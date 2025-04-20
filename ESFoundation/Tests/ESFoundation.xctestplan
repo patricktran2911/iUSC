@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "D8251EAF-40C4-40AC-A146-A0B378BE308D",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:",
+          "identifier" : "ESFoundation",
+          "name" : "ESFoundation"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "ESFoundationTests",
+        "name" : "ESFoundationTests"
+      }
+    }
+  ],
+  "version" : 1
+}

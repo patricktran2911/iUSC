@@ -1,0 +1,27 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "at" : {
+
+    },
+    "Confirm" : {
+
+    },
+    "Enter a memo" : {
+
+    },
+    "Prepare your card:" : {
+
+    },
+    "Question" : {
+
+    },
+    "Reset" : {
+
+    }
+  },
+  "version" : "1.0"
+}

@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "47CF6417-C110-4A80-8DA2-ECD232AFD4D9",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:",
+          "identifier" : "ESModule",
+          "name" : "ESModule"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "ESModuleTests",
+        "name" : "ESModuleTests"
+      }
+    }
+  ],
+  "version" : 1
+}

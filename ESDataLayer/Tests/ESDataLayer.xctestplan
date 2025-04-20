@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "E5DDA829-5810-4190-AA70-34A5D034439E",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:",
+          "identifier" : "ESDataLayer",
+          "name" : "ESDataLayer"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "ESDataLayerTests",
+        "name" : "ESDataLayerTests"
+      }
+    }
+  ],
+  "version" : 1
+}

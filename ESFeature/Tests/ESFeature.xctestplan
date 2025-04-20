@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "D6111C4C-58AC-4F7C-99A9-135BBD909B8F",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:",
+          "identifier" : "ESFeature",
+          "name" : "ESFeature"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "ESFeatureTests",
+        "name" : "ESFeatureTests"
+      }
+    }
+  ],
+  "version" : 1
+}
