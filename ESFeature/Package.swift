@@ -26,20 +26,6 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "ESFeatureDevTool",
-            dependencies: [
-                .product(name: "ESFoundationDevTool", package: "ESFoundation"),
-                .product(name: "ESDataLayerDevTool", package: "ESDataLayer"),
-                .product(name: "ESModuleDevTool", package: "ESModule"),
-                "ESLogin",
-                "ESFlashCard",
-            ],
-            path: "DevTool",
-            swiftSettings: [
-                .enableExperimentalFeature("StrictConcurrency")
-            ]
-        ),
-        .target(
             name: "ESLogin",
             dependencies: [
                 .product(name: "ESDataStructure", package: "ESFoundation"),
@@ -80,7 +66,6 @@ let package = Package(
         .testTarget(
             name: "ESFeatureTests",
             dependencies: [
-                "ESFeatureDevTool",
                 "ESLogin",
                 "ESFlashCard",
                 .product(name: "ESTestTool", package: "ESFoundation")
