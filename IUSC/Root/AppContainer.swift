@@ -6,6 +6,7 @@ import ESDataSource
 import ESLocalNotification
 import ESLogin
 import ESFlashCard
+import ESPracticeMode
 
 final class AppContainer {
     
@@ -17,6 +18,12 @@ final class AppContainer {
     
     lazy var fcContainer = Injected(.singleton { [anchorTime] in
         let container = FCContainer()
+        container.anchorTime = anchorTime
+        return container
+    })
+    
+    lazy var pmContainer = Injected(.singleton { [anchorTime] in
+        let container = PMContainer()
         container.anchorTime = anchorTime
         return container
     })

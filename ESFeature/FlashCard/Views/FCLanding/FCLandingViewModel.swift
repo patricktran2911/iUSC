@@ -8,7 +8,7 @@ public final class FCLandingViewModel: SingleViewModel<FCLandingView> {
     public init(container: FCContainer) {
         super.init {
             FCLandingView(
-                listView: .viewObserved(
+                studyFlashCards: .viewObserved(
                     stream: FCListViewModel(
                         container: container
                     )

@@ -1,0 +1,30 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "Enter your answer" : {
+
+    },
+    "No Question Available" : {
+
+    },
+    "Restart Test" : {
+
+    },
+    "Score: %lld" : {
+
+    },
+    "Submit" : {
+
+    },
+    "Test Complete!" : {
+
+    },
+    "Your score: %lld" : {
+
+    }
+  },
+  "version" : "1.0"
+}

@@ -7,10 +7,14 @@ let package = Package(
     defaultLocalization: "en",
     platforms: [.iOS(.v17)],
     products: [
+        .library(name: "ESPracticeMode", targets: [
+            "ESPracticeMode"
+        ]),
         .library(
             name: "ESFeature",
             targets: [
-                "ESFlashCard"
+                "ESFlashCard",
+                "ESPracticeMode"
             ]
         ),
         .library(
@@ -60,20 +64,31 @@ let package = Package(
                 .enableExperimentalFeature("StrictConcurrency")
             ]
         ),
+        .target(name: "ESPracticeMode", dependencies: [
+            .product(name: "ESDataStructure", package: "ESFoundation"),
+            .product(name: "ESInjector", package: "ESFoundation"),
+            .product(name: "ESLiveData", package: "ESFoundation"),
+            .product(name: "ESDataModel", package: "ESDataLayer"),
+            .product(name: "ESDataSource", package: "ESDataLayer"),
+            .product(name: "ESDataTransport", package: "ESDataLayer"),
+            .product(name: "ESLocalNotification", package: "ESModule"),
+            .product(name: "ESReusableUI", package: "ESModule"),
+        ], path: "PracticeMode", resources: [.process("Resources")], swiftSettings: [                .enableExperimentalFeature("StrictConcurrency")
+                                                                                    ]),
         
-//--------------------------------------------------//
-//
-        .testTarget(
-            name: "ESFeatureTests",
-            dependencies: [
-                "ESLogin",
-                "ESFlashCard",
-                .product(name: "ESTestTool", package: "ESFoundation")
-            ],
-            resources: [.process("Resources")],
-            swiftSettings: [
-                .enableExperimentalFeature("StrictConcurrency")
-            ]
-        ),
+        //--------------------------------------------------//
+        //
+            .testTarget(
+                name: "ESFeatureTests",
+                dependencies: [
+                    "ESLogin",
+                    "ESFlashCard",
+                    .product(name: "ESTestTool", package: "ESFoundation")
+                ],
+                resources: [.process("Resources")],
+                swiftSettings: [
+                    .enableExperimentalFeature("StrictConcurrency")
+                ]
+            ),
     ]
 )

@@ -7,7 +7,7 @@ import ESLiveData
 import ESDataModel
 import ESDataSource
 
-final class MemoInputViewModel: StreamViewModel<FCInputView> {
+final class FCInputViewModel: StreamViewModel<FCInputView> {
     @MainActor
     public init(container: FCContainer) {
         let selectedDate = container.selectedDateDataSource.resolved()

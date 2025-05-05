@@ -3,7 +3,7 @@ import ESDataStructure
 import ESLiveData
 
 public struct FCLandingView: HashIdentifiable {
-    let listView: ObservedDataView<FCListView>
+    let studyFlashCards: ObservedDataView<FCListView>
     let addButtonAE: ActionEffect
 }
 
@@ -11,8 +11,10 @@ extension FCLandingView: View {
     public var body: some View {
         VStack {
             Spacer()
-            listView
+            
+            studyFlashCards
                 .padding(.top)
+            
             Button {
                 addButtonAE.occurs()
             } label: {
@@ -34,7 +36,7 @@ public extension FCLandingView {
         inputView: FCInputView = .previewInputView()
     ) -> Self {
         .init(
-            listView: .const(listView),
+            studyFlashCards: .const(listView),
             addButtonAE: .noEffect()
         )
     }
