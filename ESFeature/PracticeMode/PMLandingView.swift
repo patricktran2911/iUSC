@@ -1,11 +1,12 @@
 import SwiftUI
 import ESDataStructure
 import ESLiveData
+import ESDataModel
 
 public struct PMLandingView: HashIdentifiable {
     
     let score: Int
-    let state: ValueChangedEffect<PMLandingViewModel.TestState>
+    let state: ValueChangedEffect<DataState.TestState>
     let questionView: ObservedDataView<PMQuestionView>
     let restartAction: ActionEffect
 }

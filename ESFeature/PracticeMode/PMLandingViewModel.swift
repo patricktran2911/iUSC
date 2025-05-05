@@ -4,17 +4,6 @@ import ESDataModel
 import ESDataSource
 
 public final class PMLandingViewModel: StreamViewModel<PMLandingView> {
-    public enum TestState: String, CaseIterable, Equatable, Sendable {
-        case inProgress
-        case complete
-    }
-    
-    public enum AnswerStatus {
-        case doing
-        case correct
-        case failed
-        case needOnlineCheck
-    }
 
     @MainActor
     public init(container: PMContainer) {
@@ -22,7 +11,7 @@ public final class PMLandingViewModel: StreamViewModel<PMLandingView> {
 
         let currentQuestionPublisher = practiceModeDataSource.currentQuestionPublisher
         let scorePublisher = practiceModeDataSource.currentScorePublisher
-        let statePublisher = CurrentValueSubject<TestState, Never>(.inProgress)
+        let statePublisher = practiceModeDataSource.testStatePublisher
 
         super.init(
             dataViewPublisher: Publishers.CombineLatest3(

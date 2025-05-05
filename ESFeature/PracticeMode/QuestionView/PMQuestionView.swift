@@ -18,7 +18,7 @@ enum PMQuestionView: HashIdentifiable {
     )
     case checkOnline(
         question: String,
-        answerInput: String,
+        answerInput: ValueChangedEffect<String>,
         submitAction: ActionEffect
     )
 }
@@ -61,7 +61,6 @@ extension PMQuestionView: View {
                             }
                         }
                         .padding(.horizontal, 16)
-                        .frame(maxWidth: .infinity, alignment: .leading)
                         .background {
                             if let index = selectedIndexOption.currentValue,
                                options[index] == option {
@@ -69,7 +68,7 @@ extension PMQuestionView: View {
                                     .fill(Color.green.opacity(0.2))
                             } else {
                                 RoundedRectangle(cornerRadius: 8)
-                                    .fill(Color.clear)
+                                    .fill(Color.gray.opacity(0.2))
                             }
                         }
                     }
@@ -138,7 +137,7 @@ extension PMQuestionView: View {
                                         .fill(Color.blue.opacity(0.2))
                                 } else {
                                     RoundedRectangle(cornerRadius: 8)
-                                        .fill(Color.clear)
+                                        .fill(Color.gray.opacity(0.2))
                                 }
                             }
                         }
@@ -168,7 +167,7 @@ extension PMQuestionView: View {
                     .font(.headline)
                     .padding(.bottom, 16)
 
-                TextField("Enter your answer", text: .constant(answerInput))
+                TextField("Enter your answer", text: answerInput.binding)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.bottom, 16)
 

@@ -4,29 +4,14 @@ import Foundation
 import ESDataSource
 import ESDataModel
 
-struct Question: Decodable {
-    enum AnswerType: String, Decodable {
-        case single = "singleAnswer"
-        case multiple = "multipleAnswer"
-        case interchange = "interchangeAnswer"
-        case stateAnswer = "stateAnswer"
-        case peopleAnswer = "peopleAnswer"
-    }
-    
-    let category: String
-    let type: String
-    let question: String
-    let answer: [String]
-    let answerType: AnswerType
-    let answerQuantity: Int?
-    let answerKey: String?
-}
+
 
 public final class PracticeModeRepository: PracticeModeDataSource {
     public var practiceQuestions: [DataModel.PracticeQuestion] = []
     public var testQuestionsPublisher = CurrentValueSubject<[DataModel.PracticeQuestion], Never>([])
     public var currentScorePublisher = CurrentValueSubject<Int, Never>(0)
     public var currentQuestionPublisher: CurrentValueSubject<DataModel.PracticeQuestion?, Never> = .init(nil)
+    public var testStatePublisher: CurrentValueSubject<DataState.TestState, Never> = .init(.inProgress)
     
     private var currentQuestionIndexPublisher = CurrentValueSubject<Int, Never>(0)
     private var cancellables: Set<AnyCancellable> = []
@@ -40,7 +25,8 @@ public final class PracticeModeRepository: PracticeModeDataSource {
         testQuestionsPublisher.combineLatest(currentQuestionIndexPublisher)
             .sink { [weak self] (questions, index) in
                 guard let self = self else { return }
-                if index >= testQuestionsPublisher.value.count - 1 {
+                if index >= testQuestionsPublisher.value.count {
+                    testStatePublisher.send(.complete)
                     return
                 } else {
                     currentQuestionPublisher.send(questions[index])
@@ -55,10 +41,10 @@ public final class PracticeModeRepository: PracticeModeDataSource {
         }
         var currentQuestionCorrectAnswersIndexes: [Int] = {
             switch currentQuestion.questionType {
-            case let .single(question, options, answer):
+            case let .single(_, options, answer):
                 let correctAnswerIndex = options.firstIndex(of: answer)
                 return [correctAnswerIndex ?? 0]
-            case let .multiple(question, options, answers):
+            case let .multiple(_, options, answers):
                 let correctAnswerIndexes = answers.compactMap { options.firstIndex(of: $0) }
                 return correctAnswerIndexes
             case .onlineCheck:
@@ -75,6 +61,11 @@ public final class PracticeModeRepository: PracticeModeDataSource {
         currentQuestionIndexPublisher.send(currentQuestionIndexPublisher.value + 1)
     }
     
+    public func checkAnswerOnline(_ answer: String) {
+        currentScorePublisher.send(currentScorePublisher.value + 1)
+        currentQuestionIndexPublisher.send(currentQuestionIndexPublisher.value + 1)
+    }
+    
     public func loadTestQuestions() {
         guard let data = NSDataAsset(name: "100Questions")?.data else  {
             return
@@ -82,7 +73,7 @@ public final class PracticeModeRepository: PracticeModeDataSource {
         let decoder = JSONDecoder()
         
         do {
-            let questions = try decoder.decode([Question].self, from: data)
+            let questions = try decoder.decode([DataModel.QuestionDecoded].self, from: data)
             practiceQuestions = questions.map {
                 .init(questionInput: $0)
             }
@@ -96,11 +87,12 @@ public final class PracticeModeRepository: PracticeModeDataSource {
     public func loadRandomQuestions(count: Int = 10) {
         testQuestionsPublisher.send(Array(practiceQuestions.shuffled().prefix(count)))
         currentQuestionIndexPublisher.send(0)
+        currentScorePublisher.send(0)
     }
 }
 
-extension DataModel.PracticeQuestion {
-    init(questionInput: Question) {
+fileprivate extension DataModel.PracticeQuestion {
+    init(questionInput: DataModel.QuestionDecoded) {
         self.init(
             questionType: .getQuestionType(from: questionInput)
         )
@@ -108,7 +100,7 @@ extension DataModel.PracticeQuestion {
 }
 
 private extension DataModel.PracticeQuestion.QuestionType {
-    static func getQuestionType(from question: Question) -> Self {
+    static func getQuestionType(from question: DataModel.QuestionDecoded) -> Self {
         switch question.answerType {
         case .single:
             return .single(question: question.question, options: ["1", "2", "3", question.answer[0]], correctAnswer: question.answer[0])

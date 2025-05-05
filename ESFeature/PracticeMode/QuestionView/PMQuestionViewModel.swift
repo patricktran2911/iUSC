@@ -10,16 +10,16 @@ final class PPMQuestionViewModel: StreamViewModel<PMQuestionView> {
         let pmDataSource = container.practiceModeDataSource.resolved()
         let currentQuestionPublisher = pmDataSource.currentQuestionPublisher
         let currentSelectionsIndexPublisher = CurrentValueSubject<Set<Int>?, Never>(nil)
-        let combinePublishers = Publishers.CombineLatest(currentQuestionPublisher, currentSelectionsIndexPublisher)
-        var freeAnswer = ""
+        let freeAnswerPublisher = CurrentValueSubject<String, Never>("")
+        let combinePublishers = Publishers.CombineLatest3(currentQuestionPublisher, currentSelectionsIndexPublisher, freeAnswerPublisher)
         super.init(
             dataViewPublisher: combinePublishers
-                .map { question, selectedIndexes in
+                .map { question, selectedIndexes, textAnswer in
                     guard let question = question else {
                         return .noQuestion
                     }
                     switch question.questionType {
-                    case let .single(question, options, correctAnswer):
+                    case let .single(question, options, _):
                         return .single(
                             question: question,
                             options: options,
@@ -34,7 +34,7 @@ final class PPMQuestionViewModel: StreamViewModel<PMQuestionView> {
                             submitAction: .performing {
                                 pmDataSource.checkAnswer(Array(selectedIndexes ?? []))
                             })
-                    case let .multiple(question, options, correctAnswers):
+                    case let .multiple(question, options, _):
                         return .multiple(
                             question: question,
                             options: options,
@@ -49,9 +49,11 @@ final class PPMQuestionViewModel: StreamViewModel<PMQuestionView> {
                     case let .onlineCheck(question):
                         return .checkOnline(
                             question: question,
-                            answerInput: "",
+                            answerInput: .onUpdated(fromInitial: textAnswer, action: { newValue in
+                                freeAnswerPublisher.send(newValue)
+                            }),
                             submitAction: .performing {
-                                
+                                pmDataSource.checkAnswerOnline(textAnswer)
                             })
                     }
                 }
