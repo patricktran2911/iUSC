@@ -14,12 +14,8 @@ public extension DataModel {
         public let question: String
         public let answer: [String]
         public let answerType: AnswerType
+        public let options: [String]?
         public let answerQuantity: Int?
         public let answerKey: String?
-    }
-    
-    enum TestState: String, CaseIterable, Equatable, Sendable {
-        case inProgress
-        case complete
     }
 }

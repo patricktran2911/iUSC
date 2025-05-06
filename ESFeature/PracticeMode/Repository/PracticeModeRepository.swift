@@ -103,9 +103,9 @@ private extension DataModel.PracticeQuestion.QuestionType {
     static func getQuestionType(from question: DataModel.QuestionDecoded) -> Self {
         switch question.answerType {
         case .single:
-            return .single(question: question.question, options: ["1", "2", "3", question.answer[0]], correctAnswer: question.answer[0])
+            return .single(question: question.question, options: question.options ?? [], correctAnswer: question.answer[0])
         case .multiple:
-            return .multiple(question: question.question, options: ["1", "2", "3"] + question.answer, correctAnswer: question.answer)
+            return .multiple(question: question.question, options: question.options ?? [], correctAnswer: question.answer)
         case .peopleAnswer, .stateAnswer, .interchange:
             return .onlineCheck(question: question.question)
         }
