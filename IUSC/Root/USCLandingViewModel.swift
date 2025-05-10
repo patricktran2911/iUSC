@@ -24,7 +24,7 @@ final class USCLandingViewModel: StreamViewModel<USCLandingView> {
                             mode: .onUpdated(fromInitial: mode, action: { newMode in
                                 selectedMode.send(newMode)
                             }),
-                            fcLandingView: .viewBuilt(from: FCLandingViewModel(container: container.fcContainer.resolved())),
+                            fcLandingView: .viewObserved(stream: FCLandingViewModel(container: container.fcContainer.resolved())),
                             practiceLandingView: .viewObserved(stream: PMLandingViewModel(container: container.pmContainer.resolved()))
                         )
                     }

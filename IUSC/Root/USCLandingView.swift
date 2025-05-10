@@ -6,7 +6,7 @@ import ESPracticeMode
 
 struct USCLandingView: HashIdentifiable {
     let mode: ValueChangedEffect<USCLandingViewModel.RunningMode>
-    let fcLandingView: FCLandingView
+    let fcLandingView: ObservedDataView<FCLandingView>
     let practiceLandingView: ObservedDataView<PMLandingView>
 }
 
@@ -50,7 +50,7 @@ extension USCLandingView {
     ) -> Self {
         .init(
             mode: .noEffect(mode),
-            fcLandingView: .previewFCLandingView(),
+            fcLandingView: .const(.previewFCLandingView()),
             practiceLandingView: .const(.previewTestModeView()))
     }
 }

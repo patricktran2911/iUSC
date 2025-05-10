@@ -5,7 +5,7 @@ public extension DataModel {
         public let uniqueId: Identifier.FlashCard
         public let category: String
         public let question: String
-        public let answer: String
+        public let answer: [String]
         public let isEditing: Bool
         
         public var updatedAt: Date = Date()
@@ -15,7 +15,7 @@ public extension DataModel {
             uniqueId: Identifier.FlashCard,
             category: String,
             question: String,
-            answer: String,
+            answer: [String],
             isEditing: Bool
         ) {
             self.uniqueId = uniqueId

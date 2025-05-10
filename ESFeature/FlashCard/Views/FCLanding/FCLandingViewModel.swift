@@ -3,20 +3,40 @@ import ESLiveData
 import ESDataModel
 import ESDataSource
 
-public final class FCLandingViewModel: SingleViewModel<FCLandingView> {
+public final class FCLandingViewModel: StreamViewModel<FCLandingView> {
     @MainActor
     public init(container: FCContainer) {
-        super.init {
-            FCLandingView(
-                studyFlashCards: .viewObserved(
-                    stream: FCListViewModel(
-                        container: container
+        let dataSource = container.flashCardDataSource.resolved()
+        let isFlippedPublisher = CurrentValueSubject<Bool, Never>(false)
+        
+        let combinedPublishers = Publishers.CombineLatest(
+            dataSource.currentIndexPublisher,
+            dataSource.totalCardsPublisher
+        )
+        
+        super.init(
+            dataViewPublisher: combinedPublishers
+                .map { currentIndex, totalCards in
+                    FCLandingView(
+                        itemView: .viewObserved(
+                            stream: FCItemViewModel(container: container)
+                        ),
+                        currentIndex: currentIndex,
+                        totalCards: totalCards,
+                        nextAction: .performing {
+                            dataSource.nextCard()
+                            isFlippedPublisher.send(false)
+                        },
+                        previousAction: .performing {
+                            dataSource.previousCard()
+                            isFlippedPublisher.send(false)
+                        },
+                        canGoNext: currentIndex < totalCards - 1,
+                        canGoPrevious: currentIndex > 0
                     )
-                ),
-                addButtonAE: .performing {
-                    await container.flashCardDataSource.resolved().createNewFlashCard()
                 }
-            )
-        }
+                .eraseToAnyPublisher()
+        )
+        
     }
 }

@@ -3,24 +3,52 @@ import ESDataStructure
 import ESLiveData
 
 public struct FCLandingView: HashIdentifiable {
-    let studyFlashCards: ObservedDataView<FCListView>
-    let addButtonAE: ActionEffect
+    let itemView: ObservedDataView<FCItemView>
+    let currentIndex: Int
+    let totalCards: Int
+    let nextAction: ActionEffect
+    let previousAction: ActionEffect
+    let canGoNext: Bool
+    let canGoPrevious: Bool
 }
 
 extension FCLandingView: View {
     public var body: some View {
-        VStack {
+        VStack(spacing: 24) {
             Spacer()
-            
-            studyFlashCards
-                .padding(.top)
-            
-            Button {
-                addButtonAE.occurs()
-            } label: {
-                Image(.addIcon)
+            if totalCards > 0 {
+                Text("Card \(currentIndex + 1) of \(totalCards)")
+                    .font(.footnote)
+                    .foregroundColor(.secondary)
+                
+                itemView
+                
+                HStack(spacing: 20) {
+                    Button(action: { previousAction.occurs() }) {
+                        Label("Previous", systemImage: "arrow.left.circle.fill")
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .disabled(!canGoPrevious)
+                                        
+                    Button(action: { nextAction.occurs() }) {
+                        Label("Next", systemImage: "arrow.right.circle.fill")
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .disabled(!canGoNext)
+                }
+                .labelStyle(.titleAndIcon)
+                .padding(.top, 8)
+            } else {
+                Spacer()
+                Text("No flashcards available.")
+                    .font(.title3)
+                    .foregroundColor(.secondary)
+                Spacer()
             }
+            
+            Spacer()
         }
+        .padding()
     }
 }
 
@@ -31,13 +59,15 @@ extension FCLandingView: View {
 
 public extension FCLandingView {
     static func previewFCLandingView(
-        listView: FCListView = .previewListView(),
-        inputEditorView: FCInputEditorView? = nil,
-        inputView: FCInputView = .previewInputView()
     ) -> Self {
         .init(
-            studyFlashCards: .const(listView),
-            addButtonAE: .noEffect()
+            itemView: .const(.preview()),
+            currentIndex: 0,
+            totalCards: 5,
+            nextAction: .noEffect(),
+            previousAction: .noEffect(),
+            canGoNext: true,
+            canGoPrevious: false
         )
     }
 }

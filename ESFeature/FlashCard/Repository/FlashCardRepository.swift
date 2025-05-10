@@ -1,110 +1,90 @@
 import Foundation
+import UIKit
 import Combine
 import ESDataModel
 import ESDataTransport
 import ESDataSource
-import ESLocalNotification
 
-final class FlashCardRepository: FlashCardDataSource {
-    
-    private let userDefaults: UserDefaults
-    private var cancellable: AnyCancellable?
-    private var hasPermission: Bool = false
-    
-    init(userDefaults: UserDefaults) {
-        self.userDefaults = userDefaults
-        self.cancellable = nil
-    }
-    
-    var flashCardPublisher: AnyPublisher<[DataModel.FlashCard], Never> {
-        userDefaults
-            .publisher(for: \.flashcardHash)
-            .map { [userDefaults] _ in
-                return userDefaults.getAllFlashCard()
+class FlashCardRepository: FlashCardDataSource {    
+    private var flashcards: [DataModel.FlashCard] = []
+    private let currentIndexSubject = CurrentValueSubject<Int, Never>(0)
+    private let flashcardsSubject = CurrentValueSubject<[DataModel.FlashCard], Never>([])
+
+    var currentFlashcardPublisher: AnyPublisher<DataModel.FlashCard?, Never> {
+        Publishers.CombineLatest(flashcardsSubject, currentIndexSubject)
+            .map { cards, index in
+                guard !cards.isEmpty, index >= 0, index < cards.count else {
+                    return nil
+                }
+                return cards[index]
             }
             .eraseToAnyPublisher()
     }
-    
-    var currentPageIndex: CurrentValueSubject<Int, Never> = .init(0)
-    
-    @MainActor
-    public func addFlashCard(_ flashCard: DataModel.FlashCard) async {
-        if !hasPermission || !userDefaults.getAllFlashCard().isEmpty {
-            userDefaults.saveFlashCard(flashCard)
-            userDefaults.flashcardHash = userDefaults.getAllFlashCard().hashValue
-            currentPageIndex.value = userDefaults.getAllFlashCard().count - 1
-        }
+
+    var currentIndexPublisher: AnyPublisher<Int, Never> {
+        currentIndexSubject.eraseToAnyPublisher()
     }
-    
-    @MainActor
-    func updateFlashCard(_ flashCard: DataModel.FlashCard) async {
-        let allFlashCard = userDefaults.getAllFlashCard().map { item in
-            if item.uniqueId == flashCard.uniqueId {
-                return flashCard
+
+    var totalCardsPublisher: AnyPublisher<Int, Never> {
+        flashcardsSubject.map { $0.count }.eraseToAnyPublisher()
+    }
+
+    init() {
+        loadFlashcards()
+    }
+
+    func loadFlashcards() {
+        guard let data = NSDataAsset(name: "100Questions")?.data else  {
+            return
+        }
+        let decoder = JSONDecoder()
+        do {
+            let questions = try decoder.decode([DataModel.QuestionDecoded].self, from: data)
+            flashcards = questions.map {
+                .init(questionDecode: $0)
+            }
+            flashcardsSubject.send(flashcards)
+            
+            let current = currentIndexSubject.value
+            if current >= flashcards.count || current < 0 {
+                 currentIndexSubject.send(0)
             } else {
-                return item
+                 currentIndexSubject.send(current) // Keep current index if still valid
             }
-        }
-        userDefaults.overrideFlashCards(allFlashCard)
-        userDefaults.flashcardHash = userDefaults.getAllFlashCard().hashValue
-    }
-    
-    @MainActor
-    public func removeFlashCard(_ id: Identifier.FlashCard) async {
-        if !hasPermission || !userDefaults.getAllFlashCard().isEmpty {
-            userDefaults.deleteSavedFlashCard(id)
-            userDefaults.flashcardHash = userDefaults.getAllFlashCard().hashValue
+        } catch {
+            
         }
     }
-    
-    @MainActor
-    public func loadSavedFlashCard() async {
-        
-    }
-}
 
-// MARK: - Persistence
+    func nextCard() {
+        let current = currentIndexSubject.value
+        if !flashcards.isEmpty && current < flashcards.count - 1 {
+            currentIndexSubject.send(current + 1)
+        }
+    }
 
-private extension UserDefaults {
-    func getAllFlashCard() -> [DataModel.FlashCard] {
-        if let savedFlashCardData = object(forKey: "savedFlashCard") as? Data {
-            let decoder = JSONDecoder()
-            if let loadedFlashCard = try? decoder.decode([DataModel.FlashCard].self, from: savedFlashCardData) {
-                return loadedFlashCard
-            }
-        }
-        return []
-    }
-    
-    func saveFlashCard(_ flashCard: DataModel.FlashCard) {
-        let updatedFlashCards = getAllFlashCard() + [flashCard]
-        overrideFlashCards(updatedFlashCards)
-    }
-    
-    func overrideFlashCards(_ updatedFlashCards: [DataModel.FlashCard]) {
-        let encoder = JSONEncoder()
-        if let encodedData = try? encoder.encode(updatedFlashCards) {
-            set(encodedData, forKey: "savedFlashCard")
+    func previousCard() {
+        let current = currentIndexSubject.value
+        if current > 0 {
+            currentIndexSubject.send(current - 1)
         }
     }
-    
-    func deleteSavedFlashCard(_ flashCardId: Identifier.FlashCard) {
-        let updatedFlashCard = getAllFlashCard()
-            .filter { flashCard in
-                flashCard.uniqueId != flashCardId
-            }
-        
-        let encoder = JSONEncoder()
-        if let encodedData = try? encoder.encode(updatedFlashCard) {
-            set(encodedData, forKey: "savedFlashCard")
+
+    func setCurrentCard(at index: Int) {
+        if index >= 0 && index < flashcards.count {
+            currentIndexSubject.send(index)
         }
     }
 }
 
-// define key for observing
-extension UserDefaults {
-    @objc dynamic var flashcardHash: Int {
-        get { integer(forKey: #function)}
-        set { setValue(newValue, forKey: #function) }
+extension DataModel.FlashCard {
+    init(questionDecode: DataModel.QuestionDecoded) {
+        self.init(
+            uniqueId: .randomGenerated,
+            category: questionDecode.category,
+            question: questionDecode.question,
+            answer: questionDecode.answer,
+            isEditing: false
+        )
     }
 }

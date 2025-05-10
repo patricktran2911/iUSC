@@ -12,7 +12,7 @@ public final class FCContainer {
     public var anchorTime
     
     public lazy var flashCardDataSource = Injected(as: FlashCardDataSource.self, .singleton {
-        FlashCardRepository(userDefaults: .standard)
+        FlashCardRepository()
     })
     
     public lazy var selectedDateDataSource = Injected(as: SelectedDateDataSource.self, .singleton {
