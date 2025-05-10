@@ -4,6 +4,9 @@
     "" : {
 
     },
+    "%lld" : {
+
+    },
     "Enter your answer" : {
 
     },
@@ -13,13 +16,13 @@
     "Restart Test" : {
 
     },
-    "Score: %lld" : {
-
-    },
     "Submit" : {
 
     },
     "Test Complete!" : {
+
+    },
+    "Total score: " : {
 
     },
     "Your score: %lld" : {

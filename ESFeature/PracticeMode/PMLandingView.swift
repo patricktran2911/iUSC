@@ -19,9 +19,13 @@ extension PMLandingView: View {
                 VStack {
                     questionView
                     
-                    Text("Score: \(score)")
-                        .font(.subheadline)
-                        .padding()
+                    Text("Total score: ")
+                        .font(.body)
+                    +
+                    Text("\(score)")
+                        .font(.body)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(.green)
                 }
                 
             case .complete:
