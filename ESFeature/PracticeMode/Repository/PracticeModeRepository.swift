@@ -39,22 +39,29 @@ public final class PracticeModeRepository: PracticeModeDataSource {
         guard let currentQuestion = currentQuestionPublisher.value else {
             return
         }
-        var currentQuestionCorrectAnswersIndexes: [Int] = {
+        let currentQuestionCorrectAnswersIndexes: [Int] = {
             switch currentQuestion.questionType {
             case let .single(_, options, answer):
                 let correctAnswerIndex = options.firstIndex(of: answer)
                 return [correctAnswerIndex ?? 0]
-            case let .multiple(_, options, answers):
+            case let .multiple(_, options, answers, _):
                 let correctAnswerIndexes = answers.compactMap { options.firstIndex(of: $0) }
                 return correctAnswerIndexes
             case .onlineCheck:
                 return []
             }
         }()
-        currentQuestionCorrectAnswersIndexes = currentQuestionCorrectAnswersIndexes.sorted { $0 < $1 }
-        let sortedIndexes = indexes.sorted()
-        let isCorrect = sortedIndexes == currentQuestionCorrectAnswersIndexes
-        
+        let selectedSet = Set(indexes)
+        let correctSet = Set(currentQuestionCorrectAnswersIndexes)
+        let isCorrect: Bool = {
+            switch currentQuestion.questionType {
+            case let .multiple(_, _, _, answerQuantity):
+                return selectedSet.isSubset(of: correctSet) && selectedSet.count >= answerQuantity ?? 1
+            default :
+                return selectedSet.isSubset(of: correctSet)
+            }
+        }()
+
         if isCorrect {
             currentScorePublisher.send(currentScorePublisher.value + 1)
         }
@@ -105,7 +112,7 @@ private extension DataModel.PracticeQuestion.QuestionType {
         case .single:
             return .single(question: question.question, options: question.options ?? [], correctAnswer: question.answer[0])
         case .multiple:
-            return .multiple(question: question.question, options: question.options ?? [], correctAnswer: question.answer)
+            return .multiple(question: question.question, options: question.options ?? [], correctAnswer: question.answer, answerQuantity: question.answerQuantity)
         case .peopleAnswer, .stateAnswer, .interchange:
             return .onlineCheck(question: question.question)
         }

@@ -19,7 +19,7 @@ final class PMMultipleAnswerViewModel: StreamViewModel<PMMultipleAnswerView> {
                         return .hidden
                     }
                     switch question.questionType {
-                    case let .multiple(questionText, options, _):
+                    case let .multiple(questionText, options, _, _):
                         return .loaded(
                             PMMultipleAnswerView(
                                 question: questionText,

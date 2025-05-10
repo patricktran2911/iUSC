@@ -5,7 +5,7 @@ public extension DataModel {
     struct PracticeQuestion: Modelable {
         public enum QuestionType: Codable, Hashable, Sendable {
             case single(question: String, options: [String], correctAnswer: String)
-            case multiple(question: String, options: [String], correctAnswer: [String])
+            case multiple(question: String, options: [String], correctAnswer: [String], answerQuantity: Int?)
             case onlineCheck(question: String)
             
             public static func == (lhs: Self, rhs: Self) -> Bool {
