@@ -17,7 +17,6 @@ public struct FCLandingView: HashIdentifiable {
 extension FCLandingView: View {
     public var body: some View {
         ZStack(alignment: .trailing) {
-            // Main content
             VStack(spacing: 24) {
                 HStack {
                     Spacer()

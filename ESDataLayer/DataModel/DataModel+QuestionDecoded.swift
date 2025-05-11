@@ -12,9 +12,9 @@ public extension DataModel {
         public let category: String
         public let type: String
         public let question: String
-        public let answer: [String]
+        public let correctAnswers: [String]
+        public let wrongAnswers: [String]
         public let answerType: AnswerType
-        public let options: [String]?
         public let answerQuantity: Int?
         public let answerKey: String?
     }

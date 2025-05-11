@@ -1,0 +1,1873 @@
+[
+  {
+    "category": "government",
+    "type": "principles",
+    "question": "What is the supreme law of the land?",
+    "correctAnswers": [
+      "The Constitution"
+    ],
+    "wrongAnswers": [
+      "The Bill of Rights",
+      "The Declaration of Independence",
+      "The Emancipation Proclamation",
+      "Presidents Day"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "principles",
+    "question": "What does the Constitution do?",
+    "correctAnswers": [
+      "Defines the government",
+      "Sets up the government",
+      "Protects basic rights of Americans"
+    ],
+    "wrongAnswers": [
+      "states rights",
+      "Green movement",
+      "Declares independence from Great Britain",
+      "Christmas"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "principles",
+    "question": "The idea of self-government is in the first three words of the Constitution. What are these words?",
+    "correctAnswers": [
+      "We the People"
+    ],
+    "wrongAnswers": [
+      "freedom of religion",
+      "In God We Trust",
+      "United We Stand",
+      "Life, Liberty, Happiness"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "principles",
+    "question": "What is an amendment?",
+    "correctAnswers": [
+      "An addition (to the Constitution)",
+      "A change (to the Constitution)"
+    ],
+    "wrongAnswers": [
+      "Appoints federal judges",
+      "President",
+      "A removal of a law",
+      "A court ruling"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "principles",
+    "question": "What do we call the first ten amendments to the Constitution?",
+    "correctAnswers": [
+      "The Bill of Rights"
+    ],
+    "wrongAnswers": [
+      "The Federalist Papers",
+      "To conquer the British",
+      "The Declaration of Independence",
+      "The Articles of Confederation"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "principles",
+    "question": "What is one right or freedom from the First Amendment?",
+    "correctAnswers": [
+      "Speech",
+      "Petition the government",
+      "Assembly",
+      "Religion",
+      "Press"
+    ],
+    "wrongAnswers": [
+      "Trial by jury",
+      "Cherokee",
+      "To declare war",
+      "Right to bear arms"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "principles",
+    "question": "How many amendments does the Constitution have?",
+    "correctAnswers": [
+      "Twenty-seven (27)"
+    ],
+    "wrongAnswers": [
+      "Twenty-one (21)",
+      "To set up schools",
+      "Thirty-three (33)",
+      "Ten (10)"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "principles",
+    "question": "What did the Declaration of Independence do?",
+    "correctAnswers": [
+      "Declared our independence (from Great Britain)",
+      "Said that the United States is free (from Great Britain)",
+      "Announced our independence (from Great Britain)"
+    ],
+    "wrongAnswers": [
+      "eight (8)",
+      "Established the U.S. Constitution",
+      "Korean War",
+      "Decides if a law goes against the Constitution"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "principles",
+    "question": "What are two rights in the Declaration of Independence?",
+    "correctAnswers": [
+      "Pursuit of happiness",
+      "Liberty",
+      "Life"
+    ],
+    "wrongAnswers": [
+      "Mohegan",
+      "Freedom of speech",
+      "Freedom from taxation",
+      "Right to bear arms"
+    ],
+    "answerType": "multipleAnswer",
+    "answerQuantity": 3,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "principles",
+    "question": "What is freedom of religion?",
+    "correctAnswers": [
+      "You can practice any religion, or not practice a religion."
+    ],
+    "wrongAnswers": [
+      "Freedom of religion applies only in churches.",
+      "Only major religions are recognized.",
+      "Checks and balances",
+      "You must choose a religion by age 18."
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "principles",
+    "question": "What is the economic system in the United States?",
+    "correctAnswers": [
+      "Capitalist economy",
+      "Market economy"
+    ],
+    "wrongAnswers": [
+      "Socialist economy",
+      "Judicial review",
+      "April 15",
+      "Planned economy"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "principles",
+    "question": "What is the rule of law?",
+    "correctAnswers": [
+      "Government must obey the law",
+      "No one is above the law",
+      "Leaders must obey the law",
+      "Everyone must follow the law"
+    ],
+    "wrongAnswers": [
+      "Mike Pence",
+      "The president decides the law",
+      "Navajo",
+      "the right to bear arms"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "Name one branch or part of the government.",
+    "correctAnswers": [
+      "President",
+      "Congress",
+      "Judicial",
+      "The courts",
+      "Executive",
+      "Legislative"
+    ],
+    "wrongAnswers": [
+      "Federal Reserve",
+      "because there were 13 original colonies",
+      "State governments",
+      "Two hundred (200)"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "What stops one branch of government from becoming too powerful?",
+    "correctAnswers": [
+      "Checks and balances",
+      "Separation of powers"
+    ],
+    "wrongAnswers": [
+      "Publius",
+      "Judicial review",
+      "Executive orders",
+      "George Washington"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "Who is in charge of the executive branch?",
+    "correctAnswers": [
+      "The President"
+    ],
+    "wrongAnswers": [
+      "The Speaker of the House",
+      "The Vice President",
+      "The Chief Justice",
+      "Everyone must follow the law"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "Who makes federal laws?",
+    "correctAnswers": [
+      "The Congress",
+      "The Senate and the House (of Representatives)",
+      "The U.S. (national) legislature"
+    ],
+    "wrongAnswers": [
+      "The Constitution was written",
+      "because the stripes represent the original colonies",
+      "The Supreme Court",
+      "The Vice President"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "What are the two parts of the U.S. Congress?",
+    "correctAnswers": [
+      "The Senate and House (of Representatives)"
+    ],
+    "wrongAnswers": [
+      "The Cabinet and Congress",
+      "The President and Vice President",
+      "The Judicial and Executive branches",
+      "because there is one star for each state"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "How many U.S. Senators are there?",
+    "correctAnswers": [
+      "One hundred (100)"
+    ],
+    "wrongAnswers": [
+      "Fifty (50)",
+      "Two hundred (200)",
+      "Vietnam War",
+      "Four hundred thirty-five (435)"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "We elect a U.S. Senator for how many years?",
+    "correctAnswers": [
+      "six (6)"
+    ],
+    "wrongAnswers": [
+      "eight (8)",
+      "Freedom",
+      "four (4)",
+      "two (2)"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "Who is one of your state U.S. Senators now?",
+    "correctAnswers": [
+      "Answers will vary"
+    ],
+    "wrongAnswers": [
+      "Russia, China, and Germany",
+      "American Samoa",
+      "Provide schooling and education",
+      "Petition the government"
+    ],
+    "answerType": "stateAnswer",
+    "answerQuantity": null,
+    "answerKey": "senator"
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "The House of Representatives has how many voting members?",
+    "correctAnswers": [
+      "Four hundred thirty-five (435)"
+    ],
+    "wrongAnswers": [
+      "Two hundred (200)",
+      "Freedom from taxation",
+      "Three hundred (300)",
+      "One hundred (100)"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "We elect a U.S. Representative for how many years?",
+    "correctAnswers": [
+      "Two (2)"
+    ],
+    "wrongAnswers": [
+      "Four (4)",
+      "Six (6)",
+      "One (1)",
+      "Nancy Pelosi"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "Name your U.S. Representative",
+    "correctAnswers": [
+      "Answers will vary"
+    ],
+    "wrongAnswers": [
+      "Michigan",
+      "because each star represents a state",
+      "Massachusetts",
+      "Everyone must follow the law"
+    ],
+    "answerType": "stateAnswer",
+    "answerQuantity": null,
+    "answerKey": "representative"
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "Who does a U.S. Senator represent?",
+    "correctAnswers": [
+      "All people of the state"
+    ],
+    "wrongAnswers": [
+      "Mike Pence",
+      "Only state lawmakers",
+      "Only people who voted for them",
+      "Only the people in their political party"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "Why do some states have more Representatives than other states?",
+    "correctAnswers": [
+      "Because some states have more people",
+      "Because of the state population",
+      "Because they have more people"
+    ],
+    "wrongAnswers": [
+      "Give a driver license",
+      "Because they are larger in size",
+      "Leaders must obey the law",
+      "The Federal Court of Appeals"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "We elect a President for how many years?",
+    "correctAnswers": [
+      "Four (4)"
+    ],
+    "wrongAnswers": [
+      "Two (2)",
+      "Six (6)",
+      "Delaware",
+      "Eight (8)"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "In what month do we vote for President?",
+    "correctAnswers": [
+      "November"
+    ],
+    "wrongAnswers": [
+      "The Judicial and Executive branches",
+      "October",
+      "January",
+      "December"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "What is the name of the President of the United States now?",
+    "correctAnswers": [
+      "Donald J. Trump"
+    ],
+    "wrongAnswers": [
+      "Religious freedom",
+      "Socialist economy",
+      "South Carolina",
+      "Zuni"
+    ],
+    "answerType": "peopleAnswer",
+    "answerQuantity": null,
+    "answerKey": "president"
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "What is the name of the Vice President of the United States now?",
+    "correctAnswers": [
+      "Mike Pence"
+    ],
+    "wrongAnswers": [
+      "Publicly support or oppose an issue or policy",
+      "At age eighteen (18)",
+      "Secretary of Transportation",
+      "because there are 50 states"
+    ],
+    "answerType": "peopleAnswer",
+    "answerQuantity": null,
+    "answerKey": "vicePresident"
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "If the President can no longer serve, who becomes President?",
+    "correctAnswers": [
+      "The Vice President"
+    ],
+    "wrongAnswers": [
+      "You can practice any religion, or not practice a religion.",
+      "The Speaker of the House",
+      "The Secretary of State",
+      "The Chief Justice"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "If both the President and the Vice President can no longer serve, who becomes President?",
+    "correctAnswers": [
+      "The Speaker of the House"
+    ],
+    "wrongAnswers": [
+      "The Secretary of State",
+      "The Chief Justice",
+      "The President Pro Tempore of the Senate",
+      "Provide protection (police)"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "Who is the Commander in Chief of the military?",
+    "correctAnswers": [
+      "The President"
+    ],
+    "wrongAnswers": [
+      "The Secretary of Defense",
+      "The Vice President",
+      "The Chairman of the Joint Chiefs",
+      "Secretary of the Interior"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "Who signs bills to become laws?",
+    "correctAnswers": [
+      "The President"
+    ],
+    "wrongAnswers": [
+      "October",
+      "The Speaker of the House",
+      "The Vice President",
+      "The Chief Justice"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "Who vetoes bills?",
+    "correctAnswers": [
+      "The President"
+    ],
+    "wrongAnswers": [
+      "The Speaker of the House",
+      "Navajo",
+      "The Chief Justice",
+      "The Senate Majority Leader"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "What does the President Cabinet do?",
+    "correctAnswers": [
+      "Advises the President"
+    ],
+    "wrongAnswers": [
+      "Commands the military",
+      "1776",
+      "Writes federal regulations",
+      "Approves laws"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "What are two Cabinet-level positions?",
+    "correctAnswers": [
+      "Secretary of Commerce",
+      "Secretary of the Interior",
+      "Secretary of Veterans Affairs",
+      "Secretary of Homeland Security",
+      "Secretary of Health and Human Services",
+      "Attorney General",
+      "Secretary of Education",
+      "Secretary of State",
+      "Secretary of Labor",
+      "Secretary of the Treasury",
+      "Vice President",
+      "Secretary of Agriculture",
+      "Secretary of Transportation",
+      "Secretary of Housing and Urban Development",
+      "Secretary of Energy",
+      "Secretary of Defense"
+    ],
+    "wrongAnswers": [
+      "Majority Leader",
+      "Speaker of the House",
+      "Blackfeet",
+      "Chief Justice"
+    ],
+    "answerType": "multipleAnswer",
+    "answerQuantity": 16,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "What does the judicial branch do?",
+    "correctAnswers": [
+      "Reviews laws",
+      "Explains laws",
+      "Resolves disputes (disagreements)",
+      "Decides if a law goes against the Constitution"
+    ],
+    "wrongAnswers": [
+      "Appoints federal judges",
+      "June 14",
+      "Enforces laws",
+      "Press"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "What is the highest court in the United States?",
+    "correctAnswers": [
+      "The Supreme Court"
+    ],
+    "wrongAnswers": [
+      "Only state lawmakers",
+      "The District Court",
+      "The Constitutional Court",
+      "The Federal Court of Appeals"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "How many justices are on the Supreme Court?",
+    "correctAnswers": [
+      "Nine (9)"
+    ],
+    "wrongAnswers": [
+      "Twelve (12)",
+      "Seven (7)",
+      "Ten (10)",
+      "You must choose a religion by age 18."
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "Who is the Chief Justice of the United States now?",
+    "correctAnswers": [
+      "John Roberts"
+    ],
+    "wrongAnswers": [
+      "Vietnam War",
+      "California",
+      "Defend the Constitution and laws of the United States",
+      "Planned economy"
+    ],
+    "answerType": "peopleAnswer",
+    "answerQuantity": null,
+    "answerKey": "chiefJustice"
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "Under our Constitution, some powers belong to the federal government. What is one power of the federal government?",
+    "correctAnswers": [
+      "To make treaties",
+      "To create an army",
+      "To print money",
+      "To declare war"
+    ],
+    "wrongAnswers": [
+      "To issue driver licenses",
+      "To set up schools",
+      "Korean War",
+      "Sioux"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "Under our Constitution, some powers belong to the states. What is one power of the states?",
+    "correctAnswers": [
+      "Provide schooling and education",
+      "Give a driver license",
+      "Approve zoning and land use",
+      "Provide safety (fire departments)",
+      "Provide protection (police)"
+    ],
+    "wrongAnswers": [
+      "Freedom",
+      "Delaware",
+      "The Bill of Rights was debated",
+      "Print money"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "Who is the Governor of your state now?",
+    "correctAnswers": [
+      "Answers will vary"
+    ],
+    "wrongAnswers": [
+      "Oneida",
+      "Only if joining the military",
+      "John Roberts",
+      "No one is above the law"
+    ],
+    "answerType": "stateAnswer",
+    "answerQuantity": null,
+    "answerKey": "governor"
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "What is the capital of your state?",
+    "correctAnswers": [
+      "Answers will vary"
+    ],
+    "wrongAnswers": [
+      "Philadelphia",
+      "South Carolina",
+      "Massachusetts",
+      "Market economy"
+    ],
+    "answerType": "stateAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "What are the two major political parties in the United States?",
+    "correctAnswers": [
+      "Democratic and Republican"
+    ],
+    "wrongAnswers": [
+      "Serve in the U.S. military (if needed)",
+      "Green and Libertarian",
+      "Federalist and Whig",
+      "Labor and Conservative"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "What is the political party of the President now?",
+    "correctAnswers": [
+      "Republican"
+    ],
+    "wrongAnswers": [
+      "Independent",
+      "Secretary of Homeland Security",
+      "Libertarian",
+      "Democratic"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "systems",
+    "question": "What is the name of the Speaker of the House of Representatives now?",
+    "correctAnswers": [
+      "Nancy Pelosi"
+    ],
+    "wrongAnswers": [
+      "Nine (9)",
+      "Attorney General",
+      "Federalist and Whig",
+      "Obey the laws of the United States"
+    ],
+    "answerType": "peopleAnswer",
+    "answerQuantity": null,
+    "answerKey": "speaker"
+  },
+  {
+    "category": "government",
+    "type": "rights",
+    "question": "There are four amendments to the Constitution about who can vote. Describe one of them.",
+    "correctAnswers": [
+      "Citizens eighteen (18) and older can vote",
+      "A male citizen of any race (can vote).",
+      "You dont have to pay (a poll tax) to vote",
+      "Any citizen can vote. (Women and men can vote)"
+    ],
+    "wrongAnswers": [
+      "Only property owners can vote",
+      "Only taxpayers can vote",
+      "Trial by jury",
+      "Valentine Day"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "rights",
+    "question": "What is one responsibility that is only for United States citizens?",
+    "correctAnswers": [
+      "Vote in a federal election",
+      "Serve on a jury"
+    ],
+    "wrongAnswers": [
+      "Give an elected official your opinion on an issue",
+      "Pay taxes",
+      "A court ruling",
+      "Obey the law"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "rights",
+    "question": "Name one right only for United States citizens",
+    "correctAnswers": [
+      "Run for federal office",
+      "Vote in a federal election"
+    ],
+    "wrongAnswers": [
+      "The Congress",
+      "Freedom of religion",
+      "Freedom of speech",
+      "Declared our independence (from Great Britain)"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "rights",
+    "question": "What are two rights of everyone living in the United States?",
+    "correctAnswers": [
+      "freedom of religion",
+      "freedom of expression",
+      "the right to bear arms",
+      "freedom of assembly",
+      "freedom to petition the government",
+      "freedom of speech"
+    ],
+    "wrongAnswers": [
+      "because there is one star for each state",
+      "free college education",
+      "Because they have more people",
+      "New York"
+    ],
+    "answerType": "multipleAnswer",
+    "answerQuantity": 6,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "rights",
+    "question": "What do we show loyalty to when we say the Pledge of Allegiance?",
+    "correctAnswers": [
+      "The flag",
+      "The United States"
+    ],
+    "wrongAnswers": [
+      "The military",
+      "The Constitution",
+      "Valentine Day",
+      "Secretary of Agriculture"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "rights",
+    "question": "What is one promise you make when you become a United States citizen?",
+    "correctAnswers": [
+      "Be loyal to the United States",
+      "Give up loyalty to other countries",
+      "Serve (do important work for) the nation (if needed)",
+      "Obey the laws of the United States",
+      "Defend the Constitution and laws of the United States",
+      "Serve in the U.S. military (if needed)"
+    ],
+    "wrongAnswers": [
+      "Only taxpayers can vote",
+      "Pay no taxes",
+      "Only state lawmakers",
+      "Twenty-seven (27)"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "rights",
+    "question": "How old do citizens have to be to vote for President?",
+    "correctAnswers": [
+      "Eighteen (18) and older"
+    ],
+    "wrongAnswers": [
+      "Sixteen (16) and older",
+      "Any age with parental consent",
+      "freedom of expression",
+      "Twenty-one (21) and older"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "rights",
+    "question": "What are two ways that Americans can participate in their democracy?",
+    "correctAnswers": [
+      "Write to a newspaper",
+      "Run for office",
+      "Join a community group",
+      "Join a civic group",
+      "Publicly support or oppose an issue or policy",
+      "Call Senators and Representatives",
+      "Give an elected official your opinion on an issue",
+      "Help with a campaign",
+      "Vote",
+      "Join a political party"
+    ],
+    "wrongAnswers": [
+      "Pay extra taxes",
+      "Martin Luther King, Jr. Day",
+      "Join the military to vote",
+      "Atlantic Ocean"
+    ],
+    "answerType": "multipleAnswer",
+    "answerQuantity": 10,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "rights",
+    "question": "When is the last day you can send in federal income tax forms?",
+    "correctAnswers": [
+      "April 15"
+    ],
+    "wrongAnswers": [
+      "December 31",
+      "War of 1812",
+      "May 1",
+      "March 1"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "government",
+    "type": "rights",
+    "question": "When must all men register for the Selective Service?",
+    "correctAnswers": [
+      "Between eighteen (18) and twenty-six (26)",
+      "At age eighteen (18)"
+    ],
+    "wrongAnswers": [
+      "The Secretary of Defense",
+      "Only if joining the military",
+      "Choctaw",
+      "Before turning 16"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-colonial",
+    "question": "What is one reason colonists came to America?",
+    "correctAnswers": [
+      "Economic opportunity",
+      "Practice their religion",
+      "Escape persecution",
+      "Religious freedom",
+      "Freedom",
+      "Political liberty"
+    ],
+    "wrongAnswers": [
+      "Secretary of the Interior",
+      "To conquer the British",
+      "To avoid paying taxes",
+      "Maryland"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-colonial",
+    "question": "Who lived in America before the Europeans arrived?",
+    "correctAnswers": [
+      "Native Americans"
+    ],
+    "wrongAnswers": [
+      "Declared our independence (from Great Britain)",
+      "Africans",
+      "Pilgrims",
+      "British settlers"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-colonial",
+    "question": "What group of people was taken to America and sold as slaves?",
+    "correctAnswers": [
+      "Africans",
+      "People from Africa"
+    ],
+    "wrongAnswers": [
+      "Montana",
+      "Native Americans",
+      "Europeans",
+      "Presidents Day"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-colonial",
+    "question": "Why did the colonists fight the British?",
+    "correctAnswers": [
+      "Because they didnt have self-government",
+      "Because the British army stayed in their houses (boarding, quartering)",
+      "Because of high taxes (taxation without representation)"
+    ],
+    "wrongAnswers": [
+      "Huron",
+      "Because they disliked tea",
+      "New York City",
+      "Signer of the Emancipation Proclamation"
+    ],
+    "answerType": "singleAnswer",
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-colonial",
+    "question": "Who wrote the Declaration of Independence?",
+    "correctAnswers": [
+      "Thomas Jefferson"
+    ],
+    "wrongAnswers": [
+      "John Adams",
+      "Chief Justice",
+      "Benjamin Franklin",
+      "George Washington"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-colonial",
+    "question": "When was the Declaration of Independence adopted?",
+    "correctAnswers": [
+      "July 4, 1776"
+    ],
+    "wrongAnswers": [
+      "June 4, 1776",
+      "September 17, 1787",
+      "July 2, 1776",
+      "A removal of a law"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-colonial",
+    "question": "There were 13 original states. Name three.",
+    "correctAnswers": [
+      "North Carolina",
+      "Pennsylvania",
+      "Maryland",
+      "New Jersey",
+      "Georgia",
+      "Delaware",
+      "Massachusetts",
+      "South Carolina",
+      "Connecticut",
+      "Virginia",
+      "New Hampshire",
+      "Rhode Island",
+      "New York"
+    ],
+    "wrongAnswers": [
+      "To print money",
+      "Ohio",
+      "Vermont",
+      "Obey the law"
+    ],
+    "answerType": "multipleAnswer",
+    "answerQuantity": 13,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-colonial",
+    "question": "What happened at the Constitutional Convention?",
+    "correctAnswers": [
+      "The Constitution was written",
+      "The Founding Fathers wrote the Constitution"
+    ],
+    "wrongAnswers": [
+      "War of 1812",
+      "The Bill of Rights was debated",
+      "January",
+      "The Declaration of Independence was signed"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-colonial",
+    "question": "When was the Constitution written?",
+    "correctAnswers": [
+      "1787"
+    ],
+    "wrongAnswers": [
+      "1801",
+      "1776",
+      "Pennsylvania",
+      "1791"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-colonial",
+    "question": "The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers",
+    "correctAnswers": [
+      "Publius",
+      "John Jay",
+      "James Madison",
+      "Alexander Hamilton"
+    ],
+    "wrongAnswers": [
+      "Only state lawmakers",
+      "World War II",
+      "Apache",
+      "George Washington"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-colonial",
+    "question": "What is one thing Benjamin Franklin is famous for?",
+    "correctAnswers": [
+      "U.S. diplomat",
+      "Oldest member of the Constitutional Convention",
+      "First Postmaster General of the United States",
+      "Started the first free libraries",
+      "Writer of Poor Richard Almanac"
+    ],
+    "wrongAnswers": [
+      "Arctic Ocean",
+      "Immigration",
+      "The Secretary of State",
+      "Signer of the Emancipation Proclamation"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-colonial",
+    "question": "Who is the Father of Our Country?",
+    "correctAnswers": [
+      "George Washington"
+    ],
+    "wrongAnswers": [
+      "Vote",
+      "Donald J. Trump",
+      "May 1",
+      "Japan, Korea, and Vietnam"
+    ],
+    "answerType": "peopleAnswer",
+    "answerQuantity": null,
+    "answerKey": "washington"
+  },
+  {
+    "category": "history-geo",
+    "type": "history-colonial",
+    "question": "Who was the first President?",
+    "correctAnswers": [
+      "George Washington"
+    ],
+    "wrongAnswers": [
+      "Fought for civil rights",
+      "To conquer the British",
+      "The United States",
+      "The District Court"
+    ],
+    "answerType": "peopleAnswer",
+    "answerQuantity": null,
+    "answerKey": "washington"
+  },
+  {
+    "category": "history-geo",
+    "type": "history-1800",
+    "question": "What territory did the United States buy from France in 1803?",
+    "correctAnswers": [
+      "Louisiana",
+      "The Louisiana Territory"
+    ],
+    "wrongAnswers": [
+      "Independence Day",
+      "Texas",
+      "Florida",
+      "Freed the slaves (Emancipation Proclamation)"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-1800",
+    "question": "Name one war fought by the United States in the 1800s",
+    "correctAnswers": [
+      "Civil War",
+      "Mexican-American War",
+      "War of 1812",
+      "Spanish-American War"
+    ],
+    "wrongAnswers": [
+      "Japan, Korea, and Vietnam",
+      "Independence Day",
+      "World War I",
+      "Nuclear power plants"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-1800",
+    "question": "Name the U.S. war between the North and the South.",
+    "correctAnswers": [
+      "The Civil War"
+    ],
+    "wrongAnswers": [
+      "The Revolutionary War",
+      "The Vietnam War",
+      "The Korean War",
+      "Twenty-one (21)"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-1800",
+    "question": "Name one problem that led to the Civil War",
+    "correctAnswers": [
+      "economic reasons",
+      "slavery",
+      "states rights"
+    ],
+    "wrongAnswers": [
+      "Write to a newspaper",
+      "taxation without representation",
+      "A removal of a law",
+      "Nuclear power plants"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-1800",
+    "question": "What was one important thing that Abraham Lincoln did?",
+    "correctAnswers": [
+      "Led the United States during the Civil War",
+      "Saved (or preserved) the Union",
+      "Freed the slaves (Emancipation Proclamation)"
+    ],
+    "wrongAnswers": [
+      "Pay extra taxes",
+      "slavery",
+      "Oldest member of the Constitutional Convention",
+      "Declared war on Britain"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-1800",
+    "question": "What did the Emancipation Proclamation do?",
+    "correctAnswers": [
+      "Freed slaves in the Confederate states"
+    ],
+    "wrongAnswers": [
+      "Gave women the right to vote",
+      "Ended the Civil War",
+      "Established the U.S. Constitution",
+      "Leaders must obey the law"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-1800",
+    "question": "What did Susan B. Anthony do?",
+    "correctAnswers": [
+      "fought for civil rights",
+      "fought for women rights"
+    ],
+    "wrongAnswers": [
+      "wrote the Constitution",
+      "led the Civil War",
+      "Because of the state population",
+      "Maryland"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-modern",
+    "question": "Name one war fought by the United States in the 1900s.",
+    "correctAnswers": [
+      "(Persian) Gulf War",
+      "Vietnam War",
+      "World War I",
+      "World War II",
+      "Korean War"
+    ],
+    "wrongAnswers": [
+      "The Chief Justice",
+      "Revolutionary War",
+      "September 17",
+      "Because they didnt have self-government"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-modern",
+    "question": "Who was President during World War I?",
+    "correctAnswers": [
+      "Woodrow Wilson"
+    ],
+    "wrongAnswers": [
+      "Mohegan",
+      "Congress",
+      "Vermont",
+      "Answers will vary"
+    ],
+    "answerType": "peopleAnswer",
+    "answerQuantity": null,
+    "answerKey": "wilson"
+  },
+  {
+    "category": "history-geo",
+    "type": "history-modern",
+    "question": "Who was President during the Great Depression and World War II?",
+    "correctAnswers": [
+      "Franklin Roosevelt"
+    ],
+    "wrongAnswers": [
+      "Only if joining the military",
+      "Thanksgiving",
+      "Leaders must obey the law",
+      "Approve zoning and land use"
+    ],
+    "answerType": "peopleAnswer",
+    "answerQuantity": null,
+    "answerKey": "roosevelt"
+  },
+  {
+    "category": "history-geo",
+    "type": "history-modern",
+    "question": "Who did the United States fight in World War II?",
+    "correctAnswers": [
+      "Japan, Germany, and Italy"
+    ],
+    "wrongAnswers": [
+      "Russia, China, and Germany",
+      "France, Germany, and Britain",
+      "Japan, Korea, and Vietnam",
+      "California"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-modern",
+    "question": "Before he was President, Eisenhower was a general. What war was he in?",
+    "correctAnswers": [
+      "World War II"
+    ],
+    "wrongAnswers": [
+      "Japan, Korea, and Vietnam",
+      "Vietnam War",
+      "World War I",
+      "Korean War"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-modern",
+    "question": "During the Cold War, what was the main concern of the United States?",
+    "correctAnswers": [
+      "Communism"
+    ],
+    "wrongAnswers": [
+      "Gave women the right to vote",
+      "Terrorism",
+      "Immigration",
+      "Nuclear power plants"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-modern",
+    "question": "What movement tried to end racial discrimination?",
+    "correctAnswers": [
+      "Civil rights (movement)"
+    ],
+    "wrongAnswers": [
+      "Only people who voted for them",
+      "Green movement",
+      "Labor movement",
+      "Women suffrage"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-modern",
+    "question": "What did Martin Luther King, Jr. do?",
+    "correctAnswers": [
+      "Fought for civil rights",
+      "Worked for equality for all Americans"
+    ],
+    "wrongAnswers": [
+      "Wrote the Declaration of Independence",
+      "Was a U.S. President",
+      "Freedom from taxation",
+      "two (2)"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-modern",
+    "question": "What major event happened on September 11, 2001, in the United States?",
+    "correctAnswers": [
+      "Terrorists attacked the United States."
+    ],
+    "wrongAnswers": [
+      "The Civil Rights Act was passed.",
+      "The U.S. declared war on Iraq.",
+      "led the Civil War",
+      "The stock market crashed."
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "history-modern",
+    "question": "Name one American Indian tribe in the United States.",
+    "correctAnswers": [
+      "Choctaw",
+      "Apache",
+      "Seminole",
+      "Pueblo",
+      "Sioux",
+      "Inuit",
+      "Navajo",
+      "Teton",
+      "Oneida",
+      "Creek",
+      "Arawak",
+      "Lakota",
+      "Shawnee",
+      "Blackfeet",
+      "Cheyenne",
+      "Huron",
+      "Crow",
+      "Cherokee",
+      "Hopi",
+      "Mohegan",
+      "Chippewa",
+      "Iroquois"
+    ],
+    "wrongAnswers": [
+      "Executive",
+      "Established the U.S. Constitution",
+      "led the Civil War",
+      "Zuni"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "geography",
+    "question": "Name one of the two longest rivers in the United States",
+    "correctAnswers": [
+      "Mississippi River",
+      "Missouri River"
+    ],
+    "wrongAnswers": [
+      "Mohegan",
+      "Two hundred (200)",
+      "Rio Grande",
+      "Colorado River"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "geography",
+    "question": "What ocean is on the West Coast of the United States?",
+    "correctAnswers": [
+      "Pacific Ocean"
+    ],
+    "wrongAnswers": [
+      "Arctic Ocean",
+      "Atlantic Ocean",
+      "Labor Day",
+      "Indian Ocean"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "geography",
+    "question": "What ocean is on the East Coast of the United States?",
+    "correctAnswers": [
+      "Atlantic Ocean"
+    ],
+    "wrongAnswers": [
+      "Southern Ocean",
+      "Pacific Ocean",
+      "Alaska",
+      "Indian Ocean"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "geography",
+    "question": "Name one U.S. territory.",
+    "correctAnswers": [
+      "U.S. Virgin Islands",
+      "Northern Mariana Islands",
+      "Guam",
+      "American Samoa",
+      "Puerto Rico"
+    ],
+    "wrongAnswers": [
+      "Because they didnt have self-government",
+      "eight (8)",
+      "Serve (do important work for) the nation (if needed)",
+      "Hawaii"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "geography",
+    "question": "Name one state that borders Canada.",
+    "correctAnswers": [
+      "Pennsylvania",
+      "North Dakota",
+      "Idaho",
+      "Minnesota",
+      "Montana",
+      "Ohio",
+      "Maine",
+      "Alaska",
+      "Michigan",
+      "Vermont",
+      "New Hampshire",
+      "Washington",
+      "New York"
+    ],
+    "wrongAnswers": [
+      "Independent",
+      "Ended the Civil War",
+      "Texas",
+      "California"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "geography",
+    "question": "Name one state that borders Mexico.",
+    "correctAnswers": [
+      "New Mexico",
+      "Texas",
+      "Arizona",
+      "California"
+    ],
+    "wrongAnswers": [
+      "Nevada",
+      "To declare war",
+      "Utah",
+      "Secretary of the Treasury"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "geography",
+    "question": "What is the capital of the United States?",
+    "correctAnswers": [
+      "Washington, D.C."
+    ],
+    "wrongAnswers": [
+      "Philadelphia",
+      "New York City",
+      "four (4)",
+      "Los Angeles"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "geography",
+    "question": "Where is the Statue of Liberty?",
+    "correctAnswers": [
+      "Liberty Island",
+      "New York (Harbor)"
+    ],
+    "wrongAnswers": [
+      "Ellis Island",
+      "Benjamin Franklin",
+      "Immigration",
+      "Washington, D.C."
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "symbols",
+    "question": "Why does the flag have 13 stripes?",
+    "correctAnswers": [
+      "because there were 13 original colonies",
+      "because the stripes represent the original colonies"
+    ],
+    "wrongAnswers": [
+      "because of 13 founding fathers",
+      "because there were 13 amendments",
+      "Choctaw",
+      "Vermont"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "symbols",
+    "question": "Why does the flag have 50 stars?",
+    "correctAnswers": [
+      "because each star represents a state",
+      "because there are 50 states",
+      "because there is one star for each state"
+    ],
+    "wrongAnswers": [
+      "Connecticut",
+      "because of the 50 founding fathers",
+      "Give up loyalty to other countries",
+      "Pay taxes"
+    ],
+    "answerType": "interchangeAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "symbols",
+    "question": "What is the name of the national anthem?",
+    "correctAnswers": [
+      "The Star-Spangled Banner"
+    ],
+    "wrongAnswers": [
+      "My Country, 'Tis of Thee",
+      "God Bless America",
+      "America the Beautiful",
+      "The United States"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "symbols",
+    "question": "When do we celebrate Independence Day?",
+    "correctAnswers": [
+      "July 4"
+    ],
+    "wrongAnswers": [
+      "Philadelphia",
+      "June 14",
+      "September 17",
+      "July 1"
+    ],
+    "answerType": "singleAnswer",
+    "answerQuantity": null,
+    "answerKey": null
+  },
+  {
+    "category": "history-geo",
+    "type": "symbols",
+    "question": "Name two national U.S. holidays.",
+    "correctAnswers": [
+      "Christmas",
+      "Veterans Day",
+      "Columbus Day",
+      "Independence Day",
+      "Thanksgiving",
+      "Presidents Day",
+      "Labor Day",
+      "New Year Day",
+      "Martin Luther King, Jr. Day",
+      "Memorial Day"
+    ],
+    "wrongAnswers": [
+      "Cherokee",
+      "Easter",
+      "September 17",
+      "Valentine Day"
+    ],
+    "answerType": "multipleAnswer",
+    "answerQuantity": 10,
+    "answerKey": null
+  }
+]

@@ -84,7 +84,6 @@ public final class PracticeModeRepository: PracticeModeDataSource {
             practiceQuestions = questions.map {
                 .init(questionInput: $0)
             }
-            print(practiceQuestions)
             loadRandomQuestions()
         } catch let error {
             print("[BOGUS]: \(error)")
@@ -101,19 +100,39 @@ public final class PracticeModeRepository: PracticeModeDataSource {
 fileprivate extension DataModel.PracticeQuestion {
     init(questionInput: DataModel.QuestionDecoded) {
         self.init(
-            questionType: .getQuestionType(from: questionInput)
+            questionType: .from(questionInput)
         )
     }
 }
 
 private extension DataModel.PracticeQuestion.QuestionType {
-    static func getQuestionType(from question: DataModel.QuestionDecoded) -> Self {
+    static func from(_ question: DataModel.QuestionDecoded) -> Self {
         switch question.answerType {
-        case .single:
-            return .single(question: question.question, options: question.options ?? [], correctAnswer: question.answer[0])
+        case .single, .interchange:
+            let correct = question.correctAnswers.randomElement() ?? ""
+            let options = Array(
+                Set(question.correctAnswers.shuffled().prefix(1) + question.wrongAnswers.shuffled().prefix(4))
+            ).shuffled()
+
+            return .single(
+                question: question.question,
+                options: Array(options),
+                correctAnswer: correct
+            )
+
         case .multiple:
-            return .multiple(question: question.question, options: question.options ?? [], correctAnswer: question.answer, answerQuantity: question.answerQuantity)
-        case .peopleAnswer, .stateAnswer, .interchange:
+            let allOptions = Array(
+                Set(question.correctAnswers.shuffled().prefix(question.answerQuantity ?? 1) + question.wrongAnswers.shuffled().prefix(4))
+            ).shuffled()
+
+            return .multiple(
+                question: question.question,
+                options: Array(allOptions),
+                correctAnswer: question.correctAnswers,
+                answerQuantity: question.answerQuantity
+            )
+
+        case .stateAnswer, .peopleAnswer:
             return .onlineCheck(question: question.question)
         }
     }

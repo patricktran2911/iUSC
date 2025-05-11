@@ -49,10 +49,10 @@ class FlashCardRepository: FlashCardDataSource {
             flashcardsPublisher.send(flashcards)
             
             let current = currentIndexSubject.value
-            if current >= flashcards.count || current < 0 {
+            if current >= flashcards.count {
                  currentIndexSubject.send(0)
             } else {
-                 currentIndexSubject.send(current) // Keep current index if still valid
+                 currentIndexSubject.send(current)
             }
         } catch {
             
@@ -87,7 +87,7 @@ extension DataModel.FlashCard {
             uniqueId: .randomGenerated,
             category: questionDecode.category,
             question: questionDecode.question,
-            answer: questionDecode.answer,
+            answer: questionDecode.correctAnswers,
             isEditing: false
         )
     }
