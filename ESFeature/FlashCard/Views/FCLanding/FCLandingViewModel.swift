@@ -9,17 +9,22 @@ public final class FCLandingViewModel: StreamViewModel<FCLandingView> {
         let dataSource = container.flashCardDataSource.resolved()
         let isFlippedPublisher = CurrentValueSubject<Bool, Never>(false)
         
-        let combinedPublishers = Publishers.CombineLatest(
+        let questionsListOpenPublisher = dataSource.isMenuListOpenPublisher
+        
+        let combinedPublishers = Publishers.CombineLatest3(
             dataSource.currentIndexPublisher,
-            dataSource.totalCardsPublisher
+            dataSource.totalCardsPublisher,
+            questionsListOpenPublisher
         )
         
         super.init(
             dataViewPublisher: combinedPublishers
-                .map { currentIndex, totalCards in
+                .map { currentIndex, totalCards, isQuestionListOpen in
                     FCLandingView(
                         itemView: .viewObserved(
                             stream: FCItemViewModel(container: container)
+                        ), questionPickerView: .viewObserved(
+                            stream: FCQuestionPickerViewModel(container: container)
                         ),
                         currentIndex: currentIndex,
                         totalCards: totalCards,
@@ -31,6 +36,9 @@ public final class FCLandingViewModel: StreamViewModel<FCLandingView> {
                             dataSource.previousCard()
                             isFlippedPublisher.send(false)
                         },
+                        isQuestionListOpen: .onUpdated(fromInitial: isQuestionListOpen, action: { newValue in
+                            questionsListOpenPublisher.send(newValue)
+                        }),
                         canGoNext: currentIndex < totalCards - 1,
                         canGoPrevious: currentIndex > 0
                     )

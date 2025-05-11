@@ -8,10 +8,13 @@ import ESDataSource
 class FlashCardRepository: FlashCardDataSource {    
     private var flashcards: [DataModel.FlashCard] = []
     private let currentIndexSubject = CurrentValueSubject<Int, Never>(0)
-    private let flashcardsSubject = CurrentValueSubject<[DataModel.FlashCard], Never>([])
+    
+    var flashcardsPublisher = CurrentValueSubject<[DataModel.FlashCard], Never>([])
+    
+    var isMenuListOpenPublisher = CurrentValueSubject<Bool, Never>(false)
 
     var currentFlashcardPublisher: AnyPublisher<DataModel.FlashCard?, Never> {
-        Publishers.CombineLatest(flashcardsSubject, currentIndexSubject)
+        Publishers.CombineLatest(flashcardsPublisher, currentIndexSubject)
             .map { cards, index in
                 guard !cards.isEmpty, index >= 0, index < cards.count else {
                     return nil
@@ -26,7 +29,7 @@ class FlashCardRepository: FlashCardDataSource {
     }
 
     var totalCardsPublisher: AnyPublisher<Int, Never> {
-        flashcardsSubject.map { $0.count }.eraseToAnyPublisher()
+        flashcardsPublisher.map { $0.count }.eraseToAnyPublisher()
     }
 
     init() {
@@ -43,7 +46,7 @@ class FlashCardRepository: FlashCardDataSource {
             flashcards = questions.map {
                 .init(questionDecode: $0)
             }
-            flashcardsSubject.send(flashcards)
+            flashcardsPublisher.send(flashcards)
             
             let current = currentIndexSubject.value
             if current >= flashcards.count || current < 0 {
@@ -73,6 +76,7 @@ class FlashCardRepository: FlashCardDataSource {
     func setCurrentCard(at index: Int) {
         if index >= 0 && index < flashcards.count {
             currentIndexSubject.send(index)
+            isMenuListOpenPublisher.send(false)
         }
     }
 }
