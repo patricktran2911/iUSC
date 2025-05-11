@@ -1,6 +1,7 @@
 import SwiftUI
 import ESDataStructure
 import ESLiveData
+import ESReusableUI
 
 public struct FCLandingView: HashIdentifiable {
     let itemView: ObservedDataView<FCItemView>
@@ -32,9 +33,20 @@ extension FCLandingView: View {
                 Spacer()
 
                 if totalCards > 0 {
-                    Text("Card \(currentIndex + 1) of \(totalCards)")
-                        .font(.footnote)
-                        .foregroundColor(.secondary)
+                    Group {
+                        Text("Question ")
+                        + Text("#\(currentIndex + 1)")
+                            .foregroundStyle(Color.blue)
+                            .fontWeight(.semibold)
+                        + (Text(" of \(totalCards)"))
+                    }
+                    .font(.footnote)
+                    .foregroundStyle(esColor: .ESText.primary.color)
+                    .padding(6)
+                    .background {
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.ESBorder.neutral.color, lineWidth: 1)
+                    }
 
                     itemView
 
@@ -78,7 +90,7 @@ extension FCLandingView: View {
 
             questionPickerView
                 .frame(width: 240)
-                .background(Color(.systemBackground))
+                .background(Color.ESBackground.screen.color)
                 .shadow(radius: 10)
                 .offset(x: isQuestionListOpen.currentValue ? 0 : 340)
                 .animation(.easeInOut(duration: 0.25), value: isQuestionListOpen.currentValue)
@@ -101,7 +113,7 @@ public extension FCLandingView {
             totalCards: 5,
             nextAction: .noEffect(),
             previousAction: .noEffect(),
-            isQuestionListOpen: .noEffect(true),
+            isQuestionListOpen: .noEffect(false),
             canGoNext: true,
             canGoPrevious: false
         )

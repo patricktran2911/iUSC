@@ -1,18 +1,14 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "%lld" : {
+    " of %lld" : {
 
     },
-    "Card %lld of %lld" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Card %1$lld of %2$lld"
-          }
-        }
-      }
+    "#%lld" : {
+
+    },
+    "%lld" : {
+
     },
     "Next" : {
 
@@ -21,6 +17,9 @@
 
     },
     "Previous" : {
+
+    },
+    "Question " : {
 
     }
   },
