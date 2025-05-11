@@ -49,6 +49,7 @@ extension FCLandingView: View {
                     }
 
                     itemView
+                        .onStateChangeAnimate(.smooth, transition: .slide)
 
                     HStack(spacing: 20) {
                         Button(action: { previousAction.occurs() }) {
