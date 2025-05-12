@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD25FF712DD1D92300CC4655 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF702DD1D92300CC4655 /* GoogleService-Info.plist */; };
+		CD25FF722DD1D92300CC4655 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF702DD1D92300CC4655 /* GoogleService-Info.plist */; };
+		CD25FF732DD1D92300CC4655 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF702DD1D92300CC4655 /* GoogleService-Info.plist */; };
+		CD25FF762DD1DA4400CC4655 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CD25FF752DD1DA4400CC4655 /* FirebaseAnalytics */; };
+		CD25FF7C2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */; };
+		CD25FF7D2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */; };
+		CD25FF7E2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */; };
 		CDB8DEE42DB46C2100AF3F08 /* ESDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = CDB8DEE32DB46C2100AF3F08 /* ESDataLayer */; };
 		CDB8DEE62DB46C2100AF3F08 /* ESFeature in Frameworks */ = {isa = PBXBuildFile; productRef = CDB8DEE52DB46C2100AF3F08 /* ESFeature */; };
 		CDB8DEE82DB46C2100AF3F08 /* ESFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = CDB8DEE72DB46C2100AF3F08 /* ESFoundation */; };
@@ -32,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD25FF702DD1D92300CC4655 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
 		CDB8DE9E2DB4631A00AF3F08 /* IUSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IUSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB8DEAE2DB4631C00AF3F08 /* IUSCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IUSCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB8DEB82DB4631C00AF3F08 /* IUSCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IUSCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +75,7 @@
 			files = (
 				CDB8DEE42DB46C2100AF3F08 /* ESDataLayer in Frameworks */,
 				CDB8DEE82DB46C2100AF3F08 /* ESFoundation in Frameworks */,
+				CD25FF762DD1DA4400CC4655 /* FirebaseAnalytics in Frameworks */,
 				CDB8DEFA2DB4791D00AF3F08 /* ESLogin in Frameworks */,
 				CDB8DEEA2DB46C2100AF3F08 /* ESModule in Frameworks */,
 				CDB8DEE62DB46C2100AF3F08 /* ESFeature in Frameworks */,
@@ -100,6 +110,8 @@
 				CDB8DEB12DB4631C00AF3F08 /* IUSCTests */,
 				CDB8DEBB2DB4631C00AF3F08 /* IUSCUITests */,
 				CDB8DEE22DB46C2100AF3F08 /* Frameworks */,
+				CD25FF702DD1D92300CC4655 /* GoogleService-Info.plist */,
+				CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */,
 				CDB8DE9F2DB4631A00AF3F08 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -146,6 +158,7 @@
 				CDB8DEE72DB46C2100AF3F08 /* ESFoundation */,
 				CDB8DEE92DB46C2100AF3F08 /* ESModule */,
 				CDB8DEF92DB4791D00AF3F08 /* ESLogin */,
+				CD25FF752DD1DA4400CC4655 /* FirebaseAnalytics */,
 			);
 			productName = IUSC;
 			productReference = CDB8DE9E2DB4631A00AF3F08 /* IUSC.app */;
@@ -229,6 +242,9 @@
 			);
 			mainGroup = CDB8DE952DB4631A00AF3F08;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CD25FF742DD1DA4400CC4655 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CDB8DE9F2DB4631A00AF3F08 /* Products */;
 			projectDirPath = "";
@@ -246,6 +262,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD25FF7E2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */,
+				CD25FF712DD1D92300CC4655 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +271,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD25FF732DD1D92300CC4655 /* GoogleService-Info.plist in Resources */,
+				CD25FF7C2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +280,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD25FF722DD1D92300CC4655 /* GoogleService-Info.plist in Resources */,
+				CD25FF7D2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,7 +650,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		CD25FF742DD1DA4400CC4655 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		CD25FF752DD1DA4400CC4655 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD25FF742DD1DA4400CC4655 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
 		CDB8DEE32DB46C2100AF3F08 /* ESDataLayer */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ESDataLayer;

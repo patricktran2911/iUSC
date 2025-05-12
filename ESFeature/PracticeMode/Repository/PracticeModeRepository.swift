@@ -4,8 +4,6 @@ import Foundation
 import ESDataSource
 import ESDataModel
 
-
-
 public final class PracticeModeRepository: PracticeModeDataSource {
     public var practiceQuestions: [DataModel.PracticeQuestion] = []
     public var testQuestionsPublisher = CurrentValueSubject<[DataModel.PracticeQuestion], Never>([])
@@ -69,7 +67,20 @@ public final class PracticeModeRepository: PracticeModeDataSource {
     }
     
     public func checkAnswerOnline(_ answer: String) {
-        currentScorePublisher.send(currentScorePublisher.value + 1)
+        guard let currentQuestion = currentQuestionPublisher.value else {
+            return
+        }
+        switch currentQuestion.questionType {
+        case let .onlineCheck(_, correctAnswers):
+            let isCorrect: Bool = {
+                correctAnswers.contains(where: { $0.lowercased() == answer.lowercased() })
+            }()
+            if isCorrect {
+                currentScorePublisher.send(currentScorePublisher.value + 1)
+            }
+        default:
+            currentQuestionIndexPublisher.send(currentQuestionIndexPublisher.value + 1)
+        }
         currentQuestionIndexPublisher.send(currentQuestionIndexPublisher.value + 1)
     }
     
@@ -133,7 +144,7 @@ private extension DataModel.PracticeQuestion.QuestionType {
             )
 
         case .stateAnswer, .peopleAnswer:
-            return .onlineCheck(question: question.question)
+            return .onlineCheck(question: question.question, correctAnswers: question.correctAnswers)
         }
     }
 }

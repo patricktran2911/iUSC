@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>president</key>
+  <string>{"names": ["Donald J. Trump", "Donald Trump", "Trump"], "party": "Republican"}</string>
+  <key>vice_president</key>
+  <string>{"names": ["James David Vance", "JD Vance", "Vance"], "party": "Republican"}</string>
+  <key>speaker_of_the_house</key>
+  <string>{"names": ["Mike Johnson", "Johnson"], "party": "Republican"}</string>
+  <key>chief_justice</key>
+  <string>{"names": ["John G. Roberts, Jr.", "John Roberts"], "party": null}</string>
+  <key>area_AL</key>
+  <string>{"name": "Alabama", "capital": "Montgomery", "governor": "Kay Ivey", "senators": ["Katie Britt", "Tommy Tuberville"]}</string>
+  <key>area_AK</key>
+  <string>{"name": "Alaska", "capital": "Juneau", "governor": "Mike Dunleavy", "senators": ["Lisa Murkowski", "Dan Sullivan"]}</string>
+  <key>area_AS</key>
+  <string>{"name": "American Samoa", "capital": "Pago Pago", "governor": "Lemanu Peleti Mauga", "senators": []}</string>
+  <key>area_AZ</key>
+  <string>{"name": "Arizona", "capital": "Phoenix", "governor": "Katie Hobbs", "senators": ["Kyrsten Sinema", "Mark Kelly"]}</string>
+  <key>area_AR</key>
+  <string>{"name": "Arkansas", "capital": "Little Rock", "governor": "Sarah Huckabee Sanders", "senators": ["John Boozman", "Tom Cotton"]}</string>
+  <key>area_CA</key>
+  <string>{"name": "California", "capital": "Sacramento", "governor": "Gavin Newsom", "senators": ["Dianne Feinstein", "Alex Padilla"]}</string>
+  <key>area_CO</key>
+  <string>{"name": "Colorado", "capital": "Denver", "governor": "Jared Polis", "senators": ["Michael Bennet", "John Hickenlooper"]}</string>
+  <key>area_CT</key>
+  <string>{"name": "Connecticut", "capital": "Hartford", "governor": "Ned Lamont", "senators": ["Richard Blumenthal", "Chris Murphy"]}</string>
+  <key>area_DE</key>
+  <string>{"name": "Delaware", "capital": "Dover", "governor": "Matt Meyer", "senators": ["Tom Carper", "Chris Coons"]}</string>
+  <key>area_FL</key>
+  <string>{"name": "Florida", "capital": "Tallahassee", "governor": "Ron DeSantis", "senators": ["Marco Rubio", "Rick Scott"]}</string>
+  <key>area_GA</key>
+  <string>{"name": "Georgia", "capital": "Atlanta", "governor": "Brian Kemp", "senators": ["Jon Ossoff", "Raphael Warnock"]}</string>
+  <key>area_GU</key>
+  <string>{"name": "Guam", "capital": "Hag\u00e5t\u00f1a", "governor": "Lou Leon Guerrero", "senators": []}</string>
+  <key>area_HI</key>
+  <string>{"name": "Hawaii", "capital": "Honolulu", "governor": "Josh Green", "senators": ["Brian Schatz", "Mazie Hirono"]}</string>
+  <key>area_ID</key>
+  <string>{"name": "Idaho", "capital": "Boise", "governor": "Brad Little", "senators": ["Mike Crapo", "Jim Risch"]}</string>
+  <key>area_IL</key>
+  <string>{"name": "Illinois", "capital": "Springfield", "governor": "J. B. Pritzker", "senators": ["Dick Durbin", "Tammy Duckworth"]}</string>
+  <key>area_IN</key>
+  <string>{"name": "Indiana", "capital": "Indianapolis", "governor": "Mike Braun", "senators": ["Todd Young", "Jim Banks"]}</string>
+  <key>area_IA</key>
+  <string>{"name": "Iowa", "capital": "Des Moines", "governor": "Kim Reynolds", "senators": ["Chuck Grassley", "Joni Ernst"]}</string>
+  <key>area_KS</key>
+  <string>{"name": "Kansas", "capital": "Topeka", "governor": "Laura Kelly", "senators": ["Jerry Moran", "Roger Marshall"]}</string>
+  <key>area_KY</key>
+  <string>{"name": "Kentucky", "capital": "Frankfort", "governor": "Andy Beshear", "senators": ["Mitch McConnell", "Rand Paul"]}</string>
+  <key>area_LA</key>
+  <string>{"name": "Louisiana", "capital": "Baton Rouge", "governor": "Jeff Landry", "senators": ["Bill Cassidy", "John Kennedy"]}</string>
+  <key>area_ME</key>
+  <string>{"name": "Maine", "capital": "Augusta", "governor": "Janet Mills", "senators": ["Susan Collins", "Angus King"]}</string>
+  <key>area_MD</key>
+  <string>{"name": "Maryland", "capital": "Annapolis", "governor": "Wes Moore", "senators": ["Ben Cardin", "Chris Van Hollen"]}</string>
+  <key>area_MA</key>
+  <string>{"name": "Massachusetts", "capital": "Boston", "governor": "Maura Healey", "senators": ["Elizabeth Warren", "Ed Markey"]}</string>
+  <key>area_MI</key>
+  <string>{"name": "Michigan", "capital": "Lansing", "governor": "Gretchen Whitmer", "senators": ["Debbie Stabenow", "Gary Peters"]}</string>
+  <key>area_MN</key>
+  <string>{"name": "Minnesota", "capital": "Saint Paul", "governor": "Tim Walz", "senators": ["Amy Klobuchar", "Tina Smith"]}</string>
+  <key>area_MS</key>
+  <string>{"name": "Mississippi", "capital": "Jackson", "governor": "Tate Reeves", "senators": ["Roger Wicker", "Cindy Hyde-Smith"]}</string>
+  <key>area_MO</key>
+  <string>{"name": "Missouri", "capital": "Jefferson City", "governor": "Mike Kehoe", "senators": ["Josh Hawley", "Eric Schmitt"]}</string>
+  <key>area_MT</key>
+  <string>{"name": "Montana", "capital": "Helena", "governor": "Greg Gianforte", "senators": ["Jon Tester", "Steve Daines"]}</string>
+  <key>area_NE</key>
+  <string>{"name": "Nebraska", "capital": "Lincoln", "governor": "Jim Pillen", "senators": ["Deb Fischer", "Pete Ricketts"]}</string>
+  <key>area_NV</key>
+  <string>{"name": "Nevada", "capital": "Carson City", "governor": "Joe Lombardo", "senators": ["Catherine Cortez Masto", "Jacky Rosen"]}</string>
+  <key>area_NH</key>
+  <string>{"name": "New Hampshire", "capital": "Concord", "governor": "Kelly Ayotte", "senators": ["Jeanne Shaheen", "Maggie Hassan"]}</string>
+  <key>area_NJ</key>
+  <string>{"name": "New Jersey", "capital": "Trenton", "governor": "Phil Murphy", "senators": ["Bob Menendez", "Cory Booker"]}</string>
+  <key>area_NM</key>
+  <string>{"name": "New Mexico", "capital": "Santa Fe", "governor": "Michelle Lujan Grisham", "senators": ["Martin Heinrich", "Ben Ray Luj\u00e1n"]}</string>
+  <key>area_NY</key>
+  <string>{"name": "New York", "capital": "Albany", "governor": "Kathy Hochul", "senators": ["Chuck Schumer", "Kirsten Gillibrand"]}</string>
+  <key>area_NC</key>
+  <string>{"name": "North Carolina", "capital": "Raleigh", "governor": "Josh Stein", "senators": ["Thom Tillis", "Ted Budd"]}</string>
+  <key>area_ND</key>
+  <string>{"name": "North Dakota", "capital": "Bismarck", "governor": "Kelly Armstrong", "senators": ["John Hoeven", "Kevin Cramer"]}</string>
+  <key>area_MP</key>
+  <string>{"name": "Northern Mariana Islands", "capital": "Saipan", "governor": "Arnold Palacios", "senators": []}</string>
+  <key>area_OH</key>
+  <string>{"name": "Ohio", "capital": "Columbus", "governor": "Mike DeWine", "senators": ["Sherrod Brown", "J.D. Vance"]}</string>
+  <key>area_OK</key>
+  <string>{"name": "Oklahoma", "capital": "Oklahoma City", "governor": "Kevin Stitt", "senators": ["James Lankford", "Markwayne Mullin"]}</string>
+  <key>area_OR</key>
+  <string>{"name": "Oregon", "capital": "Salem", "governor": "Tina Kotek", "senators": ["Ron Wyden", "Jeff Merkley"]}</string>
+  <key>area_PA</key>
+  <string>{"name": "Pennsylvania", "capital": "Harrisburg", "governor": "Josh Shapiro", "senators": ["Bob Casey Jr.", "John Fetterman"]}</string>
+  <key>area_PR</key>
+  <string>{"name": "Puerto Rico", "capital": "San Juan", "governor": "Pedro Pierluisi", "senators": []}</string>
+  <key>area_RI</key>
+  <string>{"name": "Rhode Island", "capital": "Providence", "governor": "Dan McKee", "senators": ["Jack Reed", "Sheldon Whitehouse"]}</string>
+  <key>area_SC</key>
+  <string>{"name": "South Carolina", "capital": "Columbia", "governor": "Henry McMaster", "senators": ["Lindsey Graham", "Tim Scott"]}</string>
+  <key>area_SD</key>
+  <string>{"name": "South Dakota", "capital": "Pierre", "governor": "Larry Rhoden", "senators": ["John Thune", "Mike Rounds"]}</string>
+  <key>area_TN</key>
+  <string>{"name": "Tennessee", "capital": "Nashville", "governor": "Bill Lee", "senators": ["Marsha Blackburn", "Bill Hagerty"]}</string>
+  <key>area_TX</key>
+  <string>{"name": "Texas", "capital": "Austin", "governor": "Greg Abbott", "senators": ["John Cornyn", "Ted Cruz"]}</string>
+  <key>area_UT</key>
+  <string>{"name": "Utah", "capital": "Salt Lake City", "governor": "Spencer Cox", "senators": ["Mike Lee", "Mitt Romney"]}</string>
+  <key>area_VT</key>
+  <string>{"name": "Vermont", "capital": "Montpelier", "governor": "Phil Scott", "senators": ["Bernie Sanders", "Peter Welch"]}</string>
+  <key>area_VA</key>
+  <string>{"name": "Virginia", "capital": "Richmond", "governor": "Glenn Youngkin", "senators": ["Mark Warner", "Tim Kaine"]}</string>
+  <key>area_WA</key>
+  <string>{"name": "Washington", "capital": "Olympia", "governor": "Bob Ferguson", "senators": ["Patty Murray", "Maria Cantwell"]}</string>
+  <key>area_WV</key>
+  <string>{"name": "West Virginia", "capital": "Charleston", "governor": "Patrick Morrisey", "senators": ["Shelley Moore Capito", "Jim Justice"]}</string>
+  <key>area_WI</key>
+  <string>{"name": "Wisconsin", "capital": "Madison", "governor": "Tony Evers", "senators": ["Ron Johnson", "Tammy Baldwin"]}</string>
+  <key>area_WY</key>
+  <string>{"name": "Wyoming", "capital": "Cheyenne", "governor": "Mark Gordon", "senators": ["John Barrasso", "Cynthia Lummis"]}</string>
+  <key>area_DC</key>
+  <string>{"name": "District of Columbia", "capital": "Washington", "governor": "Muriel Bowser", "senators": []}</string>
+</dict>
+</plist>

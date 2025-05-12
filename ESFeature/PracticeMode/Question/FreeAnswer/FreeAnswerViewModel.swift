@@ -20,7 +20,7 @@ final class PMFreeAnswerViewModel: StreamViewModel<PMFreeAnswerView> {
                         return .hidden
                     }
                     switch question.questionType {
-                    case let .onlineCheck(question):
+                    case let .onlineCheck(question, _):
                         return .loaded(
                             PMFreeAnswerView(
                                 question: question,
