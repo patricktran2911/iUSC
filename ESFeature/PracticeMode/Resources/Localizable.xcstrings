@@ -16,13 +16,16 @@
     "Restart Test" : {
 
     },
+    "Select Your State" : {
+
+    },
     "Submit" : {
 
     },
     "Test Complete!" : {
 
     },
-    "Total score: " : {
+    "Total Score:" : {
 
     },
     "Your score: %lld" : {

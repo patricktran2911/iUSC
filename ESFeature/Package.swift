@@ -26,7 +26,8 @@ let package = Package(
     dependencies: [
         .package(path: "ESFoundation"),
         .package(path: "ESDataLayer"),
-        .package(path: "ESModule")
+        .package(path: "ESModule"),
+        .package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: "11.12.0")
     ],
     targets: [
         .target(
@@ -64,17 +65,24 @@ let package = Package(
                 .enableExperimentalFeature("StrictConcurrency")
             ]
         ),
-        .target(name: "ESPracticeMode", dependencies: [
-            .product(name: "ESDataStructure", package: "ESFoundation"),
-            .product(name: "ESInjector", package: "ESFoundation"),
-            .product(name: "ESLiveData", package: "ESFoundation"),
-            .product(name: "ESDataModel", package: "ESDataLayer"),
-            .product(name: "ESDataSource", package: "ESDataLayer"),
-            .product(name: "ESDataTransport", package: "ESDataLayer"),
-            .product(name: "ESLocalNotification", package: "ESModule"),
-            .product(name: "ESReusableUI", package: "ESModule"),
-        ], path: "PracticeMode", resources: [.process("Resources")], swiftSettings: [                .enableExperimentalFeature("StrictConcurrency")
-                                                                                    ]),
+        .target(
+            name: "ESPracticeMode",
+            dependencies: [
+                .product(name: "ESDataStructure", package: "ESFoundation"),
+                .product(name: "ESInjector", package: "ESFoundation"),
+                .product(name: "ESLiveData", package: "ESFoundation"),
+                .product(name: "ESDataModel", package: "ESDataLayer"),
+                .product(name: "ESDataSource", package: "ESDataLayer"),
+                .product(name: "ESDataTransport", package: "ESDataLayer"),
+                .product(name: "ESLocalNotification", package: "ESModule"),
+                .product(name: "ESReusableUI", package: "ESModule"),
+                .product(name: "FirebaseRemoteConfig", package: "firebase-ios-sdk"),
+            ],
+            path: "PracticeMode",
+            resources: [.process("Resources")],
+            swiftSettings: [
+                .enableExperimentalFeature("StrictConcurrency")
+            ]),
         
         //--------------------------------------------------//
         //
