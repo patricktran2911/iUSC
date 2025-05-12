@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD25FF712DD1D92300CC4655 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF702DD1D92300CC4655 /* GoogleService-Info.plist */; };
-		CD25FF722DD1D92300CC4655 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF702DD1D92300CC4655 /* GoogleService-Info.plist */; };
-		CD25FF732DD1D92300CC4655 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF702DD1D92300CC4655 /* GoogleService-Info.plist */; };
 		CD25FF762DD1DA4400CC4655 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CD25FF752DD1DA4400CC4655 /* FirebaseAnalytics */; };
 		CD25FF7C2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */; };
 		CD25FF7D2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */; };
 		CD25FF7E2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */; };
+		CD81776E2DD2A95400A51B6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD81776D2DD2A95400A51B6B /* GoogleService-Info.plist */; };
+		CD81776F2DD2A95400A51B6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD81776D2DD2A95400A51B6B /* GoogleService-Info.plist */; };
+		CD8177702DD2A95400A51B6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD81776D2DD2A95400A51B6B /* GoogleService-Info.plist */; };
 		CDB8DEE42DB46C2100AF3F08 /* ESDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = CDB8DEE32DB46C2100AF3F08 /* ESDataLayer */; };
 		CDB8DEE62DB46C2100AF3F08 /* ESFeature in Frameworks */ = {isa = PBXBuildFile; productRef = CDB8DEE52DB46C2100AF3F08 /* ESFeature */; };
 		CDB8DEE82DB46C2100AF3F08 /* ESFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = CDB8DEE72DB46C2100AF3F08 /* ESFoundation */; };
@@ -39,8 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CD25FF702DD1D92300CC4655 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
+		CD81776D2DD2A95400A51B6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CDB8DE9E2DB4631A00AF3F08 /* IUSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IUSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB8DEAE2DB4631C00AF3F08 /* IUSCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IUSCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB8DEB82DB4631C00AF3F08 /* IUSCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IUSCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,7 +110,7 @@
 				CDB8DEB12DB4631C00AF3F08 /* IUSCTests */,
 				CDB8DEBB2DB4631C00AF3F08 /* IUSCUITests */,
 				CDB8DEE22DB46C2100AF3F08 /* Frameworks */,
-				CD25FF702DD1D92300CC4655 /* GoogleService-Info.plist */,
+				CD81776D2DD2A95400A51B6B /* GoogleService-Info.plist */,
 				CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */,
 				CDB8DE9F2DB4631A00AF3F08 /* Products */,
 			);
@@ -263,7 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD25FF7E2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */,
-				CD25FF712DD1D92300CC4655 /* GoogleService-Info.plist in Resources */,
+				CD8177702DD2A95400A51B6B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD25FF732DD1D92300CC4655 /* GoogleService-Info.plist in Resources */,
+				CD81776E2DD2A95400A51B6B /* GoogleService-Info.plist in Resources */,
 				CD25FF7C2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD25FF722DD1D92300CC4655 /* GoogleService-Info.plist in Resources */,
+				CD81776F2DD2A95400A51B6B /* GoogleService-Info.plist in Resources */,
 				CD25FF7D2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,10 +475,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.4;
 			};
 			name = Debug;
@@ -515,10 +516,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 2.4;
 			};
 			name = Release;

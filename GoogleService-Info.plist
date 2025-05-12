@@ -9,7 +9,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.patrick.IUSC</string>
+	<string>com.patrick.iUSC</string>
 	<key>PROJECT_ID</key>
 	<string>iusc-28cc4</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:713332123758:ios:55cec565c760dc684e1e7f</string>
+	<string>1:713332123758:ios:5c47e17572a40d0f4e1e7f</string>
 </dict>
 </plist>
