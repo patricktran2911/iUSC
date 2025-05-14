@@ -13,56 +13,65 @@ extension PMUSStatePickerView: View {
         VStack(spacing: 16) {
             Text("Select Your State")
                 .font(.title2)
-                .fontWeight(.semibold)
-                .padding(.top, 24)
-            
+                .fontWeight(.bold)
+                .padding(.top, 20)
+
             ScrollViewReader { reader in
-                ScrollView {
-                    LazyVStack(spacing: 12) {
-                        ForEach(usStates, id: \.self) { state in
-                            Button {
-                                currentSelectedState.update(state)
-                            } label: {
-                                HStack {
-                                    Text(state)
-                                        .font(.body)
-                                        .fontWeight(.semibold)
-                                        .foregroundColor(.primary)
-                                        .textCase(.uppercase)
-                                    
-                                    Spacer()
-                                    
-                                    if currentSelectedState.currentValue == state {
-                                        Image(systemName: "checkmark.circle.fill")
-                                            .foregroundColor(.green)
-                                            .imageScale(.medium)
-                                    }
+                ScrollView(showsIndicators: false) {
+                    LazyVStack(spacing: 10) {
+                        ForEach(usStates, id: \String.self) { state in
+                            StateRow(
+                                state: state,
+                                isSelected: state == currentSelectedState.currentValue
+                            )
+                            .onTapGesture {
+                                withAnimation(.easeInOut(duration: 0.25)) {
+                                    currentSelectedState.update(state)
                                 }
-                                .padding(.horizontal)
-                                .padding(.vertical, 14)
-                                .background(
-                                    RoundedRectangle(cornerRadius: 14)
-                                        .fill(currentSelectedState.currentValue == state ? Color.green.opacity(0.1) : Color(.systemBackground))
-                                        .shadow(color: .black.opacity(0.05), radius: 3, x: 0, y: 1)
-                                )
                             }
                             .tag(state)
-                            .buttonStyle(.plain)
                         }
                     }
-                    .padding(.horizontal)
-                    .padding(.bottom, 32)
+                    .padding()
                 }
-                .onChange(of: currentSelectedState.currentValue) { _, newValue in
-                    reader.scrollTo(newValue, anchor: .center)
+                .onAppear {
+                    withAnimation(.easeInOut) {
+                        reader.scrollTo(currentSelectedState.currentValue, anchor: .center)
+                    }
                 }
             }
+
+            Spacer()
         }
-        .padding(.horizontal)
-        .background(Color(.systemGroupedBackground))
+        .background(Color(.systemGroupedBackground).edgesIgnoringSafeArea(.all))
     }
 }
 
+private struct StateRow: View {
+    let state: String
+    let isSelected: Bool
+
+    var body: some View {
+        HStack {
+            Text(state)
+                .font(.body)
+                .fontWeight(.medium)
+                .foregroundColor(isSelected ? .green : .primary)
+                .textCase(.uppercase)
+
+            Spacer()
+
+            if isSelected {
+                Image(systemName: "checkmark.circle.fill")
+                    .foregroundColor(.green)
+            }
+        }
+        .padding()
+        .background(RoundedRectangle(cornerRadius: 12)
+            .fill(isSelected ? Color.green.opacity(0.15) : Color(.secondarySystemBackground)))
+        .shadow(color: Color.black.opacity(0.04), radius: 2, x: 0, y: 1)
+    }
+}
 
 #if targetEnvironment(simulator)
 #Preview {
@@ -72,10 +81,9 @@ extension PMUSStatePickerView: View {
 extension PMUSStatePickerView {
     static func preview() -> Self {
         .init(
-            usStates: ["area_CA", "area_TX", "area_NY", "area_FL"],
-            currentSelectedState: .noEffect("area_CA")
+            usStates: ["California", "Texas", "New York", "Florida", "Illinois", "Georgia", "Colorado"],
+            currentSelectedState: .noEffect("California")
         )
     }
 }
 #endif
-

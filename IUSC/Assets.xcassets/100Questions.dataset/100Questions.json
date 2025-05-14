@@ -648,7 +648,7 @@
       "Chief Justice"
     ],
     "answerType": "multipleAnswer",
-    "answerQuantity": 16,
+    "answerQuantity": 2,
     "answerKey": null
   },
   {
@@ -923,7 +923,7 @@
       "New York"
     ],
     "answerType": "multipleAnswer",
-    "answerQuantity": 6,
+    "answerQuantity": 2,
     "answerKey": null
   },
   {
@@ -1006,7 +1006,7 @@
       "Atlantic Ocean"
     ],
     "answerType": "multipleAnswer",
-    "answerQuantity": 10,
+    "answerQuantity": 2,
     "answerKey": null
   },
   {
@@ -1179,7 +1179,7 @@
       "Obey the law"
     ],
     "answerType": "multipleAnswer",
-    "answerQuantity": 13,
+    "answerQuantity": 3,
     "answerKey": null
   },
   {
@@ -1867,7 +1867,7 @@
       "Valentine Day"
     ],
     "answerType": "multipleAnswer",
-    "answerQuantity": 10,
+    "answerQuantity": 2,
     "answerKey": null
   }
 ]

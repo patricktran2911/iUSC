@@ -89,7 +89,7 @@ public final class PracticeModeRepository: PracticeModeDataSource {
     private var cancellables = Set<AnyCancellable>()
     
     public init() {
-        let initialAreaRawValue = userDefault.string(forKey: "practice_area") ?? DataState.USState.CA.rawValue
+        let initialAreaRawValue = userDefault.string(forKey: "practice_area")
         currentUSStateOfficersPublisher.sink { [weak self] in
             guard let self = self else {
                 return
@@ -98,7 +98,7 @@ public final class PracticeModeRepository: PracticeModeDataSource {
         }
         .store(in: &cancellables)
         
-        if let initialArea = DataState.USState(rawValue: initialAreaRawValue) {
+        if let initialAreaRawValue, let initialArea = DataState.USState(rawValue: initialAreaRawValue) {
             if initialArea != currentPracticeStateSubject.value {
                 currentPracticeStateSubject.send(initialArea)
             }
