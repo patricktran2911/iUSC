@@ -1,13 +1,11 @@
-extension DataModel.QuestionDecoded {
-    func mockData() -> [DataModel.QuestionDecoded] {
+extension Array where Element == DataModel.QuestionDecoded {
+    static public func mockData() -> [DataModel.QuestionDecoded] {
         [
             DataModel
                 .QuestionDecoded(
                     category: "government",
                     type: "principles",
-                    question: String(
-                        localized: "Question_1"
-                    ) ,
+                    question: "What is the supreme law of the land?",
                     correctAnswers: ["The Constitution"],
                     wrongAnswers: [
                         "The Bill of Rights",
@@ -26,9 +24,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "principles",
-                    question: String(
-                        localized: "Question_2"
-                    ),
+                    question: "What does the Constitution do?",
                     correctAnswers: [
                         "Defines the government",
                         "Sets up the government",
@@ -51,9 +47,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "principles",
-                    question: String(
-                        localized: "Question_3"
-                    ),
+                    question: "The idea of self-government is in the first three words of the Constitution. What are these words?",
                     correctAnswers: ["We the People"],
                     wrongAnswers: [
                         "freedom of religion",
@@ -72,9 +66,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "principles",
-                    question: String(
-                        localized: "Question_4"
-                    ),
+                    question: "What is an amendment?",
                     correctAnswers: [
                         "An addition (to the Constitution)",
                         "A change (to the Constitution)"
@@ -96,9 +88,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "principles",
-                    question: String(
-                        localized: "Question_5"
-                    ),
+                    question: "What do we call the first ten amendments to the Constitution?",
                     correctAnswers: ["The Bill of Rights"],
                     wrongAnswers: [
                         "The Federalist Papers",
@@ -117,9 +107,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "principles",
-                    question: String(
-                        localized: "Question_6"
-                    ),
+                    question: "What is one right or freedom from the First Amendment?",
                     correctAnswers: [
                         "Speech",
                         "Petition the government",
@@ -144,9 +132,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "principles",
-                    question: String(
-                        localized: "Question_7"
-                    ),
+                    question: "How many amendments does the Constitution have?",
                     correctAnswers: ["Twenty-seven (27)"],
                     wrongAnswers: [
                         "Twenty-one (21)",
@@ -165,9 +151,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "principles",
-                    question: String(
-                        localized: "Question_8"
-                    ),
+                    question: "What did the Declaration of Independence do?",
                     correctAnswers: [
                         "Declared our independence (from Great Britain)",
                         "Said that the United States is free (from Great Britain)",
@@ -190,9 +174,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "principles",
-                    question: String(
-                        localized: "Question_9"
-                    ),
+                    question: "What are two rights in the Declaration of Independence?",
                     correctAnswers: [
                         "Pursuit of happiness",
                         "Liberty",
@@ -215,9 +197,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "principles",
-                    question: String(
-                        localized: "Question_10"
-                    ),
+                    question: "What is freedom of religion?",
                     correctAnswers: ["You can practice any religion, or not practice a religion."],
                     wrongAnswers: [
                         "Freedom of religion applies only in churches.",
@@ -236,9 +216,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "principles",
-                    question: String(
-                        localized: "Question_11"
-                    ),
+                    question: "What is the economic system in the United States?",
                     correctAnswers: [
                         "Capitalist economy",
                         "Market economy"
@@ -260,9 +238,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "principles",
-                    question: String(
-                        localized: "Question_12"
-                    ),
+                    question: "What is the rule of law?",
                     correctAnswers: [
                         "Government must obey the law",
                         "No one is above the law",
@@ -286,9 +262,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_13"
-                    ),
+                    question: "Name one branch or part of the government.",
                     correctAnswers: [
                         "President",
                         "Congress",
@@ -314,9 +288,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_14"
-                    ),
+                    question: "What stops one branch of government from becoming too powerful?",
                     correctAnswers: [
                         "Checks and balances",
                         "Separation of powers"
@@ -338,9 +310,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_15"
-                    ),
+                    question: "Who is in charge of the executive branch?",
                     correctAnswers: ["The President"],
                     wrongAnswers: [
                         "The Speaker of the House",
@@ -359,9 +329,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_16"
-                    ),
+                    question: "Who makes federal laws?",
                     correctAnswers: [
                         "The Congress",
                         "The Senate and the House (of Representatives)",
@@ -384,9 +352,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_17"
-                    ),
+                    question: "What are the two parts of the U.S. Congress?",
                     correctAnswers: ["The Senate and House (of Representatives)"],
                     wrongAnswers: [
                         "The Cabinet and Congress",
@@ -405,9 +371,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "How many U.S. Senators are there?",
                     correctAnswers: ["One hundred (100)"],
                     wrongAnswers: [
                         "Fifty (50)",
@@ -426,9 +390,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_18"
-                    ),
+                    question: "We elect a U.S. Senator for how many years?",
                     correctAnswers: ["six (6)"],
                     wrongAnswers: [
                         "eight (8)",
@@ -447,9 +409,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Who is one of your state U.S. Senators now?",
                     correctAnswers: ["Answers will vary"],
                     wrongAnswers: [
                         "Russia, China, and Germany",
@@ -468,9 +428,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "The House of Representatives has how many voting members?",
                     correctAnswers: ["Four hundred thirty-five (435)"],
                     wrongAnswers: [
                         "Two hundred (200)",
@@ -489,9 +447,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "We elect a U.S. Representative for how many years?",
                     correctAnswers: ["Two (2)"],
                     wrongAnswers: [
                         "Four (4)",
@@ -510,9 +466,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Name your U.S. Representative",
                     correctAnswers: ["Answers will vary"],
                     wrongAnswers: [
                         "Michigan",
@@ -531,9 +485,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Who does a U.S. Senator represent?",
                     correctAnswers: ["All people of the state"],
                     wrongAnswers: [
                         "Mike Pence",
@@ -552,9 +504,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Why do some states have more Representatives than other states?",
                     correctAnswers: [
                         "Because some states have more people",
                         "Because of the state population",
@@ -577,9 +527,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "We elect a President for how many years?",
                     correctAnswers: ["Four (4)"],
                     wrongAnswers: [
                         "Two (2)",
@@ -598,9 +546,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "In what month do we vote for President?",
                     correctAnswers: ["November"],
                     wrongAnswers: [
                         "The Judicial and Executive branches",
@@ -619,9 +565,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What is the name of the President of the United States now?",
                     correctAnswers: ["Donald J. Trump"],
                     wrongAnswers: [
                         "Religious freedom",
@@ -640,9 +584,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What is the name of the Vice President of the United States now?",
                     correctAnswers: ["Mike Pence"],
                     wrongAnswers: [
                         "Publicly support or oppose an issue or policy",
@@ -661,9 +603,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "If the President can no longer serve, who becomes President?",
                     correctAnswers: ["The Vice President"],
                     wrongAnswers: [
                         "You can practice any religion, or not practice a religion.",
@@ -682,9 +622,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "If both the President and the Vice President can no longer serve, who becomes President?",
                     correctAnswers: ["The Speaker of the House"],
                     wrongAnswers: [
                         "The Secretary of State",
@@ -703,9 +641,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Who is the Commander in Chief of the military?",
                     correctAnswers: ["The President"],
                     wrongAnswers: [
                         "The Secretary of Defense",
@@ -724,9 +660,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Who signs bills to become laws?",
                     correctAnswers: ["The President"],
                     wrongAnswers: [
                         "October",
@@ -745,9 +679,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Who vetoes bills?",
                     correctAnswers: ["The President"],
                     wrongAnswers: [
                         "The Speaker of the House",
@@ -766,9 +698,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What does the President Cabinet do?",
                     correctAnswers: ["Advises the President"],
                     wrongAnswers: [
                         "Commands the military",
@@ -787,9 +717,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What are two Cabinet-level positions?",
                     correctAnswers: [
                         "Secretary of Commerce",
                         "Secretary of the Interior",
@@ -825,9 +753,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What does the judicial branch do?",
                     correctAnswers: [
                         "Reviews laws",
                         "Explains laws",
@@ -851,9 +777,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What is the highest court in the United States?",
                     correctAnswers: ["The Supreme Court"],
                     wrongAnswers: [
                         "Only state lawmakers",
@@ -872,9 +796,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "How many justices are on the Supreme Court?",
                     correctAnswers: ["Nine (9)"],
                     wrongAnswers: [
                         "Twelve (12)",
@@ -893,9 +815,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Who is the Chief Justice of the United States now?",
                     correctAnswers: ["John Roberts"],
                     wrongAnswers: [
                         "Vietnam War",
@@ -914,9 +834,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Under our Constitution, some powers belong to the federal government. What is one power of the federal government?",
                     correctAnswers: [
                         "To make treaties",
                         "To create an army",
@@ -940,9 +858,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Under our Constitution, some powers belong to the states. What is one power of the states?",
                     correctAnswers: [
                         "Provide schooling and education",
                         "Give a driver license",
@@ -967,9 +883,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Who is the Governor of your state now?",
                     correctAnswers: ["Answers will vary"],
                     wrongAnswers: [
                         "Oneida",
@@ -988,9 +902,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What is the capital of your state?",
                     correctAnswers: ["Answers will vary"],
                     wrongAnswers: [
                         "Philadelphia",
@@ -1009,9 +921,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What are the two major political parties in the United States?",
                     correctAnswers: ["Democratic and Republican"],
                     wrongAnswers: [
                         "Serve in the U.S. military (if needed)",
@@ -1030,9 +940,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What is the political party of the President now?",
                     correctAnswers: ["Republican"],
                     wrongAnswers: [
                         "Independent",
@@ -1051,9 +959,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "systems",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What is the name of the Speaker of the House of Representatives now?",
                     correctAnswers: ["Nancy Pelosi"],
                     wrongAnswers: [
                         "Nine (9)",
@@ -1072,9 +978,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "rights",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "There are four amendments to the Constitution about who can vote. Describe one of them.",
                     correctAnswers: [
                         "Citizens eighteen (18) and older can vote",
                         "A male citizen of any race (can vote).",
@@ -1098,9 +1002,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "rights",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What is one responsibility that is only for United States citizens?",
                     correctAnswers: [
                         "Vote in a federal election",
                         "Serve on a jury"
@@ -1122,9 +1024,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "rights",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Name one right only for United States citizens",
                     correctAnswers: [
                         "Run for federal office",
                         "Vote in a federal election"
@@ -1146,9 +1046,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "rights",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What are two rights of everyone living in the United States?",
                     correctAnswers: [
                         "freedom of religion",
                         "freedom of expression",
@@ -1174,9 +1072,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "rights",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What do we show loyalty to when we say the Pledge of Allegiance?",
                     correctAnswers: [
                         "The flag",
                         "The United States"
@@ -1198,9 +1094,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "rights",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What is one promise you make when you become a United States citizen?",
                     correctAnswers: [
                         "Be loyal to the United States",
                         "Give up loyalty to other countries",
@@ -1226,9 +1120,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "rights",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "How old do citizens have to be to vote for President?",
                     correctAnswers: ["Eighteen (18) and older"],
                     wrongAnswers: [
                         "Sixteen (16) and older",
@@ -1247,9 +1139,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "rights",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What are two ways that Americans can participate in their democracy?",
                     correctAnswers: [
                         "Write to a newspaper",
                         "Run for office",
@@ -1279,9 +1169,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "rights",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "When is the last day you can send in federal income tax forms?",
                     correctAnswers: ["April 15"],
                     wrongAnswers: [
                         "December 31",
@@ -1300,9 +1188,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "government",
                     type: "rights",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "When must all men register for the Selective Service?",
                     correctAnswers: [
                         "Between eighteen (18) and twenty-six (26)",
                         "At age eighteen (18)"
@@ -1324,9 +1210,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-colonial",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What is one reason colonists came to America?",
                     correctAnswers: [
                         "Economic opportunity",
                         "Practice their religion",
@@ -1352,9 +1236,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-colonial",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Who lived in America before the Europeans arrived?",
                     correctAnswers: ["Native Americans"],
                     wrongAnswers: [
                         "Declared our independence (from Great Britain)",
@@ -1373,9 +1255,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-colonial",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What group of people was taken to America and sold as slaves?",
                     correctAnswers: [
                         "Africans",
                         "People from Africa"
@@ -1397,9 +1277,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-colonial",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Why did the colonists fight the British?",
                     correctAnswers: [
                         "Because they didnt have self-government",
                         "Because the British army stayed in their houses (boarding, quartering)",
@@ -1422,9 +1300,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-colonial",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Who wrote the Declaration of Independence?",
                     correctAnswers: ["Thomas Jefferson"],
                     wrongAnswers: [
                         "John Adams",
@@ -1443,9 +1319,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-colonial",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "When was the Declaration of Independence adopted?",
                     correctAnswers: ["July 4, 1776"],
                     wrongAnswers: [
                         "June 4, 1776",
@@ -1464,9 +1338,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-colonial",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "There were 13 original states. Name three.",
                     correctAnswers: [
                         "North Carolina",
                         "Pennsylvania",
@@ -1499,9 +1371,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-colonial",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What happened at the Constitutional Convention?",
                     correctAnswers: [
                         "The Constitution was written",
                         "The Founding Fathers wrote the Constitution"
@@ -1523,9 +1393,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-colonial",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "When was the Constitution written?",
                     correctAnswers: ["1787"],
                     wrongAnswers: [
                         "1801",
@@ -1544,9 +1412,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-colonial",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers",
                     correctAnswers: [
                         "Publius",
                         "John Jay",
@@ -1570,9 +1436,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-colonial",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What is one thing Benjamin Franklin is famous for?",
                     correctAnswers: [
                         "U.S. diplomat",
                         "Oldest member of the Constitutional Convention",
@@ -1597,9 +1461,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-colonial",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Who is the Father of Our Country?",
                     correctAnswers: ["George Washington"],
                     wrongAnswers: [
                         "Vote",
@@ -1618,9 +1480,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-colonial",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Who was the first President?",
                     correctAnswers: ["George Washington"],
                     wrongAnswers: [
                         "Fought for civil rights",
@@ -1639,9 +1499,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-1800",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What territory did the United States buy from France in 1803?",
                     correctAnswers: [
                         "Louisiana",
                         "The Louisiana Territory"
@@ -1663,9 +1521,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-1800",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Name one war fought by the United States in the 1800s",
                     correctAnswers: [
                         "Civil War",
                         "Mexican-American War",
@@ -1689,9 +1545,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-1800",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Name the U.S. war between the North and the South.",
                     correctAnswers: ["The Civil War"],
                     wrongAnswers: [
                         "The Revolutionary War",
@@ -1710,9 +1564,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-1800",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Name one problem that led to the Civil War",
                     correctAnswers: [
                         "economic reasons",
                         "slavery",
@@ -1735,9 +1587,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-1800",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What was one important thing that Abraham Lincoln did?",
                     correctAnswers: [
                         "Led the United States during the Civil War",
                         "Saved (or preserved) the Union",
@@ -1760,9 +1610,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-1800",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What did the Emancipation Proclamation do?",
                     correctAnswers: ["Freed slaves in the Confederate states"],
                     wrongAnswers: [
                         "Gave women the right to vote",
@@ -1781,9 +1629,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-1800",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What did Susan B. Anthony do?",
                     correctAnswers: [
                         "fought for civil rights",
                         "fought for women rights"
@@ -1805,9 +1651,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-modern",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Name one war fought by the United States in the 1900s.",
                     correctAnswers: [
                         "(Persian) Gulf War",
                         "Vietnam War",
@@ -1832,9 +1676,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-modern",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Who was President during World War I?",
                     correctAnswers: ["Woodrow Wilson"],
                     wrongAnswers: [
                         "Mohegan",
@@ -1853,9 +1695,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-modern",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Who was President during the Great Depression and World War II?",
                     correctAnswers: ["Franklin Roosevelt"],
                     wrongAnswers: [
                         "Only if joining the military",
@@ -1874,9 +1714,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-modern",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Who did the United States fight in World War II?",
                     correctAnswers: ["Japan, Germany, and Italy"],
                     wrongAnswers: [
                         "Russia, China, and Germany",
@@ -1895,9 +1733,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-modern",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Before he was President, Eisenhower was a general. What war was he in?",
                     correctAnswers: ["World War II"],
                     wrongAnswers: [
                         "Japan, Korea, and Vietnam",
@@ -1916,9 +1752,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-modern",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "During the Cold War, what was the main concern of the United States?",
                     correctAnswers: ["Communism"],
                     wrongAnswers: [
                         "Gave women the right to vote",
@@ -1937,9 +1771,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-modern",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What movement tried to end racial discrimination?",
                     correctAnswers: ["Civil rights (movement)"],
                     wrongAnswers: [
                         "Only people who voted for them",
@@ -1958,9 +1790,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-modern",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What did Martin Luther King, Jr. do?",
                     correctAnswers: [
                         "Fought for civil rights",
                         "Worked for equality for all Americans"
@@ -1982,9 +1812,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-modern",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What major event happened on September 11, 2001, in the United States?",
                     correctAnswers: ["Terrorists attacked the United States."],
                     wrongAnswers: [
                         "The Civil Rights Act was passed.",
@@ -2003,9 +1831,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "history-modern",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Name one American Indian tribe in the United States.",
                     correctAnswers: [
                         "Choctaw",
                         "Apache",
@@ -2047,9 +1873,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "geography",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Name one of the two longest rivers in the United States",
                     correctAnswers: [
                         "Mississippi River",
                         "Missouri River"
@@ -2071,9 +1895,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "geography",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What ocean is on the West Coast of the United States?",
                     correctAnswers: ["Pacific Ocean"],
                     wrongAnswers: [
                         "Arctic Ocean",
@@ -2092,9 +1914,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "geography",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What ocean is on the East Coast of the United States?",
                     correctAnswers: ["Atlantic Ocean"],
                     wrongAnswers: [
                         "Southern Ocean",
@@ -2113,9 +1933,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "geography",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Name one U.S. territory.",
                     correctAnswers: [
                         "U.S. Virgin Islands",
                         "Northern Mariana Islands",
@@ -2140,9 +1958,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "geography",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Name one state that borders Canada.",
                     correctAnswers: [
                         "Pennsylvania",
                         "North Dakota",
@@ -2175,9 +1991,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "geography",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Name one state that borders Mexico.",
                     correctAnswers: [
                         "New Mexico",
                         "Texas",
@@ -2201,9 +2015,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "geography",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What is the capital of the United States?",
                     correctAnswers: ["Washington, D.C."],
                     wrongAnswers: [
                         "Philadelphia",
@@ -2222,9 +2034,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "geography",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Where is the Statue of Liberty?",
                     correctAnswers: [
                         "Liberty Island",
                         "New York (Harbor)"
@@ -2246,9 +2056,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "symbols",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Why does the flag have 13 stripes?",
                     correctAnswers: [
                         "because there were 13 original colonies",
                         "because the stripes represent the original colonies"
@@ -2270,9 +2078,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "symbols",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Why does the flag have 50 stars?",
                     correctAnswers: [
                         "because each star represents a state",
                         "because there are 50 states",
@@ -2295,9 +2101,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "symbols",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "What is the name of the national anthem?",
                     correctAnswers: ["The Star-Spangled Banner"],
                     wrongAnswers: [
                         "My Country, 'Tis of Thee",
@@ -2316,9 +2120,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "symbols",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "When do we celebrate Independence Day?",
                     correctAnswers: ["July 4"],
                     wrongAnswers: [
                         "Philadelphia",
@@ -2337,9 +2139,7 @@ extension DataModel.QuestionDecoded {
                 .QuestionDecoded(
                     category: "history-geo",
                     type: "symbols",
-                    question: String(
-                        localized: "Question_"
-                    ),
+                    question: "Name two national U.S. holidays.",
                     correctAnswers: [
                         "Christmas",
                         "Veterans Day",
@@ -2360,8 +2160,8 @@ extension DataModel.QuestionDecoded {
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                        rawValue: "multipleAnswer"
-                    ) ?? .multiple,
+                            rawValue: "multipleAnswer"
+                        ) ?? .multiple,
                     answerQuantity: 10,
                     answerKey: nil
                 )

@@ -227,7 +227,9 @@ public final class PracticeModeRepository: PracticeModeDataSource {
         
         do {
             let decodedQuestions = try decoder.decode([DataModel.QuestionDecoded].self, from: data)
-            self.practiceQuestions = decodedQuestions.map { .init(questionInput: $0) }
+            self.practiceQuestions = [DataModel.QuestionDecoded].mockData().map {
+                .init(questionInput: $0)
+            }
             loadRandomQuestions() // Load a random subset for the test
         } catch let error {
             print("[PracticeModeRepository] Error decoding questions: \(error)")
