@@ -51,9 +51,30 @@
 		CDB8DEE12DB469A900AF3F08 /* ESModule */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ESModule; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CD86E9F52DD7A102000BBB93 /* Exceptions for "IUSC" folder in "IUSCTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Localizable.xcstrings,
+			);
+			target = CDB8DEAD2DB4631C00AF3F08 /* IUSCTests */;
+		};
+		CD86E9F62DD7A102000BBB93 /* Exceptions for "IUSC" folder in "IUSCUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Localizable.xcstrings,
+			);
+			target = CDB8DEB72DB4631C00AF3F08 /* IUSCUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CDB8DEA02DB4631A00AF3F08 /* IUSC */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CD86E9F52DD7A102000BBB93 /* Exceptions for "IUSC" folder in "IUSCTests" target */,
+				CD86E9F62DD7A102000BBB93 /* Exceptions for "IUSC" folder in "IUSCUITests" target */,
+			);
 			path = IUSC;
 			sourceTree = "<group>";
 		};
