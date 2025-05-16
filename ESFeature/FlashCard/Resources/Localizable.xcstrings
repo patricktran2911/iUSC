@@ -2,25 +2,65 @@
   "sourceLanguage" : "en",
   "strings" : {
     " of %lld" : {
-
-    },
-    "#%lld" : {
-
+      "extractionState" : "manual",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "của %lld"
+          }
+        }
+      }
     },
     "%lld" : {
-
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        }
+      }
     },
     "Next" : {
-
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếp theo"
+          }
+        }
+      }
     },
     "No flashcards available." : {
-
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không có tài liệu có sẵn"
+          }
+        }
+      }
     },
     "Previous" : {
-
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trở lại"
+          }
+        }
+      }
     },
     "Question " : {
-
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Câu hỏi"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

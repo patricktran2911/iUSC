@@ -3,2164 +3,2164 @@ extension Array where Element == DataModel.QuestionDecoded {
         [
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "principles",
-                    question: "What is the supreme law of the land?",
-                    correctAnswers: ["The Constitution"],
+                    category: .localizable("government"),
+                    type: .localizable("principles"),
+                    question: .localizable("What is the supreme law of the land?"),
+                    correctAnswers: [.localizable("The Constitution")],
                     wrongAnswers: [
-                        "The Bill of Rights",
-                        "The Declaration of Independence",
-                        "The Emancipation Proclamation",
-                        "Presidents Day"
+                        .localizable("The Bill of Rights"),
+                        .localizable("The Declaration of Independence"),
+                        .localizable("The Emancipation Proclamation"),
+                        .localizable("Presidents Day")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "principles",
-                    question: "What does the Constitution do?",
+                    category: .localizable("government"),
+                    type: .localizable("principles"),
+                    question: .localizable("What does the Constitution do?"),
                     correctAnswers: [
-                        "Defines the government",
-                        "Sets up the government",
-                        "Protects basic rights of Americans"
+                        .localizable("Defines the government"),
+                        .localizable("Sets up the government"),
+                        .localizable("Protects basic rights of Americans")
                     ],
                     wrongAnswers: [
-                        "states rights",
-                        "Green movement",
-                        "Declares independence from Great Britain",
-                        "Christmas"
+                        .localizable("states rights"),
+                        .localizable("Green movement"),
+                        .localizable("Declares independence from Great Britain"),
+                        .localizable("Christmas")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "principles",
-                    question: "The idea of self-government is in the first three words of the Constitution. What are these words?",
-                    correctAnswers: ["We the People"],
+                    category: .localizable("government"),
+                    type: .localizable("principles"),
+                    question: .localizable("The idea of self-government is in the first three words of the Constitution. What are these words?"),
+                    correctAnswers: [.localizable("We the People")],
                     wrongAnswers: [
-                        "freedom of religion",
-                        "In God We Trust",
-                        "United We Stand",
-                        "Life, Liberty, Happiness"
+                        .localizable("freedom of religion"),
+                        .localizable("In God We Trust"),
+                        .localizable("United We Stand"),
+                        .localizable("Life, Liberty, Happiness")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "principles",
-                    question: "What is an amendment?",
+                    category: .localizable("government"),
+                    type: .localizable("principles"),
+                    question: .localizable("What is an amendment?"),
                     correctAnswers: [
-                        "An addition (to the Constitution)",
-                        "A change (to the Constitution)"
+                        .localizable("An addition (to the Constitution)"),
+                        .localizable("A change (to the Constitution)")
                     ],
                     wrongAnswers: [
-                        "Appoints federal judges",
-                        "President",
-                        "A removal of a law",
-                        "A court ruling"
+                        .localizable("Appoints federal judges"),
+                        .localizable("President"),
+                        .localizable("A removal of a law"),
+                        .localizable("A court ruling")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "principles",
-                    question: "What do we call the first ten amendments to the Constitution?",
-                    correctAnswers: ["The Bill of Rights"],
+                    category: .localizable("government"),
+                    type: .localizable("principles"),
+                    question: .localizable("What do we call the first ten amendments to the Constitution?"),
+                    correctAnswers: [.localizable("The Bill of Rights")],
                     wrongAnswers: [
-                        "The Federalist Papers",
-                        "To conquer the British",
-                        "The Declaration of Independence",
-                        "The Articles of Confederation"
+                        .localizable("The Federalist Papers"),
+                        .localizable("To conquer the British"),
+                        .localizable("The Declaration of Independence"),
+                        .localizable("The Articles of Confederation")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "principles",
-                    question: "What is one right or freedom from the First Amendment?",
+                    category: .localizable("government"),
+                    type: .localizable("principles"),
+                    question: .localizable("What is one right or freedom from the First Amendment?"),
                     correctAnswers: [
-                        "Speech",
-                        "Petition the government",
-                        "Assembly",
-                        "Religion",
-                        "Press"
+                        .localizable("Speech"),
+                        .localizable("Petition the government"),
+                        .localizable("Assembly"),
+                        .localizable("Religion"),
+                        .localizable("Press")
                     ],
                     wrongAnswers: [
-                        "Trial by jury",
-                        "Cherokee",
-                        "To declare war",
-                        "Right to bear arms"
+                        .localizable("Trial by jury"),
+                        .localizable("Cherokee"),
+                        .localizable("To declare war"),
+                        .localizable("Right to bear arms")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "principles",
-                    question: "How many amendments does the Constitution have?",
-                    correctAnswers: ["Twenty-seven (27)"],
+                    category: .localizable("government"),
+                    type: .localizable("principles"),
+                    question: .localizable("How many amendments does the Constitution have?"),
+                    correctAnswers: [.localizable("Twenty-seven (27)")],
                     wrongAnswers: [
-                        "Twenty-one (21)",
-                        "To set up schools",
-                        "Thirty-three (33)",
-                        "Ten (10)"
+                        .localizable("Twenty-one (21)"),
+                        .localizable("To set up schools"),
+                        .localizable("Thirty-three (33)"),
+                        .localizable("Ten (10)")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "principles",
-                    question: "What did the Declaration of Independence do?",
+                    category: .localizable("government"),
+                    type: .localizable("principles"),
+                    question: .localizable("What did the Declaration of Independence do?"),
                     correctAnswers: [
-                        "Declared our independence (from Great Britain)",
-                        "Said that the United States is free (from Great Britain)",
-                        "Announced our independence (from Great Britain)"
+                        .localizable("Declared our independence (from Great Britain)"),
+                        .localizable("Said that the United States is free (from Great Britain)"),
+                        .localizable("Announced our independence (from Great Britain)")
                     ],
                     wrongAnswers: [
-                        "eight (8)",
-                        "Established the U.S. Constitution",
-                        "Korean War",
-                        "Decides if a law goes against the Constitution"
+                        .localizable("eight (8)"),
+                        .localizable("Established the U.S. Constitution"),
+                        .localizable("Korean War"),
+                        .localizable("Decides if a law goes against the Constitution")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "principles",
-                    question: "What are two rights in the Declaration of Independence?",
+                    category: .localizable("government"),
+                    type: .localizable("principles"),
+                    question: .localizable("What are two rights in the Declaration of Independence?"),
                     correctAnswers: [
-                        "Pursuit of happiness",
-                        "Liberty",
-                        "Life"
+                        .localizable("Pursuit of happiness"),
+                        .localizable("Liberty"),
+                        .localizable("Life")
                     ],
                     wrongAnswers: [
-                        "Mohegan",
-                        "Freedom of speech",
-                        "Freedom from taxation",
-                        "Right to bear arms"
+                        .localizable("Mohegan"),
+                        .localizable("Freedom of speech"),
+                        .localizable("Freedom from taxation"),
+                        .localizable("Right to bear arms")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "multipleAnswer"
+                            rawValue: .localizable("multipleAnswer")
                         ) ?? .multiple,
                     answerQuantity: 3,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "principles",
-                    question: "What is freedom of religion?",
-                    correctAnswers: ["You can practice any religion, or not practice a religion."],
+                    category: .localizable("government"),
+                    type: .localizable("principles"),
+                    question: .localizable("What is freedom of religion?"),
+                    correctAnswers: [.localizable("You can practice any religion, or not practice a religion.")],
                     wrongAnswers: [
-                        "Freedom of religion applies only in churches.",
-                        "Only major religions are recognized.",
-                        "Checks and balances",
-                        "You must choose a religion by age 18."
+                        .localizable("Freedom of religion applies only in churches."),
+                        .localizable("Only major religions are recognized."),
+                        .localizable("Checks and balances"),
+                        .localizable("You must choose a religion by age 18.")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "principles",
-                    question: "What is the economic system in the United States?",
+                    category: .localizable("government"),
+                    type: .localizable("principles"),
+                    question: .localizable("What is the economic system in the United States?"),
                     correctAnswers: [
-                        "Capitalist economy",
-                        "Market economy"
+                        .localizable("Capitalist economy"),
+                        .localizable("Market economy")
                     ],
                     wrongAnswers: [
-                        "Socialist economy",
-                        "Judicial review",
-                        "April 15",
-                        "Planned economy"
+                        .localizable("Socialist economy"),
+                        .localizable("Judicial review"),
+                        .localizable("April 15"),
+                        .localizable("Planned economy")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "principles",
-                    question: "What is the rule of law?",
+                    category: .localizable("government"),
+                    type: .localizable("principles"),
+                    question: .localizable("What is the rule of law?"),
                     correctAnswers: [
-                        "Government must obey the law",
-                        "No one is above the law",
-                        "Leaders must obey the law",
-                        "Everyone must follow the law"
+                        .localizable("Government must obey the law"),
+                        .localizable("No one is above the law"),
+                        .localizable("Leaders must obey the law"),
+                        .localizable("Everyone must follow the law")
                     ],
                     wrongAnswers: [
-                        "Mike Pence",
-                        "The president decides the law",
-                        "Navajo",
-                        "the right to bear arms"
+                        .localizable("Mike Pence"),
+                        .localizable("The president decides the law"),
+                        .localizable("Navajo"),
+                        .localizable("the right to bear arms")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "Name one branch or part of the government.",
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("Name one branch or part of the government."),
                     correctAnswers: [
-                        "President",
-                        "Congress",
-                        "Judicial",
-                        "The courts",
-                        "Executive",
-                        "Legislative"
+                        .localizable("President"),
+                        .localizable("Congress"),
+                        .localizable("Judicial"),
+                        .localizable("The courts"),
+                        .localizable("Executive"),
+                        .localizable("Legislative")
                     ],
                     wrongAnswers: [
-                        "Federal Reserve",
-                        "because there were 13 original colonies",
-                        "State governments",
-                        "Two hundred (200)"
+                        .localizable("Federal Reserve"),
+                        .localizable("because there were 13 original colonies"),
+                        .localizable("State governments"),
+                        .localizable("Two hundred (200)")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "What stops one branch of government from becoming too powerful?",
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("What stops one branch of government from becoming too powerful?"),
                     correctAnswers: [
-                        "Checks and balances",
-                        "Separation of powers"
+                        .localizable("Checks and balances"),
+                        .localizable("Separation of powers")
                     ],
                     wrongAnswers: [
-                        "Publius",
-                        "Judicial review",
-                        "Executive orders",
-                        "George Washington"
+                        .localizable("Publius"),
+                        .localizable("Judicial review"),
+                        .localizable("Executive orders"),
+                        .localizable("George Washington")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "Who is in charge of the executive branch?",
-                    correctAnswers: ["The President"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("Who is in charge of the executive branch?"),
+                    correctAnswers: [.localizable("The President")],
                     wrongAnswers: [
-                        "The Speaker of the House",
-                        "The Vice President",
-                        "The Chief Justice",
-                        "Everyone must follow the law"
+                        .localizable("The Speaker of the House"),
+                        .localizable("The Vice President"),
+                        .localizable("The Chief Justice"),
+                        .localizable("Everyone must follow the law")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "Who makes federal laws?",
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("Who makes federal laws?"),
                     correctAnswers: [
-                        "The Congress",
-                        "The Senate and the House (of Representatives)",
-                        "The U.S. (national) legislature"
+                        .localizable("The Congress"),
+                        .localizable("The Senate and the House (of Representatives)"),
+                        .localizable("The U.S. (national) legislature")
                     ],
                     wrongAnswers: [
-                        "The Constitution was written",
-                        "because the stripes represent the original colonies",
-                        "The Supreme Court",
-                        "The Vice President"
+                        .localizable("The Constitution was written"),
+                        .localizable("because the stripes represent the original colonies"),
+                        .localizable("The Supreme Court"),
+                        .localizable("The Vice President")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "What are the two parts of the U.S. Congress?",
-                    correctAnswers: ["The Senate and House (of Representatives)"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("What are the two parts of the U.S. Congress?"),
+                    correctAnswers: [.localizable("The Senate and House (of Representatives)")],
                     wrongAnswers: [
-                        "The Cabinet and Congress",
-                        "The President and Vice President",
-                        "The Judicial and Executive branches",
-                        "because there is one star for each state"
+                        .localizable("The Cabinet and Congress"),
+                        .localizable("The President and Vice President"),
+                        .localizable("The Judicial and Executive branches"),
+                        .localizable("because there is one star for each state")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "How many U.S. Senators are there?",
-                    correctAnswers: ["One hundred (100)"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("How many U.S. Senators are there?"),
+                    correctAnswers: [.localizable("One hundred (100)")],
                     wrongAnswers: [
-                        "Fifty (50)",
-                        "Two hundred (200)",
-                        "Vietnam War",
-                        "Four hundred thirty-five (435)"
+                        .localizable("Fifty (50)"),
+                        .localizable("Two hundred (200)"),
+                        .localizable("Vietnam War"),
+                        .localizable("Four hundred thirty-five (435)")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "We elect a U.S. Senator for how many years?",
-                    correctAnswers: ["six (6)"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("We elect a U.S. Senator for how many years?"),
+                    correctAnswers: [.localizable("six (6)")],
                     wrongAnswers: [
-                        "eight (8)",
-                        "Freedom",
-                        "four (4)",
-                        "two (2)"
+                        .localizable("eight (8)"),
+                        .localizable("Freedom"),
+                        .localizable("four (4)"),
+                        .localizable("two (2)")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "Who is one of your state U.S. Senators now?",
-                    correctAnswers: ["Answers will vary"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("Who is one of your state U.S. Senators now?"),
+                    correctAnswers: [.localizable("Answers will vary")],
                     wrongAnswers: [
-                        "Russia, China, and Germany",
-                        "American Samoa",
-                        "Provide schooling and education",
-                        "Petition the government"
+                        .localizable("Russia, China, and Germany"),
+                        .localizable("American Samoa"),
+                        .localizable("Provide schooling and education"),
+                        .localizable("Petition the government")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "stateAnswer"
+                            rawValue: .localizable("stateAnswer")
                         ) ?? .stateAnswer,
                     answerQuantity: nil,
-                    answerKey: "senator"
+                    answerKey: .localizable("senator")
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "The House of Representatives has how many voting members?",
-                    correctAnswers: ["Four hundred thirty-five (435)"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("The House of Representatives has how many voting members?"),
+                    correctAnswers: [.localizable("Four hundred thirty-five (435)")],
                     wrongAnswers: [
-                        "Two hundred (200)",
-                        "Freedom from taxation",
-                        "Three hundred (300)",
-                        "One hundred (100)"
+                        .localizable("Two hundred (200)"),
+                        .localizable("Freedom from taxation"),
+                        .localizable("Three hundred (300)"),
+                        .localizable("One hundred (100)")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "We elect a U.S. Representative for how many years?",
-                    correctAnswers: ["Two (2)"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("We elect a U.S. Representative for how many years?"),
+                    correctAnswers: [.localizable("Two (2)")],
                     wrongAnswers: [
-                        "Four (4)",
-                        "Six (6)",
-                        "One (1)",
-                        "Nancy Pelosi"
+                        .localizable("Four (4)"),
+                        .localizable("Six (6)"),
+                        .localizable("One (1)"),
+                        .localizable("Nancy Pelosi")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "Name your U.S. Representative",
-                    correctAnswers: ["Answers will vary"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("Name your U.S. Representative"),
+                    correctAnswers: [.localizable("Answers will vary")],
                     wrongAnswers: [
-                        "Michigan",
-                        "because each star represents a state",
-                        "Massachusetts",
-                        "Everyone must follow the law"
+                        .localizable("Michigan"),
+                        .localizable("because each star represents a state"),
+                        .localizable("Massachusetts"),
+                        .localizable("Everyone must follow the law")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "stateAnswer"
+                            rawValue: .localizable("stateAnswer")
                         ) ?? .stateAnswer,
                     answerQuantity: nil,
-                    answerKey: "representative"
+                    answerKey: .localizable("representative")
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "Who does a U.S. Senator represent?",
-                    correctAnswers: ["All people of the state"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("Who does a U.S. Senator represent?"),
+                    correctAnswers: [.localizable("All people of the state")],
                     wrongAnswers: [
-                        "Mike Pence",
-                        "Only state lawmakers",
-                        "Only people who voted for them",
-                        "Only the people in their political party"
+                        .localizable("Mike Pence"),
+                        .localizable("Only state lawmakers"),
+                        .localizable("Only people who voted for them"),
+                        .localizable("Only the people in their political party")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "Why do some states have more Representatives than other states?",
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("Why do some states have more Representatives than other states?"),
                     correctAnswers: [
-                        "Because some states have more people",
-                        "Because of the state population",
-                        "Because they have more people"
+                        .localizable("Because some states have more people"),
+                        .localizable("Because of the state population"),
+                        .localizable("Because they have more people")
                     ],
                     wrongAnswers: [
-                        "Give a driver license",
-                        "Because they are larger in size",
-                        "Leaders must obey the law",
-                        "The Federal Court of Appeals"
+                        .localizable("Give a driver license"),
+                        .localizable("Because they are larger in size"),
+                        .localizable("Leaders must obey the law"),
+                        .localizable("The Federal Court of Appeals")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "We elect a President for how many years?",
-                    correctAnswers: ["Four (4)"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("We elect a President for how many years?"),
+                    correctAnswers: [.localizable("Four (4)")],
                     wrongAnswers: [
-                        "Two (2)",
-                        "Six (6)",
-                        "Delaware",
-                        "Eight (8)"
+                        .localizable("Two (2)"),
+                        .localizable("Six (6)"),
+                        .localizable("Delaware"),
+                        .localizable("Eight (8)")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "In what month do we vote for President?",
-                    correctAnswers: ["November"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("In what month do we vote for President?"),
+                    correctAnswers: [.localizable("November")],
                     wrongAnswers: [
-                        "The Judicial and Executive branches",
-                        "October",
-                        "January",
-                        "December"
+                        .localizable("The Judicial and Executive branches"),
+                        .localizable("October"),
+                        .localizable("January"),
+                        .localizable("December")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "What is the name of the President of the United States now?",
-                    correctAnswers: ["Donald J. Trump"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("What is the name of the President of the United States now?"),
+                    correctAnswers: [.localizable("Donald J. Trump")],
                     wrongAnswers: [
-                        "Religious freedom",
-                        "Socialist economy",
-                        "South Carolina",
-                        "Zuni"
+                        .localizable("Religious freedom"),
+                        .localizable("Socialist economy"),
+                        .localizable("South Carolina"),
+                        .localizable("Zuni")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "peopleAnswer"
+                            rawValue: .localizable("peopleAnswer")
                         ) ?? .peopleAnswer,
                     answerQuantity: nil,
-                    answerKey: "president"
+                    answerKey: .localizable("president")
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "What is the name of the Vice President of the United States now?",
-                    correctAnswers: ["Mike Pence"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("What is the name of the Vice President of the United States now?"),
+                    correctAnswers: [.localizable("Mike Pence")],
                     wrongAnswers: [
-                        "Publicly support or oppose an issue or policy",
-                        "At age eighteen (18)",
-                        "Secretary of Transportation",
-                        "because there are 50 states"
+                        .localizable("Publicly support or oppose an issue or policy"),
+                        .localizable("At age eighteen (18)"),
+                        .localizable("Secretary of Transportation"),
+                        .localizable("because there are 50 states")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "peopleAnswer"
+                            rawValue: .localizable("peopleAnswer")
                         ) ?? .peopleAnswer,
                     answerQuantity: nil,
-                    answerKey: "vicePresident"
+                    answerKey: .localizable("vicePresident")
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "If the President can no longer serve, who becomes President?",
-                    correctAnswers: ["The Vice President"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("If the President can no longer serve, who becomes President?"),
+                    correctAnswers: [.localizable("The Vice President")],
                     wrongAnswers: [
-                        "You can practice any religion, or not practice a religion.",
-                        "The Speaker of the House",
-                        "The Secretary of State",
-                        "The Chief Justice"
+                        .localizable("You can practice any religion, or not practice a religion."),
+                        .localizable("The Speaker of the House"),
+                        .localizable("The Secretary of State"),
+                        .localizable("The Chief Justice")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "If both the President and the Vice President can no longer serve, who becomes President?",
-                    correctAnswers: ["The Speaker of the House"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("If both the President and the Vice President can no longer serve, who becomes President?"),
+                    correctAnswers: [.localizable("The Speaker of the House")],
                     wrongAnswers: [
-                        "The Secretary of State",
-                        "The Chief Justice",
-                        "The President Pro Tempore of the Senate",
-                        "Provide protection (police)"
+                        .localizable("The Secretary of State"),
+                        .localizable("The Chief Justice"),
+                        .localizable("The President Pro Tempore of the Senate"),
+                        .localizable("Provide protection (police)")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "Who is the Commander in Chief of the military?",
-                    correctAnswers: ["The President"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("Who is the Commander in Chief of the military?"),
+                    correctAnswers: [.localizable("The President")],
                     wrongAnswers: [
-                        "The Secretary of Defense",
-                        "The Vice President",
-                        "The Chairman of the Joint Chiefs",
-                        "Secretary of the Interior"
+                        .localizable("The Secretary of Defense"),
+                        .localizable("The Vice President"),
+                        .localizable("The Chairman of the Joint Chiefs"),
+                        .localizable("Secretary of the Interior")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "Who signs bills to become laws?",
-                    correctAnswers: ["The President"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("Who signs bills to become laws?"),
+                    correctAnswers: [.localizable("The President")],
                     wrongAnswers: [
-                        "October",
-                        "The Speaker of the House",
-                        "The Vice President",
-                        "The Chief Justice"
+                        .localizable("October"),
+                        .localizable("The Speaker of the House"),
+                        .localizable("The Vice President"),
+                        .localizable("The Chief Justice")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "Who vetoes bills?",
-                    correctAnswers: ["The President"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("Who vetoes bills?"),
+                    correctAnswers: [.localizable("The President")],
                     wrongAnswers: [
-                        "The Speaker of the House",
-                        "Navajo",
-                        "The Chief Justice",
-                        "The Senate Majority Leader"
+                        .localizable("The Speaker of the House"),
+                        .localizable("Navajo"),
+                        .localizable("The Chief Justice"),
+                        .localizable("The Senate Majority Leader")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "What does the President Cabinet do?",
-                    correctAnswers: ["Advises the President"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("What does the President Cabinet do?"),
+                    correctAnswers: [.localizable("Advises the President")],
                     wrongAnswers: [
-                        "Commands the military",
+                        .localizable("Commands the military"),
                         "1776",
-                        "Writes federal regulations",
-                        "Approves laws"
+                        .localizable("Writes federal regulations"),
+                        .localizable("Approves laws")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "What are two Cabinet-level positions?",
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("What are two Cabinet-level positions?"),
                     correctAnswers: [
-                        "Secretary of Commerce",
-                        "Secretary of the Interior",
-                        "Secretary of Veterans Affairs",
-                        "Secretary of Homeland Security",
-                        "Secretary of Health and Human Services",
-                        "Attorney General",
-                        "Secretary of Education",
-                        "Secretary of State",
-                        "Secretary of Labor",
-                        "Secretary of the Treasury",
-                        "Vice President",
-                        "Secretary of Agriculture",
-                        "Secretary of Transportation",
-                        "Secretary of Housing and Urban Development",
-                        "Secretary of Energy",
-                        "Secretary of Defense"
+                        .localizable("Secretary of Commerce"),
+                        .localizable("Secretary of the Interior"),
+                        .localizable("Secretary of Veterans Affairs"),
+                        .localizable("Secretary of Homeland Security"),
+                        .localizable("Secretary of Health and Human Services"),
+                        .localizable("Attorney General"),
+                        .localizable("Secretary of Education"),
+                        .localizable("Secretary of State"),
+                        .localizable("Secretary of Labor"),
+                        .localizable("Secretary of the Treasury"),
+                        .localizable("Vice President"),
+                        .localizable("Secretary of Agriculture"),
+                        .localizable("Secretary of Transportation"),
+                        .localizable("Secretary of Housing and Urban Development"),
+                        .localizable("Secretary of Energy"),
+                        .localizable("Secretary of Defense")
                     ],
                     wrongAnswers: [
-                        "Majority Leader",
-                        "Speaker of the House",
-                        "Blackfeet",
-                        "Chief Justice"
+                        .localizable("Majority Leader"),
+                        .localizable("Speaker of the House"),
+                        .localizable("Blackfeet"),
+                        .localizable("Chief Justice")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "multipleAnswer"
+                            rawValue: .localizable("multipleAnswer")
                         ) ?? .multiple,
                     answerQuantity: 16,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "What does the judicial branch do?",
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("What does the judicial branch do?"),
                     correctAnswers: [
-                        "Reviews laws",
-                        "Explains laws",
-                        "Resolves disputes (disagreements)",
-                        "Decides if a law goes against the Constitution"
+                        .localizable("Reviews laws"),
+                        .localizable("Explains laws"),
+                        .localizable("Resolves disputes (disagreements)"),
+                        .localizable("Decides if a law goes against the Constitution")
                     ],
                     wrongAnswers: [
-                        "Appoints federal judges",
-                        "June 14",
-                        "Enforces laws",
-                        "Press"
+                        .localizable("Appoints federal judges"),
+                        .localizable("June 14"),
+                        .localizable("Enforces laws"),
+                        .localizable("Press")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "What is the highest court in the United States?",
-                    correctAnswers: ["The Supreme Court"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("What is the highest court in the United States?"),
+                    correctAnswers: [.localizable("The Supreme Court")],
                     wrongAnswers: [
-                        "Only state lawmakers",
-                        "The District Court",
-                        "The Constitutional Court",
-                        "The Federal Court of Appeals"
+                        .localizable("Only state lawmakers"),
+                        .localizable("The District Court"),
+                        .localizable("The Constitutional Court"),
+                        .localizable("The Federal Court of Appeals")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "How many justices are on the Supreme Court?",
-                    correctAnswers: ["Nine (9)"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("How many justices are on the Supreme Court?"),
+                    correctAnswers: [.localizable("Nine (9)")],
                     wrongAnswers: [
-                        "Twelve (12)",
-                        "Seven (7)",
-                        "Ten (10)",
-                        "You must choose a religion by age 18."
+                        .localizable("Twelve (12)"),
+                        .localizable("Seven (7)"),
+                        .localizable("Ten (10)"),
+                        .localizable("You must choose a religion by age 18.")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "Who is the Chief Justice of the United States now?",
-                    correctAnswers: ["John Roberts"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("Who is the Chief Justice of the United States now?"),
+                    correctAnswers: [.localizable("John Roberts")],
                     wrongAnswers: [
-                        "Vietnam War",
-                        "California",
-                        "Defend the Constitution and laws of the United States",
-                        "Planned economy"
+                        .localizable("Vietnam War"),
+                        .localizable("California"),
+                        .localizable("Defend the Constitution and laws of the United States"),
+                        .localizable("Planned economy")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "peopleAnswer"
+                            rawValue: .localizable("peopleAnswer")
                         ) ?? .peopleAnswer,
                     answerQuantity: nil,
-                    answerKey: "chiefJustice"
+                    answerKey: .localizable("chiefJustice")
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "Under our Constitution, some powers belong to the federal government. What is one power of the federal government?",
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("Under our Constitution, some powers belong to the federal government. What is one power of the federal government?"),
                     correctAnswers: [
-                        "To make treaties",
-                        "To create an army",
-                        "To print money",
-                        "To declare war"
+                        .localizable("To make treaties"),
+                        .localizable("To create an army"),
+                        .localizable("To print money"),
+                        .localizable("To declare war")
                     ],
                     wrongAnswers: [
-                        "To issue driver licenses",
-                        "To set up schools",
-                        "Korean War",
-                        "Sioux"
+                        .localizable("To issue driver licenses"),
+                        .localizable("To set up schools"),
+                        .localizable("Korean War"),
+                        .localizable("Sioux")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "Under our Constitution, some powers belong to the states. What is one power of the states?",
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("Under our Constitution, some powers belong to the states. What is one power of the states?"),
                     correctAnswers: [
-                        "Provide schooling and education",
-                        "Give a driver license",
-                        "Approve zoning and land use",
-                        "Provide safety (fire departments)",
-                        "Provide protection (police)"
+                        .localizable("Provide schooling and education"),
+                        .localizable("Give a driver license"),
+                        .localizable("Approve zoning and land use"),
+                        .localizable("Provide safety (fire departments)"),
+                        .localizable("Provide protection (police)")
                     ],
                     wrongAnswers: [
-                        "Freedom",
-                        "Delaware",
-                        "The Bill of Rights was debated",
-                        "Print money"
+                        .localizable("Freedom"),
+                        .localizable("Delaware"),
+                        .localizable("The Bill of Rights was debated"),
+                        .localizable("Print money")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "Who is the Governor of your state now?",
-                    correctAnswers: ["Answers will vary"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("Who is the Governor of your state now?"),
+                    correctAnswers: [.localizable("Answers will vary")],
                     wrongAnswers: [
-                        "Oneida",
-                        "Only if joining the military",
-                        "John Roberts",
-                        "No one is above the law"
+                        .localizable("Oneida"),
+                        .localizable("Only if joining the military"),
+                        .localizable("John Roberts"),
+                        .localizable("No one is above the law")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "stateAnswer"
+                            rawValue: .localizable("stateAnswer")
                         ) ?? .stateAnswer,
                     answerQuantity: nil,
-                    answerKey: "governor"
+                    answerKey: .localizable("governor")
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "What is the capital of your state?",
-                    correctAnswers: ["Answers will vary"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("What is the capital of your state?"),
+                    correctAnswers: [.localizable("Answers will vary")],
                     wrongAnswers: [
-                        "Philadelphia",
-                        "South Carolina",
-                        "Massachusetts",
-                        "Market economy"
+                        .localizable("Philadelphia"),
+                        .localizable("South Carolina"),
+                        .localizable("Massachusetts"),
+                        .localizable("Market economy")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "stateAnswer"
+                            rawValue: .localizable("stateAnswer")
                         ) ?? .stateAnswer,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "What are the two major political parties in the United States?",
-                    correctAnswers: ["Democratic and Republican"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("What are the two major political parties in the United States?"),
+                    correctAnswers: [.localizable("Democratic and Republican")],
                     wrongAnswers: [
-                        "Serve in the U.S. military (if needed)",
-                        "Green and Libertarian",
-                        "Federalist and Whig",
-                        "Labor and Conservative"
+                        .localizable("Serve in the U.S. military (if needed)"),
+                        .localizable("Green and Libertarian"),
+                        .localizable("Federalist and Whig"),
+                        .localizable("Labor and Conservative")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "What is the political party of the President now?",
-                    correctAnswers: ["Republican"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("What is the political party of the President now?"),
+                    correctAnswers: [.localizable("Republican")],
                     wrongAnswers: [
-                        "Independent",
-                        "Secretary of Homeland Security",
-                        "Libertarian",
-                        "Democratic"
+                        .localizable("Independent"),
+                        .localizable("Secretary of Homeland Security"),
+                        .localizable("Libertarian"),
+                        .localizable("Democratic")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "systems",
-                    question: "What is the name of the Speaker of the House of Representatives now?",
-                    correctAnswers: ["Nancy Pelosi"],
+                    category: .localizable("government"),
+                    type: .localizable("systems"),
+                    question: .localizable("What is the name of the Speaker of the House of Representatives now?"),
+                    correctAnswers: [.localizable("Nancy Pelosi")],
                     wrongAnswers: [
-                        "Nine (9)",
-                        "Attorney General",
-                        "Federalist and Whig",
-                        "Obey the laws of the United States"
+                        .localizable("Nine (9)"),
+                        .localizable("Attorney General"),
+                        .localizable("Federalist and Whig"),
+                        .localizable("Obey the laws of the United States")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "peopleAnswer"
+                            rawValue: .localizable("peopleAnswer")
                         ) ?? .peopleAnswer,
                     answerQuantity: nil,
-                    answerKey: "speaker"
+                    answerKey: .localizable("speaker")
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "rights",
-                    question: "There are four amendments to the Constitution about who can vote. Describe one of them.",
+                    category: .localizable("government"),
+                    type: .localizable("rights"),
+                    question: .localizable("There are four amendments to the Constitution about who can vote. Describe one of them."),
                     correctAnswers: [
-                        "Citizens eighteen (18) and older can vote",
-                        "A male citizen of any race (can vote).",
-                        "You dont have to pay (a poll tax) to vote",
-                        "Any citizen can vote. (Women and men can vote)"
+                        .localizable("Citizens eighteen (18) and older can vote"),
+                        .localizable("A male citizen of any race (can vote)."),
+                        .localizable("You dont have to pay (a poll tax) to vote"),
+                        .localizable("Any citizen can vote. (Women and men can vote)")
                     ],
                     wrongAnswers: [
-                        "Only property owners can vote",
-                        "Only taxpayers can vote",
-                        "Trial by jury",
-                        "Valentine Day"
+                        .localizable("Only property owners can vote"),
+                        .localizable("Only taxpayers can vote"),
+                        .localizable("Trial by jury"),
+                        .localizable("Valentine Day")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "rights",
-                    question: "What is one responsibility that is only for United States citizens?",
+                    category: .localizable("government"),
+                    type: .localizable("rights"),
+                    question: .localizable("What is one responsibility that is only for United States citizens?"),
                     correctAnswers: [
-                        "Vote in a federal election",
-                        "Serve on a jury"
+                        .localizable("Vote in a federal election"),
+                        .localizable("Serve on a jury")
                     ],
                     wrongAnswers: [
-                        "Give an elected official your opinion on an issue",
-                        "Pay taxes",
-                        "A court ruling",
-                        "Obey the law"
+                        .localizable("Give an elected official your opinion on an issue"),
+                        .localizable("Pay taxes"),
+                        .localizable("A court ruling"),
+                        .localizable("Obey the law")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "rights",
-                    question: "Name one right only for United States citizens",
+                    category: .localizable("government"),
+                    type: .localizable("rights"),
+                    question: .localizable("Name one right only for United States citizens"),
                     correctAnswers: [
-                        "Run for federal office",
-                        "Vote in a federal election"
+                        .localizable("Run for federal office"),
+                        .localizable("Vote in a federal election")
                     ],
                     wrongAnswers: [
-                        "The Congress",
-                        "Freedom of religion",
-                        "Freedom of speech",
-                        "Declared our independence (from Great Britain)"
+                        .localizable("The Congress"),
+                        .localizable("Freedom of religion"),
+                        .localizable("Freedom of speech"),
+                        .localizable("Declared our independence (from Great Britain)")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "rights",
-                    question: "What are two rights of everyone living in the United States?",
+                    category: .localizable("government"),
+                    type: .localizable("rights"),
+                    question: .localizable("What are two rights of everyone living in the United States?"),
                     correctAnswers: [
-                        "freedom of religion",
-                        "freedom of expression",
-                        "the right to bear arms",
-                        "freedom of assembly",
-                        "freedom to petition the government",
-                        "freedom of speech"
+                        .localizable("freedom of religion"),
+                        .localizable("freedom of expression"),
+                        .localizable("the right to bear arms"),
+                        .localizable("freedom of assembly"),
+                        .localizable("freedom to petition the government"),
+                        .localizable("freedom of speech")
                     ],
                     wrongAnswers: [
-                        "because there is one star for each state",
-                        "free college education",
-                        "Because they have more people",
-                        "New York"
+                        .localizable("because there is one star for each state"),
+                        .localizable("free college education"),
+                        .localizable("Because they have more people"),
+                        .localizable("New York")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "multipleAnswer"
+                            rawValue: .localizable("multipleAnswer")
                         ) ?? .multiple,
                     answerQuantity: 6,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "rights",
-                    question: "What do we show loyalty to when we say the Pledge of Allegiance?",
+                    category: .localizable("government"),
+                    type: .localizable("rights"),
+                    question: .localizable("What do we show loyalty to when we say the Pledge of Allegiance?"),
                     correctAnswers: [
-                        "The flag",
-                        "The United States"
+                        .localizable("The flag"),
+                        .localizable("The United States")
                     ],
                     wrongAnswers: [
-                        "The military",
-                        "The Constitution",
-                        "Valentine Day",
-                        "Secretary of Agriculture"
+                        .localizable("The military"),
+                        .localizable("The Constitution"),
+                        .localizable("Valentine Day"),
+                        .localizable("Secretary of Agriculture")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "rights",
-                    question: "What is one promise you make when you become a United States citizen?",
+                    category: .localizable("government"),
+                    type: .localizable("rights"),
+                    question: .localizable("What is one promise you make when you become a United States citizen?"),
                     correctAnswers: [
-                        "Be loyal to the United States",
-                        "Give up loyalty to other countries",
-                        "Serve (do important work for) the nation (if needed)",
-                        "Obey the laws of the United States",
-                        "Defend the Constitution and laws of the United States",
-                        "Serve in the U.S. military (if needed)"
+                        .localizable("Be loyal to the United States"),
+                        .localizable("Give up loyalty to other countries"),
+                        .localizable("Serve (do important work for) the nation (if needed)"),
+                        .localizable("Obey the laws of the United States"),
+                        .localizable("Defend the Constitution and laws of the United States"),
+                        .localizable("Serve in the U.S. military (if needed)")
                     ],
                     wrongAnswers: [
-                        "Only taxpayers can vote",
-                        "Pay no taxes",
-                        "Only state lawmakers",
-                        "Twenty-seven (27)"
+                        .localizable("Only taxpayers can vote"),
+                        .localizable("Pay no taxes"),
+                        .localizable("Only state lawmakers"),
+                        .localizable("Twenty-seven (27)")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "rights",
-                    question: "How old do citizens have to be to vote for President?",
-                    correctAnswers: ["Eighteen (18) and older"],
+                    category: .localizable("government"),
+                    type: .localizable("rights"),
+                    question: .localizable("How old do citizens have to be to vote for President?"),
+                    correctAnswers: [.localizable("Eighteen (18) and older")],
                     wrongAnswers: [
-                        "Sixteen (16) and older",
-                        "Any age with parental consent",
-                        "freedom of expression",
-                        "Twenty-one (21) and older"
+                        .localizable("Sixteen (16) and older"),
+                        .localizable("Any age with parental consent"),
+                        .localizable("freedom of expression"),
+                        .localizable("Twenty-one (21) and older")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "rights",
-                    question: "What are two ways that Americans can participate in their democracy?",
+                    category: .localizable("government"),
+                    type: .localizable("rights"),
+                    question: .localizable("What are two ways that Americans can participate in their democracy?"),
                     correctAnswers: [
-                        "Write to a newspaper",
-                        "Run for office",
-                        "Join a community group",
-                        "Join a civic group",
-                        "Publicly support or oppose an issue or policy",
-                        "Call Senators and Representatives",
-                        "Give an elected official your opinion on an issue",
-                        "Help with a campaign",
-                        "Vote",
-                        "Join a political party"
+                        .localizable("Write to a newspaper"),
+                        .localizable("Run for office"),
+                        .localizable("Join a community group"),
+                        .localizable("Join a civic group"),
+                        .localizable("Publicly support or oppose an issue or policy"),
+                        .localizable("Call Senators and Representatives"),
+                        .localizable("Give an elected official your opinion on an issue"),
+                        .localizable("Help with a campaign"),
+                        .localizable("Vote"),
+                        .localizable("Join a political party")
                     ],
                     wrongAnswers: [
-                        "Pay extra taxes",
-                        "Martin Luther King, Jr. Day",
-                        "Join the military to vote",
-                        "Atlantic Ocean"
+                        .localizable("Pay extra taxes"),
+                        .localizable("Martin Luther King, Jr. Day"),
+                        .localizable("Join the military to vote"),
+                        .localizable("Atlantic Ocean")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "multipleAnswer"
+                            rawValue: .localizable("multipleAnswer")
                         ) ?? .multiple,
                     answerQuantity: 10,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "rights",
-                    question: "When is the last day you can send in federal income tax forms?",
-                    correctAnswers: ["April 15"],
+                    category: .localizable("government"),
+                    type: .localizable("rights"),
+                    question: .localizable("When is the last day you can send in federal income tax forms?"),
+                    correctAnswers: [.localizable("April 15")],
                     wrongAnswers: [
-                        "December 31",
-                        "War of 1812",
-                        "May 1",
-                        "March 1"
+                        .localizable("December 31"),
+                        .localizable("War of 1812"),
+                        .localizable("May 1"),
+                        .localizable("March 1")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "government",
-                    type: "rights",
-                    question: "When must all men register for the Selective Service?",
+                    category: .localizable("government"),
+                    type: .localizable("rights"),
+                    question: .localizable("When must all men register for the Selective Service?"),
                     correctAnswers: [
-                        "Between eighteen (18) and twenty-six (26)",
-                        "At age eighteen (18)"
+                        .localizable("Between eighteen (18) and twenty-six (26)"),
+                        .localizable("At age eighteen (18)")
                     ],
                     wrongAnswers: [
-                        "The Secretary of Defense",
-                        "Only if joining the military",
-                        "Choctaw",
-                        "Before turning 16"
+                        .localizable("The Secretary of Defense"),
+                        .localizable("Only if joining the military"),
+                        .localizable("Choctaw"),
+                        .localizable("Before turning 16")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-colonial",
-                    question: "What is one reason colonists came to America?",
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-colonial"),
+                    question: .localizable("What is one reason colonists came to America?"),
                     correctAnswers: [
-                        "Economic opportunity",
-                        "Practice their religion",
-                        "Escape persecution",
-                        "Religious freedom",
-                        "Freedom",
-                        "Political liberty"
+                        .localizable("Economic opportunity"),
+                        .localizable("Practice their religion"),
+                        .localizable("Escape persecution"),
+                        .localizable("Religious freedom"),
+                        .localizable("Freedom"),
+                        .localizable("Political liberty")
                     ],
                     wrongAnswers: [
-                        "Secretary of the Interior",
-                        "To conquer the British",
-                        "To avoid paying taxes",
-                        "Maryland"
+                        .localizable("Secretary of the Interior"),
+                        .localizable("To conquer the British"),
+                        .localizable("To avoid paying taxes"),
+                        .localizable("Maryland")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-colonial",
-                    question: "Who lived in America before the Europeans arrived?",
-                    correctAnswers: ["Native Americans"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-colonial"),
+                    question: .localizable("Who lived in America before the Europeans arrived?"),
+                    correctAnswers: [.localizable("Native Americans")],
                     wrongAnswers: [
-                        "Declared our independence (from Great Britain)",
-                        "Africans",
-                        "Pilgrims",
-                        "British settlers"
+                        .localizable("Declared our independence (from Great Britain)"),
+                        .localizable("Africans"),
+                        .localizable("Pilgrims"),
+                        .localizable("British settlers")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-colonial",
-                    question: "What group of people was taken to America and sold as slaves?",
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-colonial"),
+                    question: .localizable("What group of people was taken to America and sold as slaves?"),
                     correctAnswers: [
-                        "Africans",
-                        "People from Africa"
+                        .localizable("Africans"),
+                        .localizable("People from Africa")
                     ],
                     wrongAnswers: [
-                        "Montana",
-                        "Native Americans",
-                        "Europeans",
-                        "Presidents Day"
+                        .localizable("Montana"),
+                        .localizable("Native Americans"),
+                        .localizable("Europeans"),
+                        .localizable("Presidents Day")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-colonial",
-                    question: "Why did the colonists fight the British?",
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-colonial"),
+                    question: .localizable("Why did the colonists fight the British?"),
                     correctAnswers: [
-                        "Because they didnt have self-government",
-                        "Because the British army stayed in their houses (boarding, quartering)",
-                        "Because of high taxes (taxation without representation)"
+                        .localizable("Because they didnt have self-government"),
+                        .localizable("Because the British army stayed in their houses (boarding, quartering)"),
+                        .localizable("Because of high taxes (taxation without representation)")
                     ],
                     wrongAnswers: [
-                        "Huron",
-                        "Because they disliked tea",
-                        "New York City",
-                        "Signer of the Emancipation Proclamation"
+                        .localizable("Huron"),
+                        .localizable("Because they disliked tea"),
+                        .localizable("New York City"),
+                        .localizable("Signer of the Emancipation Proclamation")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-colonial",
-                    question: "Who wrote the Declaration of Independence?",
-                    correctAnswers: ["Thomas Jefferson"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-colonial"),
+                    question: .localizable("Who wrote the Declaration of Independence?"),
+                    correctAnswers: [.localizable("Thomas Jefferson")],
                     wrongAnswers: [
-                        "John Adams",
-                        "Chief Justice",
-                        "Benjamin Franklin",
-                        "George Washington"
+                        .localizable("John Adams"),
+                        .localizable("Chief Justice"),
+                        .localizable("Benjamin Franklin"),
+                        .localizable("George Washington")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-colonial",
-                    question: "When was the Declaration of Independence adopted?",
-                    correctAnswers: ["July 4, 1776"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-colonial"),
+                    question: .localizable("When was the Declaration of Independence adopted?"),
+                    correctAnswers: [.localizable("July 4, 1776")],
                     wrongAnswers: [
-                        "June 4, 1776",
-                        "September 17, 1787",
-                        "July 2, 1776",
-                        "A removal of a law"
+                        .localizable("June 4, 1776"),
+                        .localizable("September 17, 1787"),
+                        .localizable("July 2, 1776"),
+                        .localizable("A removal of a law")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-colonial",
-                    question: "There were 13 original states. Name three.",
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-colonial"),
+                    question: .localizable("There were 13 original states. Name three."),
                     correctAnswers: [
-                        "North Carolina",
-                        "Pennsylvania",
-                        "Maryland",
-                        "New Jersey",
-                        "Georgia",
-                        "Delaware",
-                        "Massachusetts",
-                        "South Carolina",
-                        "Connecticut",
-                        "Virginia",
-                        "New Hampshire",
-                        "Rhode Island",
-                        "New York"
+                        .localizable("North Carolina"),
+                        .localizable("Pennsylvania"),
+                        .localizable("Maryland"),
+                        .localizable("New Jersey"),
+                        .localizable("Georgia"),
+                        .localizable("Delaware"),
+                        .localizable("Massachusetts"),
+                        .localizable("South Carolina"),
+                        .localizable("Connecticut"),
+                        .localizable("Virginia"),
+                        .localizable("New Hampshire"),
+                        .localizable("Rhode Island"),
+                        .localizable("New York")
                     ],
                     wrongAnswers: [
-                        "To print money",
-                        "Ohio",
-                        "Vermont",
-                        "Obey the law"
+                        .localizable("To print money"),
+                        .localizable("Ohio"),
+                        .localizable("Vermont"),
+                        .localizable("Obey the law")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "multipleAnswer"
+                            rawValue: .localizable("multipleAnswer")
                         ) ?? .multiple,
                     answerQuantity: 13,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-colonial",
-                    question: "What happened at the Constitutional Convention?",
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-colonial"),
+                    question: .localizable("What happened at the Constitutional Convention?"),
                     correctAnswers: [
-                        "The Constitution was written",
-                        "The Founding Fathers wrote the Constitution"
+                        .localizable("The Constitution was written"),
+                        .localizable("The Founding Fathers wrote the Constitution")
                     ],
                     wrongAnswers: [
-                        "War of 1812",
-                        "The Bill of Rights was debated",
-                        "January",
-                        "The Declaration of Independence was signed"
+                        .localizable("War of 1812"),
+                        .localizable("The Bill of Rights was debated"),
+                        .localizable("January"),
+                        .localizable("The Declaration of Independence was signed")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-colonial",
-                    question: "When was the Constitution written?",
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-colonial"),
+                    question: .localizable("When was the Constitution written?"),
                     correctAnswers: ["1787"],
                     wrongAnswers: [
                         "1801",
                         "1776",
-                        "Pennsylvania",
+                        .localizable("Pennsylvania"),
                         "1791"
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-colonial",
-                    question: "The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers",
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-colonial"),
+                    question: .localizable("The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers"),
                     correctAnswers: [
-                        "Publius",
-                        "John Jay",
-                        "James Madison",
-                        "Alexander Hamilton"
+                        .localizable("Publius"),
+                        .localizable("John Jay"),
+                        .localizable("James Madison"),
+                        .localizable("Alexander Hamilton")
                     ],
                     wrongAnswers: [
-                        "Only state lawmakers",
-                        "World War II",
-                        "Apache",
-                        "George Washington"
+                        .localizable("Only state lawmakers"),
+                        .localizable("World War II"),
+                        .localizable("Apache"),
+                        .localizable("George Washington")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-colonial",
-                    question: "What is one thing Benjamin Franklin is famous for?",
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-colonial"),
+                    question: .localizable("What is one thing Benjamin Franklin is famous for?"),
                     correctAnswers: [
-                        "U.S. diplomat",
-                        "Oldest member of the Constitutional Convention",
-                        "First Postmaster General of the United States",
-                        "Started the first free libraries",
-                        "Writer of Poor Richard Almanac"
+                        .localizable("U.S. diplomat"),
+                        .localizable("Oldest member of the Constitutional Convention"),
+                        .localizable("First Postmaster General of the United States"),
+                        .localizable("Started the first free libraries"),
+                        .localizable("Writer of Poor Richard Almanac")
                     ],
                     wrongAnswers: [
-                        "Arctic Ocean",
-                        "Immigration",
-                        "The Secretary of State",
-                        "Signer of the Emancipation Proclamation"
+                        .localizable("Arctic Ocean"),
+                        .localizable("Immigration"),
+                        .localizable("The Secretary of State"),
+                        .localizable("Signer of the Emancipation Proclamation")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-colonial",
-                    question: "Who is the Father of Our Country?",
-                    correctAnswers: ["George Washington"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-colonial"),
+                    question: .localizable("Who is the Father of Our Country?"),
+                    correctAnswers: [.localizable("George Washington")],
                     wrongAnswers: [
-                        "Vote",
-                        "Donald J. Trump",
-                        "May 1",
-                        "Japan, Korea, and Vietnam"
+                        .localizable("Vote"),
+                        .localizable("Donald J. Trump"),
+                        .localizable("May 1"),
+                        .localizable("Japan, Korea, and Vietnam")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "peopleAnswer"
+                            rawValue: .localizable("peopleAnswer")
                         ) ?? .peopleAnswer,
                     answerQuantity: nil,
-                    answerKey: "washington"
+                    answerKey: .localizable("washington")
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-colonial",
-                    question: "Who was the first President?",
-                    correctAnswers: ["George Washington"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-colonial"),
+                    question: .localizable("Who was the first President?"),
+                    correctAnswers: [.localizable("George Washington")],
                     wrongAnswers: [
-                        "Fought for civil rights",
-                        "To conquer the British",
-                        "The United States",
-                        "The District Court"
+                        .localizable("Fought for civil rights"),
+                        .localizable("To conquer the British"),
+                        .localizable("The United States"),
+                        .localizable("The District Court")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "peopleAnswer"
+                            rawValue: .localizable("peopleAnswer")
                         ) ?? .peopleAnswer,
                     answerQuantity: nil,
-                    answerKey: "washington"
+                    answerKey: .localizable("washington")
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-1800",
-                    question: "What territory did the United States buy from France in 1803?",
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-1800"),
+                    question: .localizable("What territory did the United States buy from France in 1803?"),
                     correctAnswers: [
-                        "Louisiana",
-                        "The Louisiana Territory"
+                        .localizable("Louisiana"),
+                        .localizable("The Louisiana Territory")
                     ],
                     wrongAnswers: [
-                        "Independence Day",
-                        "Texas",
-                        "Florida",
-                        "Freed the slaves (Emancipation Proclamation)"
+                        .localizable("Independence Day"),
+                        .localizable("Texas"),
+                        .localizable("Florida"),
+                        .localizable("Freed the slaves (Emancipation Proclamation)")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-1800",
-                    question: "Name one war fought by the United States in the 1800s",
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-1800"),
+                    question: .localizable("Name one war fought by the United States in the 1800s"),
                     correctAnswers: [
-                        "Civil War",
-                        "Mexican-American War",
-                        "War of 1812",
-                        "Spanish-American War"
+                        .localizable("Civil War"),
+                        .localizable("Mexican-American War"),
+                        .localizable("War of 1812"),
+                        .localizable("Spanish-American War")
                     ],
                     wrongAnswers: [
-                        "Japan, Korea, and Vietnam",
-                        "Independence Day",
-                        "World War I",
-                        "Nuclear power plants"
+                        .localizable("Japan, Korea, and Vietnam"),
+                        .localizable("Independence Day"),
+                        .localizable("World War I"),
+                        .localizable("Nuclear power plants")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-1800",
-                    question: "Name the U.S. war between the North and the South.",
-                    correctAnswers: ["The Civil War"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-1800"),
+                    question: .localizable("Name the U.S. war between the North and the South."),
+                    correctAnswers: [.localizable("The Civil War")],
                     wrongAnswers: [
-                        "The Revolutionary War",
-                        "The Vietnam War",
-                        "The Korean War",
-                        "Twenty-one (21)"
+                        .localizable("The Revolutionary War"),
+                        .localizable("The Vietnam War"),
+                        .localizable("The Korean War"),
+                        .localizable("Twenty-one (21)")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-1800",
-                    question: "Name one problem that led to the Civil War",
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-1800"),
+                    question: .localizable("Name one problem that led to the Civil War"),
                     correctAnswers: [
-                        "economic reasons",
-                        "slavery",
-                        "states rights"
+                        .localizable("economic reasons"),
+                        .localizable("slavery"),
+                        .localizable("states rights")
                     ],
                     wrongAnswers: [
-                        "Write to a newspaper",
-                        "taxation without representation",
-                        "A removal of a law",
-                        "Nuclear power plants"
+                        .localizable("Write to a newspaper"),
+                        .localizable("taxation without representation"),
+                        .localizable("A removal of a law"),
+                        .localizable("Nuclear power plants")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-1800",
-                    question: "What was one important thing that Abraham Lincoln did?",
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-1800"),
+                    question: .localizable("What was one important thing that Abraham Lincoln did?"),
                     correctAnswers: [
-                        "Led the United States during the Civil War",
-                        "Saved (or preserved) the Union",
-                        "Freed the slaves (Emancipation Proclamation)"
+                        .localizable("Led the United States during the Civil War"),
+                        .localizable("Saved (or preserved) the Union"),
+                        .localizable("Freed the slaves (Emancipation Proclamation)")
                     ],
                     wrongAnswers: [
-                        "Pay extra taxes",
-                        "slavery",
-                        "Oldest member of the Constitutional Convention",
-                        "Declared war on Britain"
+                        .localizable("Pay extra taxes"),
+                        .localizable("slavery"),
+                        .localizable("Oldest member of the Constitutional Convention"),
+                        .localizable("Declared war on Britain")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-1800",
-                    question: "What did the Emancipation Proclamation do?",
-                    correctAnswers: ["Freed slaves in the Confederate states"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-1800"),
+                    question: .localizable("What did the Emancipation Proclamation do?"),
+                    correctAnswers: [.localizable("Freed slaves in the Confederate states")],
                     wrongAnswers: [
-                        "Gave women the right to vote",
-                        "Ended the Civil War",
-                        "Established the U.S. Constitution",
-                        "Leaders must obey the law"
+                        .localizable("Gave women the right to vote"),
+                        .localizable("Ended the Civil War"),
+                        .localizable("Established the U.S. Constitution"),
+                        .localizable("Leaders must obey the law")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-1800",
-                    question: "What did Susan B. Anthony do?",
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-1800"),
+                    question: .localizable("What did Susan B. Anthony do?"),
                     correctAnswers: [
-                        "fought for civil rights",
-                        "fought for women rights"
+                        .localizable("fought for civil rights"),
+                        .localizable("fought for women rights")
                     ],
                     wrongAnswers: [
-                        "wrote the Constitution",
-                        "led the Civil War",
-                        "Because of the state population",
-                        "Maryland"
+                        .localizable("wrote the Constitution"),
+                        .localizable("led the Civil War"),
+                        .localizable("Because of the state population"),
+                        .localizable("Maryland")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-modern",
-                    question: "Name one war fought by the United States in the 1900s.",
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-modern"),
+                    question: .localizable("Name one war fought by the United States in the 1900s."),
                     correctAnswers: [
-                        "(Persian) Gulf War",
-                        "Vietnam War",
-                        "World War I",
-                        "World War II",
-                        "Korean War"
+                        .localizable("(Persian) Gulf War"),
+                        .localizable("Vietnam War"),
+                        .localizable("World War I"),
+                        .localizable("World War II"),
+                        .localizable("Korean War")
                     ],
                     wrongAnswers: [
-                        "The Chief Justice",
-                        "Revolutionary War",
-                        "September 17",
-                        "Because they didnt have self-government"
+                        .localizable("The Chief Justice"),
+                        .localizable("Revolutionary War"),
+                        .localizable("September 17"),
+                        .localizable("Because they didnt have self-government")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-modern",
-                    question: "Who was President during World War I?",
-                    correctAnswers: ["Woodrow Wilson"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-modern"),
+                    question: .localizable("Who was President during World War I?"),
+                    correctAnswers: [.localizable("Woodrow Wilson")],
                     wrongAnswers: [
-                        "Mohegan",
-                        "Congress",
-                        "Vermont",
-                        "Answers will vary"
+                        .localizable("Mohegan"),
+                        .localizable("Congress"),
+                        .localizable("Vermont"),
+                        .localizable("Answers will vary")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "peopleAnswer"
+                            rawValue: .localizable("peopleAnswer")
                         ) ?? .peopleAnswer,
                     answerQuantity: nil,
-                    answerKey: "wilson"
+                    answerKey: .localizable("wilson")
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-modern",
-                    question: "Who was President during the Great Depression and World War II?",
-                    correctAnswers: ["Franklin Roosevelt"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-modern"),
+                    question: .localizable("Who was President during the Great Depression and World War II?"),
+                    correctAnswers: [.localizable("Franklin Roosevelt")],
                     wrongAnswers: [
-                        "Only if joining the military",
-                        "Thanksgiving",
-                        "Leaders must obey the law",
-                        "Approve zoning and land use"
+                        .localizable("Only if joining the military"),
+                        .localizable("Thanksgiving"),
+                        .localizable("Leaders must obey the law"),
+                        .localizable("Approve zoning and land use")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "peopleAnswer"
+                            rawValue: .localizable("peopleAnswer")
                         ) ?? .peopleAnswer,
                     answerQuantity: nil,
-                    answerKey: "roosevelt"
+                    answerKey: .localizable("roosevelt")
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-modern",
-                    question: "Who did the United States fight in World War II?",
-                    correctAnswers: ["Japan, Germany, and Italy"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-modern"),
+                    question: .localizable("Who did the United States fight in World War II?"),
+                    correctAnswers: [.localizable("Japan, Germany, and Italy")],
                     wrongAnswers: [
-                        "Russia, China, and Germany",
-                        "France, Germany, and Britain",
-                        "Japan, Korea, and Vietnam",
-                        "California"
+                        .localizable("Russia, China, and Germany"),
+                        .localizable("France, Germany, and Britain"),
+                        .localizable("Japan, Korea, and Vietnam"),
+                        .localizable("California")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-modern",
-                    question: "Before he was President, Eisenhower was a general. What war was he in?",
-                    correctAnswers: ["World War II"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-modern"),
+                    question: .localizable("Before he was President, Eisenhower was a general. What war was he in?"),
+                    correctAnswers: [.localizable("World War II")],
                     wrongAnswers: [
-                        "Japan, Korea, and Vietnam",
-                        "Vietnam War",
-                        "World War I",
-                        "Korean War"
+                        .localizable("Japan, Korea, and Vietnam"),
+                        .localizable("Vietnam War"),
+                        .localizable("World War I"),
+                        .localizable("Korean War")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-modern",
-                    question: "During the Cold War, what was the main concern of the United States?",
-                    correctAnswers: ["Communism"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-modern"),
+                    question: .localizable("During the Cold War, what was the main concern of the United States?"),
+                    correctAnswers: [.localizable("Communism")],
                     wrongAnswers: [
-                        "Gave women the right to vote",
-                        "Terrorism",
-                        "Immigration",
-                        "Nuclear power plants"
+                        .localizable("Gave women the right to vote"),
+                        .localizable("Terrorism"),
+                        .localizable("Immigration"),
+                        .localizable("Nuclear power plants")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-modern",
-                    question: "What movement tried to end racial discrimination?",
-                    correctAnswers: ["Civil rights (movement)"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-modern"),
+                    question: .localizable("What movement tried to end racial discrimination?"),
+                    correctAnswers: [.localizable("Civil rights (movement)")],
                     wrongAnswers: [
-                        "Only people who voted for them",
-                        "Green movement",
-                        "Labor movement",
-                        "Women suffrage"
+                        .localizable("Only people who voted for them"),
+                        .localizable("Green movement"),
+                        .localizable("Labor movement"),
+                        .localizable("Women suffrage")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-modern",
-                    question: "What did Martin Luther King, Jr. do?",
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-modern"),
+                    question: .localizable("What did Martin Luther King, Jr. do?"),
                     correctAnswers: [
-                        "Fought for civil rights",
-                        "Worked for equality for all Americans"
+                        .localizable("Fought for civil rights"),
+                        .localizable("Worked for equality for all Americans")
                     ],
                     wrongAnswers: [
-                        "Wrote the Declaration of Independence",
-                        "Was a U.S. President",
-                        "Freedom from taxation",
-                        "two (2)"
+                        .localizable("Wrote the Declaration of Independence"),
+                        .localizable("Was a U.S. President"),
+                        .localizable("Freedom from taxation"),
+                        .localizable("two (2)")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-modern",
-                    question: "What major event happened on September 11, 2001, in the United States?",
-                    correctAnswers: ["Terrorists attacked the United States."],
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-modern"),
+                    question: .localizable("What major event happened on September 11, 2001, in the United States?"),
+                    correctAnswers: [.localizable("Terrorists attacked the United States.")],
                     wrongAnswers: [
-                        "The Civil Rights Act was passed.",
-                        "The U.S. declared war on Iraq.",
-                        "led the Civil War",
-                        "The stock market crashed."
+                        .localizable("The Civil Rights Act was passed."),
+                        .localizable("The U.S. declared war on Iraq."),
+                        .localizable("led the Civil War"),
+                        .localizable("The stock market crashed.")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "history-modern",
-                    question: "Name one American Indian tribe in the United States.",
+                    category: .localizable("history-geo"),
+                    type: .localizable("history-modern"),
+                    question: .localizable("Name one American Indian tribe in the United States."),
                     correctAnswers: [
-                        "Choctaw",
-                        "Apache",
-                        "Seminole",
-                        "Pueblo",
-                        "Sioux",
-                        "Inuit",
-                        "Navajo",
-                        "Teton",
-                        "Oneida",
-                        "Creek",
-                        "Arawak",
-                        "Lakota",
-                        "Shawnee",
-                        "Blackfeet",
-                        "Cheyenne",
-                        "Huron",
-                        "Crow",
-                        "Cherokee",
-                        "Hopi",
-                        "Mohegan",
-                        "Chippewa",
-                        "Iroquois"
+                        .localizable("Choctaw"),
+                        .localizable("Apache"),
+                        .localizable("Seminole"),
+                        .localizable("Pueblo"),
+                        .localizable("Sioux"),
+                        .localizable("Inuit"),
+                        .localizable("Navajo"),
+                        .localizable("Teton"),
+                        .localizable("Oneida"),
+                        .localizable("Creek"),
+                        .localizable("Arawak"),
+                        .localizable("Lakota"),
+                        .localizable("Shawnee"),
+                        .localizable("Blackfeet"),
+                        .localizable("Cheyenne"),
+                        .localizable("Huron"),
+                        .localizable("Crow"),
+                        .localizable("Cherokee"),
+                        .localizable("Hopi"),
+                        .localizable("Mohegan"),
+                        .localizable("Chippewa"),
+                        .localizable("Iroquois")
                     ],
                     wrongAnswers: [
-                        "Executive",
-                        "Established the U.S. Constitution",
-                        "led the Civil War",
-                        "Zuni"
+                        .localizable("Executive"),
+                        .localizable("Established the U.S. Constitution"),
+                        .localizable("led the Civil War"),
+                        .localizable("Zuni")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "geography",
-                    question: "Name one of the two longest rivers in the United States",
+                    category: .localizable("history-geo"),
+                    type: .localizable("geography"),
+                    question: .localizable("Name one of the two longest rivers in the United States"),
                     correctAnswers: [
-                        "Mississippi River",
-                        "Missouri River"
+                        .localizable("Mississippi River"),
+                        .localizable("Missouri River")
                     ],
                     wrongAnswers: [
-                        "Mohegan",
-                        "Two hundred (200)",
-                        "Rio Grande",
-                        "Colorado River"
+                        .localizable("Mohegan"),
+                        .localizable("Two hundred (200)"),
+                        .localizable("Rio Grande"),
+                        .localizable("Colorado River")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "geography",
-                    question: "What ocean is on the West Coast of the United States?",
-                    correctAnswers: ["Pacific Ocean"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("geography"),
+                    question: .localizable("What ocean is on the West Coast of the United States?"),
+                    correctAnswers: [.localizable("Pacific Ocean")],
                     wrongAnswers: [
-                        "Arctic Ocean",
-                        "Atlantic Ocean",
-                        "Labor Day",
-                        "Indian Ocean"
+                        .localizable("Arctic Ocean"),
+                        .localizable("Atlantic Ocean"),
+                        .localizable("Labor Day"),
+                        .localizable("Indian Ocean")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "geography",
-                    question: "What ocean is on the East Coast of the United States?",
-                    correctAnswers: ["Atlantic Ocean"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("geography"),
+                    question: .localizable("What ocean is on the East Coast of the United States?"),
+                    correctAnswers: [.localizable("Atlantic Ocean")],
                     wrongAnswers: [
-                        "Southern Ocean",
-                        "Pacific Ocean",
-                        "Alaska",
-                        "Indian Ocean"
+                        .localizable("Southern Ocean"),
+                        .localizable("Pacific Ocean"),
+                        .localizable("Alaska"),
+                        .localizable("Indian Ocean")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "geography",
-                    question: "Name one U.S. territory.",
+                    category: .localizable("history-geo"),
+                    type: .localizable("geography"),
+                    question: .localizable("Name one U.S. territory."),
                     correctAnswers: [
-                        "U.S. Virgin Islands",
-                        "Northern Mariana Islands",
-                        "Guam",
-                        "American Samoa",
-                        "Puerto Rico"
+                        .localizable("U.S. Virgin Islands"),
+                        .localizable("Northern Mariana Islands"),
+                        .localizable("Guam"),
+                        .localizable("American Samoa"),
+                        .localizable("Puerto Rico")
                     ],
                     wrongAnswers: [
-                        "Because they didnt have self-government",
-                        "eight (8)",
-                        "Serve (do important work for) the nation (if needed)",
-                        "Hawaii"
+                        .localizable("Because they didnt have self-government"),
+                        .localizable("eight (8)"),
+                        .localizable("Serve (do important work for) the nation (if needed)"),
+                        .localizable("Hawaii")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "geography",
-                    question: "Name one state that borders Canada.",
+                    category: .localizable("history-geo"),
+                    type: .localizable("geography"),
+                    question: .localizable("Name one state that borders Canada."),
                     correctAnswers: [
-                        "Pennsylvania",
-                        "North Dakota",
-                        "Idaho",
-                        "Minnesota",
-                        "Montana",
-                        "Ohio",
-                        "Maine",
-                        "Alaska",
-                        "Michigan",
-                        "Vermont",
-                        "New Hampshire",
-                        "Washington",
-                        "New York"
+                        .localizable("Pennsylvania"),
+                        .localizable("North Dakota"),
+                        .localizable("Idaho"),
+                        .localizable("Minnesota"),
+                        .localizable("Montana"),
+                        .localizable("Ohio"),
+                        .localizable("Maine"),
+                        .localizable("Alaska"),
+                        .localizable("Michigan"),
+                        .localizable("Vermont"),
+                        .localizable("New Hampshire"),
+                        .localizable("Washington"),
+                        .localizable("New York")
                     ],
                     wrongAnswers: [
-                        "Independent",
-                        "Ended the Civil War",
-                        "Texas",
-                        "California"
+                        .localizable("Independent"),
+                        .localizable("Ended the Civil War"),
+                        .localizable("Texas"),
+                        .localizable("California")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "geography",
-                    question: "Name one state that borders Mexico.",
+                    category: .localizable("history-geo"),
+                    type: .localizable("geography"),
+                    question: .localizable("Name one state that borders Mexico."),
                     correctAnswers: [
-                        "New Mexico",
-                        "Texas",
-                        "Arizona",
-                        "California"
+                        .localizable("New Mexico"),
+                        .localizable("Texas"),
+                        .localizable("Arizona"),
+                        .localizable("California")
                     ],
                     wrongAnswers: [
-                        "Nevada",
-                        "To declare war",
-                        "Utah",
-                        "Secretary of the Treasury"
+                        .localizable("Nevada"),
+                        .localizable("To declare war"),
+                        .localizable("Utah"),
+                        .localizable("Secretary of the Treasury")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "geography",
-                    question: "What is the capital of the United States?",
-                    correctAnswers: ["Washington, D.C."],
+                    category: .localizable("history-geo"),
+                    type: .localizable("geography"),
+                    question: .localizable("What is the capital of the United States?"),
+                    correctAnswers: [.localizable("Washington, D.C.")],
                     wrongAnswers: [
-                        "Philadelphia",
-                        "New York City",
-                        "four (4)",
-                        "Los Angeles"
+                        .localizable("Philadelphia"),
+                        .localizable("New York City"),
+                        .localizable("four (4)"),
+                        .localizable("Los Angeles")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "geography",
-                    question: "Where is the Statue of Liberty?",
+                    category: .localizable("history-geo"),
+                    type: .localizable("geography"),
+                    question: .localizable("Where is the Statue of Liberty?"),
                     correctAnswers: [
-                        "Liberty Island",
-                        "New York (Harbor)"
+                        .localizable("Liberty Island"),
+                        .localizable("New York (Harbor)")
                     ],
                     wrongAnswers: [
-                        "Ellis Island",
-                        "Benjamin Franklin",
-                        "Immigration",
-                        "Washington, D.C."
+                        .localizable("Ellis Island"),
+                        .localizable("Benjamin Franklin"),
+                        .localizable("Immigration"),
+                        .localizable("Washington, D.C.")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "symbols",
-                    question: "Why does the flag have 13 stripes?",
+                    category: .localizable("history-geo"),
+                    type: .localizable("symbols"),
+                    question: .localizable("Why does the flag have 13 stripes?"),
                     correctAnswers: [
-                        "because there were 13 original colonies",
-                        "because the stripes represent the original colonies"
+                        .localizable("because there were 13 original colonies"),
+                        .localizable("because the stripes represent the original colonies")
                     ],
                     wrongAnswers: [
-                        "because of 13 founding fathers",
-                        "because there were 13 amendments",
-                        "Choctaw",
-                        "Vermont"
+                        .localizable("because of 13 founding fathers"),
+                        .localizable("because there were 13 amendments"),
+                        .localizable("Choctaw"),
+                        .localizable("Vermont")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "symbols",
-                    question: "Why does the flag have 50 stars?",
+                    category: .localizable("history-geo"),
+                    type: .localizable("symbols"),
+                    question: .localizable("Why does the flag have 50 stars?"),
                     correctAnswers: [
-                        "because each star represents a state",
-                        "because there are 50 states",
-                        "because there is one star for each state"
+                        .localizable("because each star represents a state"),
+                        .localizable("because there are 50 states"),
+                        .localizable("because there is one star for each state")
                     ],
                     wrongAnswers: [
-                        "Connecticut",
-                        "because of the 50 founding fathers",
-                        "Give up loyalty to other countries",
-                        "Pay taxes"
+                        .localizable("Connecticut"),
+                        .localizable("because of the 50 founding fathers"),
+                        .localizable("Give up loyalty to other countries"),
+                        .localizable("Pay taxes")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "interchangeAnswer"
+                            rawValue: .localizable("interchangeAnswer")
                         ) ?? .interchange,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "symbols",
-                    question: "What is the name of the national anthem?",
-                    correctAnswers: ["The Star-Spangled Banner"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("symbols"),
+                    question: .localizable("What is the name of the national anthem?"),
+                    correctAnswers: [.localizable("The Star-Spangled Banner")],
                     wrongAnswers: [
-                        "My Country, 'Tis of Thee",
-                        "God Bless America",
-                        "America the Beautiful",
-                        "The United States"
+                        .localizable("My Country, 'Tis of Thee"),
+                        .localizable("God Bless America"),
+                        .localizable("America the Beautiful"),
+                        .localizable("The United States")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "symbols",
-                    question: "When do we celebrate Independence Day?",
-                    correctAnswers: ["July 4"],
+                    category: .localizable("history-geo"),
+                    type: .localizable("symbols"),
+                    question: .localizable("When do we celebrate Independence Day?"),
+                    correctAnswers: [.localizable("July 4")],
                     wrongAnswers: [
-                        "Philadelphia",
-                        "June 14",
-                        "September 17",
-                        "July 1"
+                        .localizable("Philadelphia"),
+                        .localizable("June 14"),
+                        .localizable("September 17"),
+                        .localizable("July 1")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "singleAnswer"
+                            rawValue: .localizable("singleAnswer")
                         ) ?? .single,
                     answerQuantity: nil,
                     answerKey: nil
                 ),
             DataModel
                 .QuestionDecoded(
-                    category: "history-geo",
-                    type: "symbols",
-                    question: "Name two national U.S. holidays.",
+                    category: .localizable("history-geo"),
+                    type: .localizable("symbols"),
+                    question: .localizable("Name two national U.S. holidays."),
                     correctAnswers: [
-                        "Christmas",
-                        "Veterans Day",
-                        "Columbus Day",
-                        "Independence Day",
-                        "Thanksgiving",
-                        "Presidents Day",
-                        "Labor Day",
-                        "New Year Day",
-                        "Martin Luther King, Jr. Day",
-                        "Memorial Day"
+                        .localizable("Christmas"),
+                        .localizable("Veterans Day"),
+                        .localizable("Columbus Day"),
+                        .localizable("Independence Day"),
+                        .localizable("Thanksgiving"),
+                        .localizable("Presidents Day"),
+                        .localizable("Labor Day"),
+                        .localizable("New Year Day"),
+                        .localizable("Martin Luther King, Jr. Day"),
+                        .localizable("Memorial Day")
                     ],
                     wrongAnswers: [
-                        "Cherokee",
-                        "Easter",
-                        "September 17",
-                        "Valentine Day"
+                        .localizable("Cherokee"),
+                        .localizable("Easter"),
+                        .localizable("September 17"),
+                        .localizable("Valentine Day")
                     ],
                     answerType: DataModel.QuestionDecoded
                         .AnswerType(
-                            rawValue: "multipleAnswer"
+                            rawValue: .localizable("multipleAnswer")
                         ) ?? .multiple,
                     answerQuantity: 10,
                     answerKey: nil

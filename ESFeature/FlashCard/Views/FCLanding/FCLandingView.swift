@@ -34,11 +34,11 @@ extension FCLandingView: View {
 
                 if totalCards > 0 {
                     Group {
-                        Text("Question ")
-                        + Text("#\(currentIndex + 1)")
+                        Text(String.localizable("Question "))
+                        + Text(String.localizable(" #\(currentIndex + 1)"))
                             .foregroundStyle(Color.blue)
                             .fontWeight(.semibold)
-                        + (Text(" of \(totalCards)"))
+                        + (Text(String.localizable("/ \(totalCards)")))
                     }
                     .font(.footnote)
                     .foregroundStyle(esColor: .ESText.primary.color)
@@ -53,13 +53,13 @@ extension FCLandingView: View {
 
                     HStack(spacing: 20) {
                         Button(action: { previousAction.occurs() }) {
-                            Label("Previous", systemImage: "arrow.left.circle.fill")
+                            Label(String.localizable("Previous"), systemImage: "arrow.left.circle.fill")
                         }
                         .buttonStyle(.borderedProminent)
                         .disabled(!canGoPrevious)
 
                         Button(action: { nextAction.occurs() }) {
-                            Label("Next", systemImage: "arrow.right.circle.fill")
+                            Label(String.localizable("Next"), systemImage: "arrow.right.circle.fill")
                         }
                         .buttonStyle(.borderedProminent)
                         .disabled(!canGoNext)
@@ -68,7 +68,7 @@ extension FCLandingView: View {
                     .padding(.top, 8)
                 } else {
                     Spacer()
-                    Text("No flashcards available.")
+                    Text(String.localizable("No flashcards available."))
                         .font(.title3)
                         .foregroundColor(.secondary)
                     Spacer()

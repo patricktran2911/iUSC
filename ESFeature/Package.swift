@@ -42,7 +42,6 @@ let package = Package(
                 .product(name: "ESAppleSignIn", package: "ESModule"),
             ],
             path: "Login",
-            resources: [.process("Resources")],
             swiftSettings: [
                 .enableExperimentalFeature("StrictConcurrency")
             ]
@@ -60,7 +59,7 @@ let package = Package(
                 .product(name: "ESReusableUI", package: "ESModule"),
             ],
             path: "FlashCard",
-            resources: [.process("Resources")],
+            resources: [.process("Resources", localization: .default)],
             swiftSettings: [
                 .enableExperimentalFeature("StrictConcurrency")
             ]
@@ -79,7 +78,9 @@ let package = Package(
                 .product(name: "FirebaseRemoteConfig", package: "firebase-ios-sdk"),
             ],
             path: "PracticeMode",
-            resources: [.process("Resources")],
+            resources: [
+                .process("Resources", localization: .default)
+            ],
             swiftSettings: [
                 .enableExperimentalFeature("StrictConcurrency")
             ]),

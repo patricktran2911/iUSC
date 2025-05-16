@@ -37,7 +37,7 @@ public final class FCLandingViewModel: StreamViewModel<FCLandingView> {
                             isFlippedPublisher.send(false)
                         },
                         isQuestionListOpen: .onUpdated(fromInitial: isQuestionListOpen, action: { newValue in
-                            questionsListOpenPublisher.send(newValue)
+                            dataSource.setMenuList(isOpen: newValue)
                         }),
                         canGoNext: currentIndex < totalCards - 1,
                         canGoPrevious: currentIndex > 0

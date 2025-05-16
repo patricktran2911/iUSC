@@ -15,7 +15,7 @@ extension PMFreeAnswerView: View {
                 .font(.headline)
                 .padding(.bottom, 16)
 
-            TextField("Enter your answer", text: answerInput.binding)
+            TextField(String.localizable("Enter your answer"), text: answerInput.binding)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.bottom, 16)
 
@@ -24,7 +24,7 @@ extension PMFreeAnswerView: View {
             Button(action: {
                 submitAction.occurs()
             }) {
-                Text("Submit")
+                Text(String.localizable("Submit"))
                     .font(.headline)
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity, minHeight: 44)

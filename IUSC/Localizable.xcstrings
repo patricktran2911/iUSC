@@ -3759,8 +3759,13 @@
       }
     },
     "Mode" : {
-      "extractionState" : "stale",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4819,6 +4824,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tự do chính trị"
+          }
+        }
+      }
+    },
+    "Practice" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thực hành"
           }
         }
       }
@@ -6111,6 +6127,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "quyền của nhà nước"
+          }
+        }
+      }
+    },
+    "Study" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Học lý thuyết"
           }
         }
       }

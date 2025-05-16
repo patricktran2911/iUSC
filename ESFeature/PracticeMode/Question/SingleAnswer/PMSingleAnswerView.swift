@@ -58,7 +58,7 @@ extension PMSingleAnswerView: View {
             Button(action: {
                 submitAction.occurs()
             }) {
-                Text("Submit")
+                Text(String.localizable("Submit"))
                     .font(.headline)
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity, minHeight: 44)

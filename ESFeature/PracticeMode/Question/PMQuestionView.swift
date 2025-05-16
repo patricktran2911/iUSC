@@ -17,7 +17,7 @@ extension PMQuestionView: View {
         case .noQuestion:
             VStack {
                 Spacer()
-                Text("No Question Available")
+                Text(String.localizable("No Question Available"))
                     .font(.title2)
                     .foregroundColor(.gray)
                 Spacer()

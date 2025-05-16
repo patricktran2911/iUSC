@@ -36,7 +36,7 @@ extension PMLandingView: View {
                     }
                     .buttonStyle(.plain)
                 } else {
-                    Button("Select Your State") {
+                    Button(String.localizable("Select Your State")) {
                         changeUSStateAction.occurs()
                     }
                     .padding(.horizontal, 12)
@@ -59,7 +59,7 @@ extension PMLandingView: View {
                         .frame(maxWidth: .infinity)
 
                     HStack {
-                        Text("Total Score:")
+                        Text(String(localized: "Total Score:", bundle: .module))
                             .font(.body)
                         Text("\(score)")
                             .font(.body)
@@ -72,17 +72,17 @@ extension PMLandingView: View {
             case .complete:
                 VStack(spacing: 20) {
                     Spacer()
-                    Text("Test Complete!")
+                    Text(String.localizable("Test Complete!"))
                         .font(.title)
                         .fontWeight(.bold)
 
-                    Text("Your score: \(score)")
+                    Text(String.localizable("Your score: \(score)"))
                         .font(.headline)
 
                     Button(action: {
                         restartAction.occurs()
                     }) {
-                        Text("Restart Test")
+                        Text(String.localizable("Restart Test"))
                             .fontWeight(.medium)
                             .frame(maxWidth: .infinity)
                             .padding()

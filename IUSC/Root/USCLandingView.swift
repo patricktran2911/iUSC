@@ -15,7 +15,7 @@ extension USCLandingView: View {
         VStack {
             Picker(selection: mode.binding) {
                 ForEach(USCLandingViewModel.RunningMode.allCases, id: \.rawValue) {
-                    Text($0.rawValue)
+                    Text($0.localizedString())
                         .tag($0)
                 }
             } label: {

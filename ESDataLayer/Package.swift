@@ -57,7 +57,9 @@ let package = Package(
                 .product(name: "ESDataStructure", package: "ESFoundation")
             ],
             path: "DataModel",
-            resources: [.process("./Resources")],
+            resources: [
+                .process("Resources")
+            ],
             swiftSettings: [
                 .enableExperimentalFeature("StrictConcurrency")
             ]
@@ -96,7 +98,6 @@ let package = Package(
                 "ESDataTransport",
                 .product(name: "ESTestTool", package: "ESFoundation")
             ],
-            resources: [.process("Resources")],
             swiftSettings: [
                 .enableExperimentalFeature("StrictConcurrency")
             ]

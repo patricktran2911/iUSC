@@ -11,7 +11,7 @@ struct PMUSStatePickerView: HashIdentifiable {
 extension PMUSStatePickerView: View {
     var body: some View {
         VStack(spacing: 16) {
-            Text("Select Your State")
+            Text(String.localizable("Select Your State"))
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top, 20)

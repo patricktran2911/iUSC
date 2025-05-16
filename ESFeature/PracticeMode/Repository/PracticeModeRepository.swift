@@ -219,21 +219,10 @@ public final class PracticeModeRepository: PracticeModeDataSource {
     }
     
     public func loadTestQuestions() {
-        guard let data = NSDataAsset(name: "100Questions")?.data else  {
-            print("[PracticeModeRepository] Error: Could not load 100Questions data asset.")
-            return
+        self.practiceQuestions = [DataModel.QuestionDecoded].mockData().map {
+            .init(questionInput: $0)
         }
-        let decoder = JSONDecoder()
-        
-        do {
-            let decodedQuestions = try decoder.decode([DataModel.QuestionDecoded].self, from: data)
-            self.practiceQuestions = [DataModel.QuestionDecoded].mockData().map {
-                .init(questionInput: $0)
-            }
-            loadRandomQuestions() // Load a random subset for the test
-        } catch let error {
-            print("[PracticeModeRepository] Error decoding questions: \(error)")
-        }
+        loadRandomQuestions()
     }
     
     public func loadRandomQuestions(count: Int = 10) {

@@ -5,14 +5,18 @@ import ESDataModel
 import ESDataTransport
 import ESDataSource
 
-class FlashCardRepository: FlashCardDataSource {    
+class FlashCardRepository: FlashCardDataSource {
+    var isMenuListOpenPublisher: AnyPublisher<Bool, Never> {
+        isMenuListOpenValueSubject.eraseToAnyPublisher()
+    }
+    
     private var flashcards: [DataModel.FlashCard] = []
     private let currentIndexSubject = CurrentValueSubject<Int, Never>(0)
     
-    var flashcardsPublisher = CurrentValueSubject<[DataModel.FlashCard], Never>([])
+    var flashcardsPublisher: AnyPublisher<[DataModel.FlashCard], Never> {
+        flashcardsValueSubject.eraseToAnyPublisher()
+    }
     
-    var isMenuListOpenPublisher = CurrentValueSubject<Bool, Never>(false)
-
     var currentFlashcardPublisher: AnyPublisher<DataModel.FlashCard?, Never> {
         Publishers.CombineLatest(flashcardsPublisher, currentIndexSubject)
             .map { cards, index in
@@ -31,32 +35,19 @@ class FlashCardRepository: FlashCardDataSource {
     var totalCardsPublisher: AnyPublisher<Int, Never> {
         flashcardsPublisher.map { $0.count }.eraseToAnyPublisher()
     }
+    
+    private var isMenuListOpenValueSubject = CurrentValueSubject<Bool, Never>(false)
+    private var flashcardsValueSubject = CurrentValueSubject<[DataModel.FlashCard], Never>([])
 
     init() {
         loadFlashcards()
     }
 
     func loadFlashcards() {
-        guard let data = NSDataAsset(name: "100Questions")?.data else  {
-            return
+        flashcards = [DataModel.QuestionDecoded].mockData().map {
+            .init(questionDecode: $0)
         }
-        let decoder = JSONDecoder()
-        do {
-            let questions = try decoder.decode([DataModel.QuestionDecoded].self, from: data)
-            flashcards = questions.map {
-                .init(questionDecode: $0)
-            }
-            flashcardsPublisher.send(flashcards)
-            
-            let current = currentIndexSubject.value
-            if current >= flashcards.count {
-                 currentIndexSubject.send(0)
-            } else {
-                 currentIndexSubject.send(current)
-            }
-        } catch {
-            
-        }
+        flashcardsValueSubject.send(flashcards)
     }
 
     func nextCard() {
@@ -76,8 +67,12 @@ class FlashCardRepository: FlashCardDataSource {
     func setCurrentCard(at index: Int) {
         if index >= 0 && index < flashcards.count {
             currentIndexSubject.send(index)
-            isMenuListOpenPublisher.send(false)
+            isMenuListOpenValueSubject.send(false)
         }
+    }
+    
+    func setMenuList(isOpen: Bool) {
+        isMenuListOpenValueSubject.value = isOpen
     }
 }
 

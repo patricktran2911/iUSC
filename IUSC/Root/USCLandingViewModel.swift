@@ -6,8 +6,12 @@ import ESPracticeMode
 
 final class USCLandingViewModel: StreamViewModel<USCLandingView> {
     enum RunningMode: String, CaseIterable, Sendable {
-        case study
-        case practice
+        case study = "Study"
+        case practice = "Practice"
+        
+        func localizedString() -> String {
+            String(localized: .init(self.rawValue), comment: "Running mode options")
+        }
     }
     
     @MainActor
