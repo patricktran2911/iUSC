@@ -2,6 +2,7 @@ import SwiftUI
 import ESDataStructure
 import ESLiveData
 import ESReusableUI
+import ESLocalizer
 
 struct PMMultipleAnswerView: HashIdentifiable {
     let question: String
@@ -70,7 +71,7 @@ extension PMMultipleAnswerView: View {
                 Button(action: {
                     submitAction.occurs()
                 }) {
-                    Text(String.localizable("Submit"))
+                    Text(ESLocalizer.text("Submit", table: .practiceMode))
                         .font(.headline)
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity, minHeight: 44)

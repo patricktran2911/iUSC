@@ -1,6 +1,7 @@
 import SwiftUI
 import ESDataStructure
 import ESLiveData
+import ESLocalizer
 
 enum PMQuestionView: HashIdentifiable {
     case noQuestion
@@ -17,7 +18,7 @@ extension PMQuestionView: View {
         case .noQuestion:
             VStack {
                 Spacer()
-                Text(String.localizable("No Question Available"))
+                Text(ESLocalizer.text("No Question Available", table: .practiceMode))
                     .font(.title2)
                     .foregroundColor(.gray)
                 Spacer()

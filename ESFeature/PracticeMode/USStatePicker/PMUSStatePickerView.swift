@@ -2,6 +2,7 @@ import SwiftUI
 import ESDataStructure
 import ESLiveData
 import ESReusableUI
+import ESLocalizer
 
 struct PMUSStatePickerView: HashIdentifiable {
     let usStates: [String]
@@ -11,7 +12,7 @@ struct PMUSStatePickerView: HashIdentifiable {
 extension PMUSStatePickerView: View {
     var body: some View {
         VStack(spacing: 16) {
-            Text(String.localizable("Select Your State"))
+            Text(ESLocalizer.text("Select Your State", table: .practiceMode))
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top, 20)

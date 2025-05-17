@@ -5,7 +5,9 @@ import PackageDescription
 let package = Package(
     name: "ESDataLayer",
     defaultLocalization: "en",
-    platforms: [.iOS(.v17)],
+    platforms: [.iOS(
+        .v17
+    )],
     products: [
         .library(
             name: "ESDataLayer",
@@ -14,6 +16,7 @@ let package = Package(
                 "ESDataModel",
                 "ESDataSource",
                 "ESDataTransport",
+                "ESLocalizer"
             ]
         ),
         .library(
@@ -32,15 +35,39 @@ let package = Package(
             name: "ESDataTransport",
             targets: ["ESDataTransport"]
         ),
+        .library(
+            name: "ESLocalizer",
+            targets: [
+                "ESLocalizer"
+            ]
+        )
     ],
     dependencies: [
-        .package(path: "ESFoundation")
+        .package(
+            path: "ESFoundation"
+        )
     ],
     targets: [
         .target(
+            name: "ESLocalizer",
+            dependencies: [],
+            path: "LocalizationHelper",
+            resources: [
+                .process("Resources")
+            ],
+            swiftSettings: [
+                .enableExperimentalFeature(
+                    "StrictConcurrency"
+                )
+            ]
+        ),
+        .target(
             name: "ESDataLayerDevTool",
             dependencies: [
-                .product(name: "ESFoundationDevTool", package: "ESFoundation"),
+                .product(
+                    name: "ESFoundationDevTool",
+                    package: "ESFoundation"
+                ),
                 
                 "ESDataModel",
                 "ESDataSource",
@@ -48,58 +75,80 @@ let package = Package(
             ],
             path: "DevTool",
             swiftSettings: [
-                .enableExperimentalFeature("StrictConcurrency")
+                .enableExperimentalFeature(
+                    "StrictConcurrency"
+                )
             ]
         ),
         .target(
             name: "ESDataModel",
             dependencies: [
-                .product(name: "ESDataStructure", package: "ESFoundation")
+                .product(
+                    name: "ESDataStructure",
+                    package: "ESFoundation"
+                ),
+                "ESLocalizer",
             ],
             path: "DataModel",
-            resources: [
-                .process("Resources")
-            ],
             swiftSettings: [
-                .enableExperimentalFeature("StrictConcurrency")
+                .enableExperimentalFeature(
+                    "StrictConcurrency"
+                )
             ]
         ),
         .target(
             name: "ESDataSource",
             dependencies: [
-                .product(name: "ESDataStructure", package: "ESFoundation"),
+                .product(
+                    name: "ESDataStructure",
+                    package: "ESFoundation"
+                ),
                 "ESDataModel",
                 "ESDataTransport"
             ],
             path: "DataSource",
             swiftSettings: [
-                .enableExperimentalFeature("StrictConcurrency")
+                .enableExperimentalFeature(
+                    "StrictConcurrency"
+                )
             ]
         ),
         .target(
             name: "ESDataTransport",
             dependencies: [
-                .product(name: "ESDataStructure", package: "ESFoundation"),
+                .product(
+                    name: "ESDataStructure",
+                    package: "ESFoundation"
+                ),
                 "ESDataModel"
             ],
             path: "DataTransport",
             swiftSettings: [
-                .enableExperimentalFeature("StrictConcurrency")
+                .enableExperimentalFeature(
+                    "StrictConcurrency"
+                )
             ]
         ),
         
-//--------------------------------------------------//
-//
-        .testTarget(
-            name: "ESDataLayerTests",
-            dependencies: [
-                "ESDataLayerDevTool",
-                "ESDataModel",
-                "ESDataTransport",
-                .product(name: "ESTestTool", package: "ESFoundation")
-            ],
-            swiftSettings: [
-                .enableExperimentalFeature("StrictConcurrency")
+        
+        //--------------------------------------------------//
+        //
+            .testTarget(
+                name: "ESDataLayerTests",
+                dependencies: [
+                    "ESDataLayerDevTool",
+                    "ESDataModel",
+                    "ESDataTransport",
+                    "ESLocalizer",
+                    .product(
+                        name: "ESTestTool",
+                        package: "ESFoundation"
+                    )
+                ],
+                swiftSettings: [
+                    .enableExperimentalFeature(
+                        "StrictConcurrency"
+                    )
             ]
         ),
     ]

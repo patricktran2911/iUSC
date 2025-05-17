@@ -2,6 +2,7 @@ import SwiftUI
 import ESDataStructure
 import ESLiveData
 import ESReusableUI
+import ESLocalizer
 
 public struct FCLandingView: HashIdentifiable {
     let itemView: ObservedDataView<FCItemView>
@@ -34,13 +35,13 @@ extension FCLandingView: View {
 
                 if totalCards > 0 {
                     Group {
-                        Text(String.localizable("Question "))
-                        + Text(String.localizable(" #\(currentIndex + 1)"))
+                        Text(ESLocalizer.text("Question ", table: .flashcard))
+                        + Text(" #\(currentIndex + 1)")
                             .foregroundStyle(Color.blue)
                             .fontWeight(.semibold)
-                        + (Text(String.localizable("/ \(totalCards)")))
+                        + (Text("/ \(totalCards)"))
                     }
-                    .font(.footnote)
+                    .font(.body)
                     .foregroundStyle(esColor: .ESText.primary.color)
                     .padding(6)
                     .background {
@@ -53,13 +54,13 @@ extension FCLandingView: View {
 
                     HStack(spacing: 20) {
                         Button(action: { previousAction.occurs() }) {
-                            Label(String.localizable("Previous"), systemImage: "arrow.left.circle.fill")
+                            Label(ESLocalizer.text("Previous", table: .flashcard), systemImage: "arrow.left.circle.fill")
                         }
                         .buttonStyle(.borderedProminent)
                         .disabled(!canGoPrevious)
 
                         Button(action: { nextAction.occurs() }) {
-                            Label(String.localizable("Next"), systemImage: "arrow.right.circle.fill")
+                            Label(ESLocalizer.text("Next", table: .flashcard), systemImage: "arrow.right.circle.fill")
                         }
                         .buttonStyle(.borderedProminent)
                         .disabled(!canGoNext)
@@ -68,7 +69,7 @@ extension FCLandingView: View {
                     .padding(.top, 8)
                 } else {
                     Spacer()
-                    Text(String.localizable("No flashcards available."))
+                    Text(ESLocalizer.text("No flashcards available.", table: .flashcard))
                         .font(.title3)
                         .foregroundColor(.secondary)
                     Spacer()

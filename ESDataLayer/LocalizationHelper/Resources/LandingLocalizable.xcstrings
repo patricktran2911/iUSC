@@ -2,6 +2,7 @@
   "sourceLanguage" : "en",
   "strings" : {
     "Mode" : {
+      "extractionState" : "manual",
       "localizations" : {
         "vi" : {
           "stringUnit" : {
@@ -12,6 +13,7 @@
       }
     },
     "Practice" : {
+      "extractionState" : "stale",
       "localizations" : {
         "vi" : {
           "stringUnit" : {
@@ -22,11 +24,12 @@
       }
     },
     "Study" : {
+      "extractionState" : "stale",
       "localizations" : {
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Học lý thuyết"
+            "value" : "Học câu hỏi"
           }
         }
       }

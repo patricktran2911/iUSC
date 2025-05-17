@@ -3,14 +3,20 @@ import ESLiveData
 import ESDataModel
 import ESFlashCard
 import ESPracticeMode
+import Foundation
 
 final class USCLandingViewModel: StreamViewModel<USCLandingView> {
-    enum RunningMode: String, CaseIterable, Sendable {
-        case study = "Study"
-        case practice = "Practice"
+    enum RunningMode: CaseIterable, Sendable {
+        case study
+        case practice
         
         func localizedString() -> String {
-            String(localized: .init(self.rawValue), comment: "Running mode options")
+            switch self {
+            case .study:
+                String(localized: "Study", table: "USCLandingLocalized")
+            case .practice:
+                String(localized: "Practice", table: "USCLandingLocalized")
+            }
         }
     }
     

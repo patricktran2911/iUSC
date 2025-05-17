@@ -1,16 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Mode" : {
-      "localizations" : {
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Chế độ"
-          }
-        }
-      }
-    },
     "Practice" : {
       "localizations" : {
         "vi" : {
@@ -26,7 +16,7 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Học lý thuyết"
+            "value" : "Học câu hỏi"
           }
         }
       }

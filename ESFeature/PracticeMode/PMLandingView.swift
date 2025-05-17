@@ -2,6 +2,7 @@ import SwiftUI
 import ESDataStructure
 import ESLiveData
 import ESDataModel
+import ESLocalizer
 
 public struct PMLandingView: HashIdentifiable {
     let score: Int
@@ -36,7 +37,7 @@ extension PMLandingView: View {
                     }
                     .buttonStyle(.plain)
                 } else {
-                    Button(String.localizable("Select Your State")) {
+                    Button(ESLocalizer.text("Select Your State", table: .practiceMode)) {
                         changeUSStateAction.occurs()
                     }
                     .padding(.horizontal, 12)
@@ -72,17 +73,17 @@ extension PMLandingView: View {
             case .complete:
                 VStack(spacing: 20) {
                     Spacer()
-                    Text(String.localizable("Test Complete!"))
+                    Text(ESLocalizer.text("Test Complete!", table: .practiceMode))
                         .font(.title)
                         .fontWeight(.bold)
 
-                    Text(String.localizable("Your score: \(score)"))
+                    Text(ESLocalizer.text("Your score: \(score)", table: .practiceMode))
                         .font(.headline)
 
                     Button(action: {
                         restartAction.occurs()
                     }) {
-                        Text(String.localizable("Restart Test"))
+                        Text(ESLocalizer.text("Restart Test", table: .practiceMode))
                             .fontWeight(.medium)
                             .frame(maxWidth: .infinity)
                             .padding()

@@ -1,6 +1,7 @@
 import SwiftUI
 import ESDataStructure
 import ESLiveData
+import ESLocalizer
 
 struct PMFreeAnswerView: HashIdentifiable {
     let question: String
@@ -15,7 +16,7 @@ extension PMFreeAnswerView: View {
                 .font(.headline)
                 .padding(.bottom, 16)
 
-            TextField(String.localizable("Enter your answer"), text: answerInput.binding)
+            TextField(ESLocalizer.text("Enter your answer", table: .practiceMode), text: answerInput.binding)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.bottom, 16)
 
@@ -24,7 +25,7 @@ extension PMFreeAnswerView: View {
             Button(action: {
                 submitAction.occurs()
             }) {
-                Text(String.localizable("Submit"))
+                Text(ESLocalizer.text("Submit", table: .practiceMode))
                     .font(.headline)
                     .foregroundColor(.white)
                     .frame(maxWidth: .infinity, minHeight: 44)
