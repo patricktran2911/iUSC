@@ -50,7 +50,12 @@ let package = Package(
     targets: [
         .target(
             name: "ESLocalizer",
-            dependencies: [],
+            dependencies: [
+                .product(
+                    name: "ESDataStructure",
+                    package: "ESFoundation"
+                ),
+            ],
             path: "LocalizationHelper",
             resources: [
                 .process("Resources")
