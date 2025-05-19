@@ -32,6 +32,8 @@ extension FCLandingView: View {
                     }
                 }
 
+                Spacer()
+                
                 if totalCards > 0 {
                     VStack {
                         Group {
