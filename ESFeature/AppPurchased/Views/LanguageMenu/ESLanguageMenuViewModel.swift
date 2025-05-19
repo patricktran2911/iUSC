@@ -20,21 +20,22 @@ public final class ESLanguageMenuViewModel: StreamViewModel<ESLanguageMenuView> 
     @MainActor
     public init(dataSource: AppPurchasedDataSource) {
         let allLanguagesSupported = CurrentValueSubject<[LanguageItem], Never>(.currentSupportedLanguages)
-        let combinedPublishser = Publishers.CombineLatest3(
+        let combinedPublishser = Publishers.CombineLatest4(
             allLanguagesSupported,
             dataSource.currentLocale,
-            dataSource.currentAvailableLanguagesPublisher
+            dataSource.currentAvailableLanguagesPublisher,
+            dataSource.isOnProcessingPurchases
         )
         super.init(
             dataViewPublisher: combinedPublishser
-                .map { languages, currentLocale, availableLanguages in
+                .map { languages, currentLocale, availableLanguages, onProcessingPurchase in
                     var updatedLanguages: [LanguageItem] = languages
                     availableLanguages.forEach { availLang in
                         updatedLanguages = updatedLanguages.updatingPurchasedLanguage(language: availLang)
                     }
-                    return (updatedLanguages, currentLocale)
+                    return (updatedLanguages, currentLocale, onProcessingPurchase)
                 }
-                .map { updatedLanguages, currentLocale in
+                .map { updatedLanguages, currentLocale, onProcessinPurchase in
                     var selectedLanguage: LanguageItem {
                         let currentLanguage = DataState.AppLanguage(rawValue: currentLocale.identifier) ?? .english
                         return updatedLanguages.first(where: {$0.language == currentLanguage}) ?? .init(language: .english, hasPurchased: true)
@@ -50,7 +51,8 @@ public final class ESLanguageMenuViewModel: StreamViewModel<ESLanguageMenuView> 
                         ),
                         unlockAction: .performing {
                             await dataSource.purchaseProduct(id: "iUSC.language.vi")
-                        }
+                        },
+                        onProcessingPurchase: onProcessinPurchase
                     )
                 }
                 .eraseToAnyPublisher()

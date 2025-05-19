@@ -7,57 +7,91 @@ public struct ESLanguageMenuView: HashIdentifiable {
     let languages: [ESLanguageMenuViewModel.LanguageItem]
     let selectedLanguage: ValueChangedEffect<ESLanguageMenuViewModel.LanguageItem>
     let unlockAction: ActionEffect
+    let onProcessingPurchase: Bool
 }
 
 extension ESLanguageMenuView: View {
     public var body: some View {
-        ScrollView(.vertical) {
-            VStack(alignment: .leading, spacing: 6) {
-                ForEach(languages, id: \.id) { language in
-                    Button {
-                        if language.hasPurchased {
-                            selectedLanguage.update(language)
-                        } else {
-                            unlockAction.occurs()
-                        }
-                    } label: {
-                        HStack {
-                            Text(language.displayName)
-                                .foregroundColor(.primary)
-                                .fontWeight(.medium)
-                                .lineLimit(1)
-                                .truncationMode(.tail)
+        ZStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 8) {
+                    ForEach(languages, id: \.id) { language in
+                        let isSelected = selectedLanguage.currentValue == language
+                        let isLocked = !language.hasPurchased
 
-                            Spacer()
-
-                            if !language.hasPurchased {
-                                Image(systemName: "lock.fill")
-                                    .foregroundColor(.gray)
-                            } else if selectedLanguage.currentValue == language {
-                                Image(systemName: "checkmark")
-                                    .foregroundColor(.accentColor)
+                        Button {
+                            if !isLocked {
+                                selectedLanguage.update(language)
+                            } else {
+                                unlockAction.occurs()
                             }
+                        } label: {
+                            HStack(spacing: 12) {
+                                Text(language.displayName)
+                                    .font(.system(size: 16, weight: isSelected ? .semibold : .regular))
+                                    .foregroundColor(isLocked ? .gray : .primary)
+                                    .lineLimit(1)
+                                    .truncationMode(.tail)
+
+                                Spacer()
+
+                                if isLocked {
+                                    Image(systemName: "lock.fill")
+                                        .foregroundColor(.gray)
+                                } else if isSelected {
+                                    Image(systemName: "checkmark.circle.fill")
+                                        .foregroundColor(.accentColor)
+                                }
+                            }
+                            .padding(.vertical, 12)
+                            .padding(.horizontal, 16)
+                            .background(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .fill(
+                                        isSelected
+                                        ? Color.accentColor.opacity(0.15)
+                                        : Color(UIColor.secondarySystemBackground)
+                                    )
+                            )
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .strokeBorder(
+                                        isSelected ? Color.accentColor : Color.clear,
+                                        lineWidth: isSelected ? 1.5 : 0
+                                    )
+                            )
                         }
-                        .padding(.vertical, 10)
-                        .padding(.horizontal, 14)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(
-                                    selectedLanguage.currentValue == language && language.hasPurchased
-                                    ? Color.accentColor.opacity(0.12)
-                                    : Color.clear
-                                )
-                        )
+                        .buttonStyle(.plain)
                     }
-                    .buttonStyle(.plain)
                 }
+                .padding(16)
             }
-            .padding(12)
+            .frame(minWidth: 260, maxWidth: 400)
+
+            if onProcessingPurchase {
+                Color.black.opacity(0.25)
+                    .ignoresSafeArea()
+                    .blur(radius: 2)
+
+                VStack(spacing: 12) {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .accentColor))
+                        .scaleEffect(1.2)
+                    Text("Processing…")
+                        .font(.footnote)
+                        .foregroundColor(.secondary)
+                }
+                .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 14)
+                        .fill(Color(.systemBackground))
+                        .shadow(radius: 8)
+                )
+            }
         }
-        .frame(minWidth: 240, maxWidth: 360)
     }
 }
+
 
 
 #if targetEnvironment(simulator)
@@ -70,7 +104,8 @@ public extension ESLanguageMenuView {
         .init(
             languages: .currentSupportedLanguages,
             selectedLanguage: .noEffect(.init(language: .english, hasPurchased: true)),
-            unlockAction: .noEffect()
+            unlockAction: .noEffect(),
+            onProcessingPurchase: false
         )
     }
 }

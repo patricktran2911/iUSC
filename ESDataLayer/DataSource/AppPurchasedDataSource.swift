@@ -6,6 +6,7 @@ public protocol AppPurchasedDataSource {
     var currentLocale: AnyPublisher<Locale, Never> { get }
     var productsPurchasedPublisher: AnyPublisher<Set<String>, Never> { get }
     var currentAvailableLanguagesPublisher: AnyPublisher<[DataState.AppLanguage], Never> { get }
+    var isOnProcessingPurchases: AnyPublisher<Bool, Never> { get }
     
     @MainActor
     func purchaseProduct(id: String) async

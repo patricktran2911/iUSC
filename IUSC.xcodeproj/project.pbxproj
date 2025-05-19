@@ -11,6 +11,9 @@
 		CD25FF7C2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */; };
 		CD25FF7D2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */; };
 		CD25FF7E2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */; };
+		CD3BC9622DDAFBF7008E5623 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = CD3BC9612DDAFBF7008E5623 /* FirebaseCore */; };
+		CD3BC9642DDAFBF7008E5623 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CD3BC9632DDAFBF7008E5623 /* FirebaseCrashlytics */; };
+		CD3BC9662DDAFBF7008E5623 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = CD3BC9652DDAFBF7008E5623 /* FirebaseRemoteConfig */; };
 		CD81776E2DD2A95400A51B6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD81776D2DD2A95400A51B6B /* GoogleService-Info.plist */; };
 		CD81776F2DD2A95400A51B6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD81776D2DD2A95400A51B6B /* GoogleService-Info.plist */; };
 		CD8177702DD2A95400A51B6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD81776D2DD2A95400A51B6B /* GoogleService-Info.plist */; };
@@ -97,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD3BC9662DDAFBF7008E5623 /* FirebaseRemoteConfig in Frameworks */,
 				CDB8DEE42DB46C2100AF3F08 /* ESDataLayer in Frameworks */,
 				CDB8DEE82DB46C2100AF3F08 /* ESFoundation in Frameworks */,
 				CD25FF762DD1DA4400CC4655 /* FirebaseAnalytics in Frameworks */,
@@ -104,6 +108,8 @@
 				CDB8DEFA2DB4791D00AF3F08 /* ESLogin in Frameworks */,
 				CD86E9E52DD6ED05000BBB93 /* ESPracticeMode in Frameworks */,
 				CDB8DEEA2DB46C2100AF3F08 /* ESModule in Frameworks */,
+				CD3BC9642DDAFBF7008E5623 /* FirebaseCrashlytics in Frameworks */,
+				CD3BC9622DDAFBF7008E5623 /* FirebaseCore in Frameworks */,
 				CDB8DEE62DB46C2100AF3F08 /* ESFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +193,9 @@
 				CDB8DEF92DB4791D00AF3F08 /* ESLogin */,
 				CD25FF752DD1DA4400CC4655 /* FirebaseAnalytics */,
 				CD86E9E42DD6ED05000BBB93 /* ESPracticeMode */,
+				CD3BC9612DDAFBF7008E5623 /* FirebaseCore */,
+				CD3BC9632DDAFBF7008E5623 /* FirebaseCrashlytics */,
+				CD3BC9652DDAFBF7008E5623 /* FirebaseRemoteConfig */,
 			);
 			productName = IUSC;
 			productReference = CDB8DE9E2DB4631A00AF3F08 /* IUSC.app */;
@@ -491,8 +500,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = IUSC/IUSC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = S65C86TGF9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -535,8 +545,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = IUSC/IUSC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = S65C86TGF9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -723,6 +734,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CD25FF742DD1DA4400CC4655 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
+		};
+		CD3BC9612DDAFBF7008E5623 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD25FF742DD1DA4400CC4655 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		CD3BC9632DDAFBF7008E5623 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD25FF742DD1DA4400CC4655 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		CD3BC9652DDAFBF7008E5623 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD25FF742DD1DA4400CC4655 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
 		};
 		CD86E9E42DD6ED05000BBB93 /* ESPracticeMode */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -14,7 +14,10 @@ public final class AppPurchaseRepository: AppPurchasedDataSource {
         userDefault.publisher(for: \.appLocale).eraseToAnyPublisher()
     }
     
-    private var updateTask: Task<Void, Never>?
+    public var isOnProcessingPurchases: AnyPublisher<Bool, Never> {
+        isProcessingPurchase.eraseToAnyPublisher()
+    }
+    
     
     public var currentAvailableLanguagesPublisher: AnyPublisher<[DataState.AppLanguage], Never> {
         purchased
@@ -29,7 +32,9 @@ public final class AppPurchaseRepository: AppPurchasedDataSource {
             .eraseToAnyPublisher()
     }
 
+    private var updateTask: Task<Void, Never>?
     private let purchased = CurrentValueSubject<Set<String>, Never>([])
+    private let isProcessingPurchase = CurrentValueSubject<Bool, Never>(false)
     
     @MainActor
     public init() {
@@ -39,7 +44,9 @@ public final class AppPurchaseRepository: AppPurchasedDataSource {
     @MainActor
     public func purchaseProduct(id: String) async {
         guard !purchased.value.contains(id) else { return }
-
+        
+        isProcessingPurchase.value = true
+        
         do {
             guard let product = try await Product.products(for: [id]).first else { return }
             let result = try await product.purchase()
@@ -50,6 +57,7 @@ public final class AppPurchaseRepository: AppPurchasedDataSource {
         } catch {
             print("Purchase failed:", error)
         }
+        isProcessingPurchase.value = false
     }
     
     public func selectAppLanguage(_ language: DataState.AppLanguage) {
