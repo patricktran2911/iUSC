@@ -15,6 +15,7 @@
 		CD81776F2DD2A95400A51B6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD81776D2DD2A95400A51B6B /* GoogleService-Info.plist */; };
 		CD8177702DD2A95400A51B6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD81776D2DD2A95400A51B6B /* GoogleService-Info.plist */; };
 		CD86E9E52DD6ED05000BBB93 /* ESPracticeMode in Frameworks */ = {isa = PBXBuildFile; productRef = CD86E9E42DD6ED05000BBB93 /* ESPracticeMode */; };
+		CD86EA852DDADE1A000BBB93 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86EA842DDADE1A000BBB93 /* StoreKit.framework */; };
 		CDB8DEE42DB46C2100AF3F08 /* ESDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = CDB8DEE32DB46C2100AF3F08 /* ESDataLayer */; };
 		CDB8DEE62DB46C2100AF3F08 /* ESFeature in Frameworks */ = {isa = PBXBuildFile; productRef = CDB8DEE52DB46C2100AF3F08 /* ESFeature */; };
 		CDB8DEE82DB46C2100AF3F08 /* ESFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = CDB8DEE72DB46C2100AF3F08 /* ESFoundation */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
 		CD81776D2DD2A95400A51B6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CD86EA842DDADE1A000BBB93 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		CDB8DE9E2DB4631A00AF3F08 /* IUSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IUSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB8DEAE2DB4631C00AF3F08 /* IUSCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IUSCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB8DEB82DB4631C00AF3F08 /* IUSCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IUSCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,7 @@
 				CDB8DEE42DB46C2100AF3F08 /* ESDataLayer in Frameworks */,
 				CDB8DEE82DB46C2100AF3F08 /* ESFoundation in Frameworks */,
 				CD25FF762DD1DA4400CC4655 /* FirebaseAnalytics in Frameworks */,
+				CD86EA852DDADE1A000BBB93 /* StoreKit.framework in Frameworks */,
 				CDB8DEFA2DB4791D00AF3F08 /* ESLogin in Frameworks */,
 				CD86E9E52DD6ED05000BBB93 /* ESPracticeMode in Frameworks */,
 				CDB8DEEA2DB46C2100AF3F08 /* ESModule in Frameworks */,
@@ -152,6 +155,7 @@
 		CDB8DEE22DB46C2100AF3F08 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD86EA842DDADE1A000BBB93 /* StoreKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

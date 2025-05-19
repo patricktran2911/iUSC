@@ -20,7 +20,6 @@ public final class FCLandingViewModel: StreamViewModel<FCLandingView> {
         super.init(
             dataViewPublisher: combinedPublishers
                 .map { currentIndex, totalCards, isQuestionListOpen in
-                    print("[BOGUS] \(totalCards)")
                     return FCLandingView(
                         itemView: .viewObserved(stream: FCItemViewModel(
                             container: container

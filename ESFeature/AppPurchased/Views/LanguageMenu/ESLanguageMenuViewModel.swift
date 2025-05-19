@@ -47,7 +47,10 @@ public final class ESLanguageMenuViewModel: StreamViewModel<ESLanguageMenuView> 
                             action: { newValue in
                                 dataSource.selectAppLanguage(newValue.language)
                             }
-                        )
+                        ),
+                        unlockAction: .performing {
+                            await dataSource.purchaseProduct(id: "iUSC.language.vi")
+                        }
                     )
                 }
                 .eraseToAnyPublisher()
@@ -75,7 +78,7 @@ extension ESLanguageMenuViewModel.LanguageItem: Equatable {
 
 extension Array where Element == ESLanguageMenuViewModel.LanguageItem {
     static let currentSupportedLanguages: [ESLanguageMenuViewModel.LanguageItem] = DataState.AppLanguage.allCases.map {
-        .init(language: $0, hasPurchased: false)
+        .init(language: $0, hasPurchased: $0.id == "en")
     }
     
     func updatingPurchasedLanguage(language: DataState.AppLanguage) -> Self {

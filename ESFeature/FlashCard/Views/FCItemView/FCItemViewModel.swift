@@ -12,7 +12,6 @@ final class FCItemViewModel: StreamViewModel<FCItemView> {
         let combinedPublishers = Publishers.CombineLatest(currentQuestionPublisher, isFlippedPublisher)
         
         super.init(statePublisher: combinedPublishers
-            .print("[BOGUS]")
             .map { currentQuestion, isFlipped in
                 guard let currentQuestion else {
                     return .hidden

@@ -14,7 +14,7 @@ public final class AppPurchaseRepository: AppPurchasedDataSource {
         userDefault.publisher(for: \.appLocale).eraseToAnyPublisher()
     }
     
-    public init() {}
+    private var updateTask: Task<Void, Never>?
     
     public var currentAvailableLanguagesPublisher: AnyPublisher<[DataState.AppLanguage], Never> {
         purchased
@@ -30,7 +30,12 @@ public final class AppPurchaseRepository: AppPurchasedDataSource {
     }
 
     private let purchased = CurrentValueSubject<Set<String>, Never>([])
-
+    
+    @MainActor
+    public init() {
+        updateTask = listenForTransactionUpdates()
+    }
+    
     @MainActor
     public func purchaseProduct(id: String) async {
         guard !purchased.value.contains(id) else { return }

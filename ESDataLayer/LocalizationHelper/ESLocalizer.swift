@@ -22,12 +22,3 @@ public enum ESLocalizer {
                       bundle: bundle)
     }
 }
-
-
-// Featurea
-//   USCISLocalization
-//      - ESLocalizer
-//      - FlashcardLocalizable
-//      - PracticeModeLocalizable
-//   FlashCard
-//   PracticeMode
