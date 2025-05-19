@@ -86,7 +86,7 @@ public final class PracticeModeRepository: PracticeModeDataSource {
     private var practiceQuestionsSubject = CurrentValueSubject<[DataModel.PracticeQuestion], Never>([])
     private var currentPracticeStateSubject = CurrentValueSubject<DataState.USState, Never>(.CA) // Assuming .CA is default
     private var currentScoreSubject = CurrentValueSubject<Int, Never>(0)
-    private var currentQuestionIndexSubject = CurrentValueSubject<Int, Never>(0)
+    private var currentQuestionIndexSubject = CurrentValueSubject<Int, Never>(-1)
     private var showStatePickerSubject = CurrentValueSubject<Bool, Never>(false)
     
     private var cancellables = Set<AnyCancellable>()
