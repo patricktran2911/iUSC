@@ -63,7 +63,9 @@ let package = Package(
         ),
         .target(
             name: "ESInjector",
-            dependencies: [],
+            dependencies: [
+                "ESDataStructure"
+            ],
             path: "Injector",
             swiftSettings: [
                 .enableExperimentalFeature("StrictConcurrency")
