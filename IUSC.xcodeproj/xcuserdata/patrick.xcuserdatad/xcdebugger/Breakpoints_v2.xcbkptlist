@@ -114,50 +114,6 @@
             endingLineNumber = "89"
             landmarkName = "add(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0ED0A36C-C8BE-4D1A-BA92-7A816F6C4052 - 59f120c1c856f674"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for closure #1 () async -&gt; () in ESAppPurchased.AppPurchaseRepository.listenForTransactionUpdates() -&gt; Swift.Task&lt;(), Swift.Never&gt;"
-                  moduleName = "IUSC.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patrick/Dev/iUSC/ESFeature/AppPurchased/Repository/AppPurchasedRepository.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78">
-               </Location>
-               <Location
-                  uuid = "0ED0A36C-C8BE-4D1A-BA92-7A816F6C4052 - 1f7925cfeb80bbf2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 () async -&gt; () in ESAppPurchased.AppPurchaseRepository.listenForTransactionUpdates() -&gt; Swift.Task&lt;(), Swift.Never&gt;"
-                  moduleName = "IUSC.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patrick/Dev/iUSC/ESFeature/AppPurchased/Repository/AppPurchasedRepository.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78">
-               </Location>
-               <Location
-                  uuid = "0ED0A36C-C8BE-4D1A-BA92-7A816F6C4052 - 1f7925cfeb80bbf2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 () async -&gt; () in ESAppPurchased.AppPurchaseRepository.listenForTransactionUpdates() -&gt; Swift.Task&lt;(), Swift.Never&gt;"
-                  moduleName = "IUSC.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patrick/Dev/iUSC/ESFeature/AppPurchased/Repository/AppPurchasedRepository.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
