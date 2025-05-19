@@ -1,6 +1,7 @@
 import Combine
 import ESDataModel
 
+@MainActor
 public protocol PracticeModeDataSource {
     var currentUSStateOfficersPublisher: AnyPublisher<DataModel.USStateOfficers?, Never> { get }
     var testQuestionsPublisher: AnyPublisher<[DataModel.PracticeQuestion], Never> { get }

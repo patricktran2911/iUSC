@@ -11,6 +11,7 @@ public final class PMContainer {
     @_Injected(as: AnchorTime.self, required: Void.self)
     public var anchorTime
     
+    @MainActor
     public lazy var practiceModeDataSource = Injected(as: PracticeModeDataSource.self, .singleton {
         PracticeModeRepository()
     })

@@ -20,12 +20,14 @@ public final class FCLandingViewModel: StreamViewModel<FCLandingView> {
         super.init(
             dataViewPublisher: combinedPublishers
                 .map { currentIndex, totalCards, isQuestionListOpen in
-                    FCLandingView(
-                        itemView: .viewObserved(
-                            stream: FCItemViewModel(container: container)
-                        ), questionPickerView: .viewObserved(
-                            stream: FCQuestionPickerViewModel(container: container)
-                        ),
+                    print("[BOGUS] \(totalCards)")
+                    return FCLandingView(
+                        itemView: .viewObserved(stream: FCItemViewModel(
+                            container: container
+                        )),
+                        questionPickerView: .viewObserved(stream: FCQuestionPickerViewModel(
+                            container: container
+                        )),
                         currentIndex: currentIndex,
                         totalCards: totalCards,
                         nextAction: .performing {

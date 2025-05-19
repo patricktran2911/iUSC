@@ -11,6 +11,7 @@ public final class FCContainer {
     @_Injected(as: AnchorTime.self, required: Void.self)
     public var anchorTime
     
+    @MainActor
     public lazy var flashCardDataSource = Injected(as: FlashCardDataSource.self, .singleton {
         FlashCardRepository()
     })

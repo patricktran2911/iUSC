@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Language" : {
+
+    },
     "Mode" : {
       "localizations" : {
         "vi" : {

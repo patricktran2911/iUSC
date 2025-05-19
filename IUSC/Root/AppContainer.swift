@@ -7,6 +7,7 @@ import ESLocalNotification
 import ESLogin
 import ESFlashCard
 import ESPracticeMode
+import ESAppPurchased
 
 final class AppContainer {
     
@@ -30,8 +31,15 @@ final class AppContainer {
     
     // MARK: - ESLogin
     
+    @MainActor
     lazy var authDataSource = Injected(.singleton { [loginContainer] in
         loginContainer.resolved().authDataSource.resolved()
+    })
+    
+    // MARK: - In-App Purchase
+    @MainActor
+    lazy var appPurchasedRepository = Injected(as: AppPurchasedDataSource.self, .singleton {
+        AppPurchaseRepository()
     })
     
     // MARK: - App

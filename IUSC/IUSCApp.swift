@@ -18,11 +18,14 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct iUSCApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @AppStorage(UserDefaults.appLocaleKey) var appLocale: String?
     let app = AppContainer()
     
     var body: some Scene {
         WindowGroup {
             USCLandingView.viewObserved(stream: USCLandingViewModel(container: app))
+                .environment(\.locale, UserDefaults.standard.appLocale)
+                .id(appLocale)
         }
     }
 }

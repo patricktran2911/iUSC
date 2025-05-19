@@ -4,14 +4,13 @@ import Combine
 import ESDataModel
 import ESDataTransport
 import ESDataSource
+import ESAppPurchased
 
+@MainActor
 class FlashCardRepository: FlashCardDataSource {
     var isMenuListOpenPublisher: AnyPublisher<Bool, Never> {
         isMenuListOpenValueSubject.eraseToAnyPublisher()
     }
-    
-    private var flashcards: [DataModel.FlashCard] = []
-    private let currentIndexSubject = CurrentValueSubject<Int, Never>(0)
     
     var flashcardsPublisher: AnyPublisher<[DataModel.FlashCard], Never> {
         flashcardsValueSubject.eraseToAnyPublisher()
@@ -36,23 +35,28 @@ class FlashCardRepository: FlashCardDataSource {
         flashcardsPublisher.map { $0.count }.eraseToAnyPublisher()
     }
     
+    private let currentIndexSubject = CurrentValueSubject<Int, Never>(0)
     private var isMenuListOpenValueSubject = CurrentValueSubject<Bool, Never>(false)
     private var flashcardsValueSubject = CurrentValueSubject<[DataModel.FlashCard], Never>([])
+    private var cancellables = Set<AnyCancellable>()
 
     init() {
         loadFlashcards()
     }
 
     func loadFlashcards() {
-        flashcards = [DataModel.QuestionDecoded].mockData().map {
-            .init(questionDecode: $0)
+        [DataModel.QuestionDecoded].dataPublisher().sink { questions in
+            let flashcards: [DataModel.FlashCard] = questions.map {
+                .init(questionDecode: $0)
+            }
+            self.flashcardsValueSubject.value = flashcards
         }
-        flashcardsValueSubject.send(flashcards)
+        .store(in: &cancellables)
     }
 
     func nextCard() {
         let current = currentIndexSubject.value
-        if !flashcards.isEmpty && current < flashcards.count - 1 {
+        if !flashcardsValueSubject.value.isEmpty && current < flashcardsValueSubject.value.count - 1 {
             currentIndexSubject.send(current + 1)
         }
     }
@@ -65,7 +69,7 @@ class FlashCardRepository: FlashCardDataSource {
     }
 
     func setCurrentCard(at index: Int) {
-        if index >= 0 && index < flashcards.count {
+        if index >= 0 && index < flashcardsValueSubject.value.count {
             currentIndexSubject.send(index)
             isMenuListOpenValueSubject.send(false)
         }

@@ -4,7 +4,9 @@ import Foundation
 import ESDataSource
 import ESDataModel
 import FirebaseRemoteConfig
+import ESAppPurchased
 
+@MainActor
 public final class PracticeModeRepository: PracticeModeDataSource {
     private let userDefault = UserDefaults.standard
     private let remote = RemoteConfig.remoteConfig()
@@ -42,6 +44,7 @@ public final class PracticeModeRepository: PracticeModeDataSource {
     
     public var testQuestionsPublisher: AnyPublisher<[DataModel.PracticeQuestion], Never> {
         practiceQuestionsSubject.eraseToAnyPublisher()
+
     }
     
     public var practiceScorePublisher: AnyPublisher<Int, Never> {
@@ -79,7 +82,7 @@ public final class PracticeModeRepository: PracticeModeDataSource {
     }
     
     private var currentOfficersSnapShot: DataModel.USStateOfficers? = nil
-    private var practiceQuestions: [DataModel.PracticeQuestion] = []
+    private var allQuestionsSubject = CurrentValueSubject<[DataModel.PracticeQuestion],Never>([])
     private var practiceQuestionsSubject = CurrentValueSubject<[DataModel.PracticeQuestion], Never>([])
     private var currentPracticeStateSubject = CurrentValueSubject<DataState.USState, Never>(.CA) // Assuming .CA is default
     private var currentScoreSubject = CurrentValueSubject<Int, Never>(0)
@@ -219,20 +222,20 @@ public final class PracticeModeRepository: PracticeModeDataSource {
     }
     
     public func loadTestQuestions() {
-        self.practiceQuestions = [DataModel.QuestionDecoded].mockData().map {
-            .init(questionInput: $0)
+        [DataModel.QuestionDecoded].dataPublisher().sink { questions in
+            let practiceQuestions: [DataModel.PracticeQuestion] = questions.map {
+                .init(questionInput: $0)
+            }
+            self.allQuestionsSubject.value = practiceQuestions
+            self.loadRandomQuestions()
         }
-        loadRandomQuestions()
+        .store(in: &cancellables)
     }
     
     public func loadRandomQuestions(count: Int = 10) {
-        guard !practiceQuestions.isEmpty else {
-            practiceQuestionsSubject.send([])
-            currentQuestionIndexSubject.send(0)
-            currentScoreSubject.send(0)
-            return
-        }
-        practiceQuestionsSubject.send(Array(self.practiceQuestions.shuffled().prefix(count)))
+        practiceQuestionsSubject.send(
+            Array(allQuestionsSubject.value.shuffled().prefix(count))
+        )
         currentQuestionIndexSubject.send(0)
         currentScoreSubject.send(0)
     }

@@ -3,6 +3,7 @@ import ESDataStructure
 import ESLiveData
 import ESReusableUI
 import ESLocalizer
+import Foundation
 
 public struct FCLandingView: HashIdentifiable {
     let itemView: ObservedDataView<FCItemView>
@@ -31,42 +32,43 @@ extension FCLandingView: View {
                     }
                 }
 
-                Spacer()
-
                 if totalCards > 0 {
-                    Group {
-                        Text(ESLocalizer.text("Question ", table: .flashcard))
-                        + Text(" #\(currentIndex + 1)")
-                            .foregroundStyle(Color.blue)
-                            .fontWeight(.semibold)
-                        + (Text("/ \(totalCards)"))
-                    }
-                    .font(.body)
-                    .foregroundStyle(esColor: .ESText.primary.color)
-                    .padding(6)
-                    .background {
-                        RoundedRectangle(cornerRadius: 8)
-                            .stroke(Color.ESBorder.neutral.color, lineWidth: 1)
-                    }
-
-                    itemView
-                        .onStateChangeAnimate(.smooth, transition: .slide)
-
-                    HStack(spacing: 20) {
-                        Button(action: { previousAction.occurs() }) {
-                            Label(ESLocalizer.text("Previous", table: .flashcard), systemImage: "arrow.left.circle.fill")
+                    VStack {
+                        Group {
+                            Text(ESLocalizer.text("Question ", table: .flashcard))
+                            + Text(" #\(currentIndex + 1)")
+                                .foregroundStyle(Color.blue)
+                                .fontWeight(.semibold)
+                            + (Text("/ \(totalCards)"))
                         }
-                        .buttonStyle(.borderedProminent)
-                        .disabled(!canGoPrevious)
-
-                        Button(action: { nextAction.occurs() }) {
-                            Label(ESLocalizer.text("Next", table: .flashcard), systemImage: "arrow.right.circle.fill")
+                        .font(.body)
+                        .foregroundStyle(esColor: .ESText.primary.color)
+                        .padding(6)
+                        .background {
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(Color.ESBorder.neutral.color, lineWidth: 1)
                         }
-                        .buttonStyle(.borderedProminent)
-                        .disabled(!canGoNext)
+
+                        itemView
+                            .onStateChangeAnimate(.smooth, transition: .slide)
+
+                        HStack(spacing: 20) {
+                            Button(action: { previousAction.occurs() }) {
+                                Label(ESLocalizer.text("Previous", table: .flashcard), systemImage: "arrow.left.circle.fill")
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .disabled(!canGoPrevious)
+
+                            Button(action: { nextAction.occurs() }) {
+                                Label(ESLocalizer.text("Next", table: .flashcard), systemImage: "arrow.right.circle.fill")
+                            }
+                            .buttonStyle(.borderedProminent)
+                            .disabled(!canGoNext)
+                        }
+                        .labelStyle(.titleAndIcon)
+                        .padding(.top, 8)
                     }
-                    .labelStyle(.titleAndIcon)
-                    .padding(.top, 8)
+                    
                 } else {
                     Spacer()
                     Text(ESLocalizer.text("No flashcards available.", table: .flashcard))

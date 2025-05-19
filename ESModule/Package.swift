@@ -13,6 +13,7 @@ let package = Package(
                 "ESModuleDevTool",
                 "ESGoogleSignIn",
                 "ESAppleSignIn",
+                "ESAppPurchased",
                 "ESLocalNotification",
                 "ESReusableUI"
             ]
@@ -28,6 +29,12 @@ let package = Package(
         .library(
             name: "ESGoogleSignIn",
             targets: ["ESGoogleSignIn"]
+        ),
+        .library(
+            name: "ESAppPurchased",
+            targets: [
+                "ESAppPurchased"
+            ]
         ),
         .library(
             name: "ESLocalNotification",
@@ -73,6 +80,20 @@ let package = Package(
             ],
             path: "AppleSignIn",
             resources: [.process("Resources")],
+            swiftSettings: [
+                .enableExperimentalFeature("StrictConcurrency")
+            ]
+        ),
+        .target(
+            name: "ESAppPurchased",
+            dependencies: [
+                .product(name: "ESDataStructure", package: "ESFoundation"),
+                .product(name: "ESInjector", package: "ESFoundation"),
+                .product(name: "ESLiveData", package: "ESFoundation"),
+                .product(name: "ESDataModel", package: "ESDataLayer"),
+                .product(name: "ESDataSource", package: "ESDataLayer")
+            ],
+            path: "AppPurchased",
             swiftSettings: [
                 .enableExperimentalFeature("StrictConcurrency")
             ]
@@ -127,6 +148,7 @@ let package = Package(
                 "ESModuleDevTool",
                 "ESAppleSignIn",
                 "ESGoogleSignIn",
+                "ESAppPurchased",
                 "ESLocalNotification",
                 "ESReusableUI",
                 .product(name: "ESTestTool", package: "ESFoundation")

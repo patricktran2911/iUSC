@@ -4,6 +4,7 @@ import ESLiveData
 import ESDataModel
 
 // Protocol for the Flashcard Data Source
+@MainActor
 public protocol FlashCardDataSource {
     var flashcardsPublisher: AnyPublisher<[DataModel.FlashCard], Never> { get }
     var currentFlashcardPublisher: AnyPublisher<DataModel.FlashCard?, Never> { get }
