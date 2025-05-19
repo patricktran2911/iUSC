@@ -74,6 +74,12 @@
             ReferencedContainer = "container:IUSC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "-FIRDebugEnabled"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <StoreKitConfigurationFileReference
          identifier = "../../IUSC/iUSC.storekit/Configuration.storekit">
       </StoreKitConfigurationFileReference>

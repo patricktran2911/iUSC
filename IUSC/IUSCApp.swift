@@ -5,6 +5,7 @@ import FirebaseRemoteConfig
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        FirebaseConfiguration.shared.setLoggerLevel(.min)
         FirebaseApp.configure()
         let remoteConfig = RemoteConfig.remoteConfig()
         let settings = RemoteConfigSettings()

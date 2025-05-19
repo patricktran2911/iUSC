@@ -9,10 +9,33 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
-		<key>iUSC-VI.xcscheme</key>
+		<key>Promises (Playground).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>25</integer>
+		</dict>
+		<key>iUSC-vi.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CDB8DE9D2DB4631A00AF3F08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CDB8DEAD2DB4631C00AF3F08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CDB8DEB72DB4631C00AF3F08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

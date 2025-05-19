@@ -8,16 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CD25FF762DD1DA4400CC4655 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CD25FF752DD1DA4400CC4655 /* FirebaseAnalytics */; };
-		CD25FF7C2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */; };
-		CD25FF7D2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */; };
-		CD25FF7E2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */; };
 		CD3BC9622DDAFBF7008E5623 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = CD3BC9612DDAFBF7008E5623 /* FirebaseCore */; };
 		CD3BC9642DDAFBF7008E5623 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CD3BC9632DDAFBF7008E5623 /* FirebaseCrashlytics */; };
 		CD3BC9662DDAFBF7008E5623 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = CD3BC9652DDAFBF7008E5623 /* FirebaseRemoteConfig */; };
 		CD3BC9692DDB13C7008E5623 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CD3BC9682DDB13C7008E5623 /* FirebaseCrashlytics */; };
-		CD81776E2DD2A95400A51B6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD81776D2DD2A95400A51B6B /* GoogleService-Info.plist */; };
-		CD81776F2DD2A95400A51B6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD81776D2DD2A95400A51B6B /* GoogleService-Info.plist */; };
-		CD8177702DD2A95400A51B6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD81776D2DD2A95400A51B6B /* GoogleService-Info.plist */; };
 		CD86E9E52DD6ED05000BBB93 /* ESPracticeMode in Frameworks */ = {isa = PBXBuildFile; productRef = CD86E9E42DD6ED05000BBB93 /* ESPracticeMode */; };
 		CD86EA852DDADE1A000BBB93 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD86EA842DDADE1A000BBB93 /* StoreKit.framework */; };
 		CDB8DEE42DB46C2100AF3F08 /* ESDataLayer in Frameworks */ = {isa = PBXBuildFile; productRef = CDB8DEE32DB46C2100AF3F08 /* ESDataLayer */; };
@@ -45,8 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = remote_config_defaults.plist; sourceTree = "<group>"; };
-		CD81776D2DD2A95400A51B6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CD86EA842DDADE1A000BBB93 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		CDB8DE9E2DB4631A00AF3F08 /* IUSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IUSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB8DEAE2DB4631C00AF3F08 /* IUSCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IUSCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,17 +50,28 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CD3BC96B2DDB9E58008E5623 /* Exceptions for "IUSC" folder in "IUSC" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CDB8DE9D2DB4631A00AF3F08 /* IUSC */;
+		};
 		CD86E9F52DD7A102000BBB93 /* Exceptions for "IUSC" folder in "IUSCTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				"GoogleService-Info.plist",
 				Localizable.xcstrings,
+				remote_config_defaults.plist,
 			);
 			target = CDB8DEAD2DB4631C00AF3F08 /* IUSCTests */;
 		};
 		CD86E9F62DD7A102000BBB93 /* Exceptions for "IUSC" folder in "IUSCUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				"GoogleService-Info.plist",
 				Localizable.xcstrings,
+				remote_config_defaults.plist,
 			);
 			target = CDB8DEB72DB4631C00AF3F08 /* IUSCUITests */;
 		};
@@ -78,6 +81,7 @@
 		CDB8DEA02DB4631A00AF3F08 /* IUSC */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				CD3BC96B2DDB9E58008E5623 /* Exceptions for "IUSC" folder in "IUSC" target */,
 				CD86E9F52DD7A102000BBB93 /* Exceptions for "IUSC" folder in "IUSCTests" target */,
 				CD86E9F62DD7A102000BBB93 /* Exceptions for "IUSC" folder in "IUSCUITests" target */,
 			);
@@ -144,8 +148,6 @@
 				CDB8DEB12DB4631C00AF3F08 /* IUSCTests */,
 				CDB8DEBB2DB4631C00AF3F08 /* IUSCUITests */,
 				CDB8DEE22DB46C2100AF3F08 /* Frameworks */,
-				CD81776D2DD2A95400A51B6B /* GoogleService-Info.plist */,
-				CD25FF7B2DD1E43700CC4655 /* remote_config_defaults.plist */,
 				CDB8DE9F2DB4631A00AF3F08 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -304,8 +306,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD25FF7E2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */,
-				CD8177702DD2A95400A51B6B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,8 +313,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD81776E2DD2A95400A51B6B /* GoogleService-Info.plist in Resources */,
-				CD25FF7C2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,8 +320,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD81776F2DD2A95400A51B6B /* GoogleService-Info.plist in Resources */,
-				CD25FF7D2DD1E43700CC4655 /* remote_config_defaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +535,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IUSC/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = iUSC;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -556,6 +553,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 2025.05.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.patrick.iUSC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -584,6 +582,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IUSC/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = iUSC;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -601,6 +600,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 2025.05.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.patrick.iUSC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
