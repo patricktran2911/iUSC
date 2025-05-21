@@ -21,13 +21,11 @@ public final class AppPurchaseRepository: AppPurchasedDataSource {
     
     public var currentAvailableLanguagesPublisher: AnyPublisher<[DataState.AppLanguage], Never> {
         purchased
-            .map { ids -> [DataState.AppLanguage] in
-                ids.compactMap { id -> DataState.AppLanguage? in
-                    guard let code = id.split(separator: ".").last else {
-                        return nil
-                    }
-                    return .init(rawValue: String(code))
+            .map { ids in
+                if ids.contains(where: { $0 == "iUSC.languages"}) {
+                    return DataState.AppLanguage.allCases
                 }
+                return [.english]
             }
             .eraseToAnyPublisher()
     }
@@ -56,6 +54,7 @@ public final class AppPurchaseRepository: AppPurchasedDataSource {
             }
         } catch {
             print("Purchase failed:", error)
+            isProcessingPurchase.value = false
         }
         isProcessingPurchase.value = false
     }

@@ -50,7 +50,7 @@ public final class ESLanguageMenuViewModel: StreamViewModel<ESLanguageMenuView> 
                             }
                         ),
                         unlockAction: .performing {
-                            await dataSource.purchaseProduct(id: "iUSC.language.vi")
+                            await dataSource.purchaseProduct(id: "iUSC.languages")
                         },
                         onProcessingPurchase: onProcessinPurchase
                     )

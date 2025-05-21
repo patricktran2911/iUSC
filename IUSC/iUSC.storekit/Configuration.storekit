@@ -17,22 +17,16 @@
     {
       "displayPrice" : "0.99",
       "familyShareable" : false,
-      "internalID" : "6746081799",
+      "internalID" : "6746192646",
       "localizations" : [
         {
-          "description" : "Vietnamese Version",
-          "displayName" : "iUSC Vietnamese",
+          "description" : "Buy this for multiple languages",
+          "displayName" : "iUSC Translate",
           "locale" : "en_US"
-        },
-        {
-          "description" : "Sử dụng ứng dụng bằng tiếng Việt",
-          "displayName" : "iUSC Tiếng Việt",
-          "locale" : "vi"
         }
       ],
-      "productID" : "iUSC.language.vi",
-      "promotionalImageID" : "94AE1BBC",
-      "referenceName" : "iUSC_vi",
+      "productID" : "iUSC.languages",
+      "referenceName" : "iUSC Language",
       "type" : "NonConsumable"
     }
   ],
@@ -41,7 +35,7 @@
     "_askToBuyEnabled" : false,
     "_developerTeamID" : "S65C86TGF9",
     "_failTransactionsEnabled" : false,
-    "_lastSynchronizedDate" : 769318638.64038396,
+    "_lastSynchronizedDate" : 769512688.40395296,
     "_locale" : "en_US",
     "_storefront" : "USA",
     "_storeKitErrors" : [
