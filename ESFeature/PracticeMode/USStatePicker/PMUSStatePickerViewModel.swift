@@ -3,7 +3,7 @@ import ESLiveData
 import ESDataModel
 import ESDataSource
 
-final class PMUSStatePickerViewModel: StreamViewModel<PMUSStatePickerView> {
+public final class PMUSStatePickerViewModel: StreamViewModel<PMUSStatePickerView> {
     @MainActor
     public init(container: PMContainer) {
         let pmDataSource = container.practiceModeDataSource.resolved()

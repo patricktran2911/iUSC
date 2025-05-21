@@ -28,6 +28,7 @@ final class USCLandingViewModel: StreamViewModel<USCLandingView> {
         let authStatePublisher = container.authDataSource.resolved().authStatePublisher
         let selectedMode = CurrentValueSubject<RunningMode, Never>(.study)
         let publishers = Publishers.CombineLatest3(authStatePublisher, selectedMode, menuOpenValueSubject)
+        //MARK: need to bring PMStatePicker to another package
         super.init(
             dataViewPublisher: publishers
                 .map { authState, mode, isMenuOpen in

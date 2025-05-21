@@ -5,6 +5,7 @@ import ESDataModel
 import ESDataTransport
 import ESDataSource
 import ESAppPurchased
+import ESUSCDataRepository
 
 @MainActor
 class FlashCardRepository: FlashCardDataSource {
@@ -39,13 +40,15 @@ class FlashCardRepository: FlashCardDataSource {
     private var isMenuListOpenValueSubject = CurrentValueSubject<Bool, Never>(false)
     private var flashcardsValueSubject = CurrentValueSubject<[DataModel.FlashCard], Never>([])
     private var cancellables = Set<AnyCancellable>()
+    private let uscDataSource: USCDataSource
 
-    init() {
+    init(uscDataSource: USCDataSource) {
+        self.uscDataSource = uscDataSource
         loadFlashcards()
     }
 
     func loadFlashcards() {
-        [DataModel.QuestionDecoded].dataPublisher().sink { questions in
+        uscDataSource.uscis100QuestionsPublisher.sink { questions in
             let flashcards: [DataModel.FlashCard] = questions.map {
                 .init(questionDecode: $0)
             }

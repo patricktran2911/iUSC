@@ -4,13 +4,13 @@ import ESLiveData
 import ESReusableUI
 import ESLocalizer
 
-struct PMUSStatePickerView: HashIdentifiable {
+public struct PMUSStatePickerView: HashIdentifiable {
     let usStates: [String]
     let currentSelectedState: ValueChangedEffect<String>
 }
 
 extension PMUSStatePickerView: View {
-    var body: some View {
+    public var body: some View {
         VStack(spacing: 16) {
             Text(ESLocalizer.text("Select Your State", table: .practiceMode))
                 .font(.title2)
@@ -80,7 +80,7 @@ private struct StateRow: View {
 }
 
 extension PMUSStatePickerView {
-    static func preview() -> Self {
+    public static func preview() -> Self {
         .init(
             usStates: ["California", "Texas", "New York", "Florida", "Illinois", "Georgia", "Colorado"],
             currentSelectedState: .noEffect("California")

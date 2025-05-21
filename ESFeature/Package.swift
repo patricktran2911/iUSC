@@ -31,6 +31,10 @@ let package = Package(
             targets: [
                 "ESAppPurchased"
             ]
+        ),
+        .library(
+            name: "ESUSCDataRepository",
+            targets: ["ESUSCDataRepository"]
         )
     ],
     dependencies: [
@@ -67,6 +71,7 @@ let package = Package(
                 .product(name: "ESDataTransport", package: "ESDataLayer"),
                 .product(name: "ESLocalNotification", package: "ESModule"),
                 .product(name: "ESReusableUI", package: "ESModule"),
+                "ESUSCDataRepository",
                 "ESAppPurchased"
             ],
             path: "FlashCard",
@@ -87,6 +92,7 @@ let package = Package(
                 .product(name: "ESLocalNotification", package: "ESModule"),
                 .product(name: "ESReusableUI", package: "ESModule"),
                 .product(name: "FirebaseRemoteConfig", package: "firebase-ios-sdk"),
+                "ESUSCDataRepository",
                 "ESAppPurchased"
             ],
             path: "PracticeMode",
@@ -103,9 +109,22 @@ let package = Package(
                 .product(name: "ESInjector", package: "ESFoundation"),
                 .product(name: "ESLiveData", package: "ESFoundation"),
                 .product(name: "ESDataModel", package: "ESDataLayer"),
-                .product(name: "ESDataSource", package: "ESDataLayer")
+                .product(name: "ESDataSource", package: "ESDataLayer"),
+                "ESUSCDataRepository"
             ],
             path: "AppPurchased",
+            swiftSettings: [
+                .enableExperimentalFeature("StrictConcurrency")
+            ]
+        ),
+        .target(
+            name: "ESUSCDataRepository",
+            dependencies: [
+                .product(name: "ESDataSource", package: "ESDataLayer"),
+                .product(name: "ESDataModel", package: "ESDataLayer"),
+                .product(name: "FirebaseRemoteConfig", package: "firebase-ios-sdk")
+            ],
+            path: "IUSCData",
             swiftSettings: [
                 .enableExperimentalFeature("StrictConcurrency")
             ]
@@ -120,6 +139,7 @@ let package = Package(
                     "ESFlashCard",
                     "ESAppPurchased",
                     "ESPracticeMode",
+                    "ESUSCDataRepository",
                     .product(name: "ESTestTool", package: "ESFoundation")
                 ],
                 resources: [.process("Resources")],

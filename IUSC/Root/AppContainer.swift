@@ -8,6 +8,7 @@ import ESLogin
 import ESFlashCard
 import ESPracticeMode
 import ESAppPurchased
+import ESUSCDataRepository
 
 final class AppContainer {
     
@@ -17,15 +18,17 @@ final class AppContainer {
         LoginContainer()
     })
     
-    lazy var fcContainer = Injected(.singleton { [anchorTime] in
+    lazy var fcContainer = Injected(.singleton { [anchorTime, uscDataRepository] in
         let container = FCContainer()
         container.anchorTime = anchorTime
+        container.uscDataRepository = uscDataRepository
         return container
     })
     
-    lazy var pmContainer = Injected(.singleton { [anchorTime] in
+    lazy var pmContainer = Injected(.singleton { [anchorTime, uscDataRepository] in
         let container = PMContainer()
         container.anchorTime = anchorTime
+        container.uscDataRepository = uscDataRepository
         return container
     })
     
@@ -34,6 +37,11 @@ final class AppContainer {
     @MainActor
     lazy var authDataSource = Injected(.singleton { [loginContainer] in
         loginContainer.resolved().authDataSource.resolved()
+    })
+    
+    // MARK: - Data
+    public lazy var uscDataRepository = Injected(.singleton {
+        USCDataRepository()
     })
     
     // MARK: - In-App Purchase
