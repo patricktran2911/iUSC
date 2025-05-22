@@ -48,7 +48,7 @@ public final class PracticeModeRepository: PracticeModeDataSource {
     
     public var currentAreaTestPublisher: AnyPublisher<DataState.USState?, Never> {
         userDefault
-            .publisher(for: \.currentPracticeState)
+            .publisher(for: \.currentState)
             .map { rawValue in
                 DataState.USState(rawValue: rawValue)
             }
@@ -58,7 +58,7 @@ public final class PracticeModeRepository: PracticeModeDataSource {
     private var currentOfficersSnapShot: DataModel.USStateOfficers? = nil
     private var allQuestionsSubject: [DataModel.PracticeQuestion] = []
     private var practiceQuestionsSubject = CurrentValueSubject<[DataModel.PracticeQuestion], Never>([])
-    private var currentPracticeStateSubject = CurrentValueSubject<DataState.USState, Never>(.CA) // Assuming .CA is default
+    private var currentStateSubject = CurrentValueSubject<DataState.USState, Never>(.CA) // Assuming .CA is default
     private var currentScoreSubject = CurrentValueSubject<Int, Never>(0)
     private var currentQuestionIndexSubject = CurrentValueSubject<Int, Never>(0)
     private var showStatePickerSubject = CurrentValueSubject<Bool, Never>(false)
@@ -78,8 +78,8 @@ public final class PracticeModeRepository: PracticeModeDataSource {
         .store(in: &cancellables)
         
         if let initialAreaRawValue, let initialArea = DataState.USState(rawValue: initialAreaRawValue) {
-            if initialArea != currentPracticeStateSubject.value {
-                currentPracticeStateSubject.send(initialArea)
+            if initialArea != currentStateSubject.value {
+                currentStateSubject.send(initialArea)
             }
         } else {
             showStatePickerSubject.send(true)
@@ -156,8 +156,8 @@ public final class PracticeModeRepository: PracticeModeDataSource {
     }
     
     public func updateTestState(_ state: DataState.USState) {
-        userDefault.currentPracticeState = state.rawValue
-        currentPracticeStateSubject.send(state)
+        userDefault.currentState = state.rawValue
+        currentStateSubject.send(state)
         showStatePickerSubject.send(false)
     }
     

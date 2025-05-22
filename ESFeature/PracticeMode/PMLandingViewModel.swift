@@ -2,6 +2,7 @@ import Combine
 import ESLiveData
 import ESDataModel
 import ESDataSource
+import ESStateSelector
 
 public final class PMLandingViewModel: StreamViewModel<PMLandingView> {
 
@@ -25,12 +26,7 @@ public final class PMLandingViewModel: StreamViewModel<PMLandingView> {
                 return PMLandingView(
                     score: score,
                     state: practiceState,
-                    currentUSState: currentTestingUSState?.abbreviation,
-                    selectUSStatePickerView: .viewObserved(stream: PMUSStatePickerViewModel(container: container)),
-                    isShowingUSStatePicker: .onUpdated(fromInitial: isShowingUSStatePicker, action: { newValue in
-                        practiceModeDataSource.showStatePicker(newValue)
-                    }),
-                    questionView: .viewObserved(stream: PPMQuestionViewModel(container: container)),
+                    questionView: .viewObserved(stream: PMQuestionViewModel(container: container)),
                     changeUSStateAction: .performing {
                         practiceModeDataSource.showStatePicker(true)
                     },

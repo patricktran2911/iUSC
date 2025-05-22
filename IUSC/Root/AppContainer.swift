@@ -9,6 +9,7 @@ import ESFlashCard
 import ESPracticeMode
 import ESAppPurchased
 import ESUSCDataRepository
+import ESStateSelector
 
 final class AppContainer {
     
@@ -48,6 +49,12 @@ final class AppContainer {
     @MainActor
     lazy var appPurchasedRepository = Injected(as: AppPurchasedDataSource.self, .singleton {
         AppPurchaseRepository()
+    })
+    
+    // MARK: - StateSelector
+    @MainActor
+    lazy var stateSelectorRepository = Injected(as: StateSelectorDataSource.self, .singleton {
+        StateSelectorRepository()
     })
     
     // MARK: - App

@@ -7,9 +7,6 @@ import ESLocalizer
 public struct PMLandingView: HashIdentifiable {
     let score: Int
     let state: DataState.TestState
-    let currentUSState: String?
-    let selectUSStatePickerView: ObservedDataView<PMUSStatePickerView>
-    let isShowingUSStatePicker: ValueChangedEffect<Bool>
     let questionView: ObservedDataView<PMQuestionView>
     let changeUSStateAction: ActionEffect
     let restartAction: ActionEffect
@@ -19,39 +16,6 @@ extension PMLandingView: View {
     public var body: some View {
         
         VStack(spacing: 32) {
-            HStack {
-                if let currentUSState {
-                    Button(action: {
-                        changeUSStateAction.occurs()
-                    }) {
-                        HStack(spacing: 6) {
-                            Image(systemName: "location.fill")
-                            Text(currentUSState)
-                                .fontWeight(.semibold)
-                            Image(systemName: "chevron.down")
-                        }
-                        .padding(.horizontal, 12)
-                        .padding(.vertical, 8)
-                        .background(Color.gray.opacity(0.15))
-                        .clipShape(Capsule())
-                    }
-                    .buttonStyle(.plain)
-                } else {
-                    Button(ESLocalizer.text("Select Your State", table: .practiceMode)) {
-                        changeUSStateAction.occurs()
-                    }
-                    .padding(.horizontal, 12)
-                    .padding(.vertical, 8)
-                    .background(Color.red.opacity(0.15))
-                    .clipShape(Capsule())
-                    .foregroundColor(.red)
-                    .fontWeight(.medium)
-                }
-
-                Spacer()
-            }
-            .padding(.horizontal)
-
             // Main content based on state
             switch state {
             case .inProgress:
@@ -101,11 +65,7 @@ extension PMLandingView: View {
         }
         .padding()
         .background(Color(.systemGroupedBackground))
-        .sheet(isPresented: isShowingUSStatePicker.binding) {
-            selectUSStatePickerView
-                .background(Color.black.opacity(0.2))
-                .ignoresSafeArea()
-        }
+
     }
 }
 
@@ -120,9 +80,6 @@ public extension PMLandingView {
         PMLandingView(
             score: 1,
             state: .inProgress,
-            currentUSState: "CA",
-            selectUSStatePickerView: .const(.preview()),
-            isShowingUSStatePicker: .noEffect(false),
             questionView: .const(.preview()),
             changeUSStateAction: .noEffect(),
             restartAction: .noEffect()

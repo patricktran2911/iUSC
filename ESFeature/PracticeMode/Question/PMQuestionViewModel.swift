@@ -3,7 +3,7 @@ import ESLiveData
 import ESDataModel
 import ESDataSource
 
-final class PPMQuestionViewModel: StreamViewModel<PMQuestionView> {
+final class PMQuestionViewModel: StreamViewModel<PMQuestionView> {
     
     @MainActor
     public init(container: PMContainer) {

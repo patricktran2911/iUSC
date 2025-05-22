@@ -35,7 +35,10 @@ let package = Package(
         .library(
             name: "ESUSCDataRepository",
             targets: ["ESUSCDataRepository"]
-        )
+        ),
+        .library(name: "ESStateSelector", targets: [
+            "ESStateSelector"
+        ])
     ],
     dependencies: [
         .package(path: "ESFoundation"),
@@ -110,7 +113,7 @@ let package = Package(
                 .product(name: "ESLiveData", package: "ESFoundation"),
                 .product(name: "ESDataModel", package: "ESDataLayer"),
                 .product(name: "ESDataSource", package: "ESDataLayer"),
-                "ESUSCDataRepository"
+                "ESUSCDataRepository",
             ],
             path: "AppPurchased",
             swiftSettings: [
@@ -122,11 +125,29 @@ let package = Package(
             dependencies: [
                 .product(name: "ESDataSource", package: "ESDataLayer"),
                 .product(name: "ESDataModel", package: "ESDataLayer"),
-                .product(name: "FirebaseRemoteConfig", package: "firebase-ios-sdk")
+                .product(name: "FirebaseRemoteConfig", package: "firebase-ios-sdk"),
+                "ESStateSelector"
             ],
             path: "IUSCData",
             swiftSettings: [
                 .enableExperimentalFeature("StrictConcurrency")
+            ]
+        ),
+        .target(
+            name: "ESStateSelector",
+            dependencies: [
+                .product(name: "ESLiveData", package: "ESFoundation"),
+                .product(name: "ESDataModel", package: "ESDataLayer"),
+                .product(name: "ESDataSource", package: "ESDataLayer"),
+            ],
+            path: "StateSelector",
+            resources: [.process(
+                "Resources"
+            )],
+            swiftSettings: [
+                .enableExperimentalFeature(
+                    "StrictConcurrency"
+                )
             ]
         ),
         
@@ -140,6 +161,7 @@ let package = Package(
                     "ESAppPurchased",
                     "ESPracticeMode",
                     "ESUSCDataRepository",
+                    "ESStateSelector",
                     .product(name: "ESTestTool", package: "ESFoundation")
                 ],
                 resources: [.process("Resources")],

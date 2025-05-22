@@ -4,6 +4,7 @@ import ESDataModel
 import ESFlashCard
 import ESPracticeMode
 import ESAppPurchased
+import ESStateSelector
 import ESLocalizer
 import Foundation
 
@@ -39,7 +40,8 @@ final class USCLandingViewModel: StreamViewModel<USCLandingView> {
                                 selectedMode.send(newMode)
                             }),
                             appLanguageMenu: .viewObserved(stream: ESLanguageMenuViewModel(dataSource: container.appPurchasedRepository.resolved())),
-                            isPopupLangueMenu: .onUpdated(fromInitial: isMenuOpen, action: { newValue in
+                            statePickerView: .viewObserved(stream: SSPickerViewModel(repository: container.stateSelectorRepository.resolved())),
+                            isPopupLanguageMenu: .onUpdated(fromInitial: isMenuOpen, action: { newValue in
                                 menuOpenValueSubject.send(newValue)
                             }),
                             fcLandingView: .viewObserved(stream: FCLandingViewModel(container: container.fcContainer.resolved())),
