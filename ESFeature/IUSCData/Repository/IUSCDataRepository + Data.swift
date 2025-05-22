@@ -196,7 +196,7 @@ extension USCDataRepository {
                             .AnswerType(
                                 rawValue: "multipleAnswer"
                             ) ?? .multiple,
-                        answerQuantity: 3,
+                        answerQuantity: 2,
                         answerKey: nil
                     ),
                 DataModel
@@ -752,7 +752,7 @@ extension USCDataRepository {
                             .AnswerType(
                                 rawValue: "multipleAnswer"
                             ) ?? .multiple,
-                        answerQuantity: 16,
+                        answerQuantity: 2,
                         answerKey: nil
                     ),
                 DataModel
@@ -1071,7 +1071,7 @@ extension USCDataRepository {
                             .AnswerType(
                                 rawValue: "multipleAnswer"
                             ) ?? .multiple,
-                        answerQuantity: 6,
+                        answerQuantity: 2,
                         answerKey: nil
                     ),
                 DataModel
@@ -1168,7 +1168,7 @@ extension USCDataRepository {
                             .AnswerType(
                                 rawValue: "multipleAnswer"
                             ) ?? .multiple,
-                        answerQuantity: 10,
+                        answerQuantity: 2,
                         answerKey: nil
                     ),
                 DataModel
@@ -1370,7 +1370,7 @@ extension USCDataRepository {
                             .AnswerType(
                                 rawValue: "multipleAnswer"
                             ) ?? .multiple,
-                        answerQuantity: 13,
+                        answerQuantity: 3,
                         answerKey: nil
                     ),
                 DataModel
@@ -2168,7 +2168,7 @@ extension USCDataRepository {
                             .AnswerType(
                                 rawValue: "multipleAnswer"
                             ) ?? .multiple,
-                        answerQuantity: 10,
+                        answerQuantity: 2,
                         answerKey: nil
                     )
             ]

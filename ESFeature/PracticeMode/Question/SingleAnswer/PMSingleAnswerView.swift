@@ -12,32 +12,34 @@ struct PMSingleAnswerView: HashIdentifiable {
 
 extension PMSingleAnswerView: View {
     var body: some View {
-        VStack(spacing: 24) {
+        VStack(spacing: 8) {
             VStack(alignment: .leading, spacing: 16) {
                 Text(question)
                     .font(.title3)
                     .fontWeight(.semibold)
                     .foregroundColor(.primary)
-
-                ForEach(options.indices, id: \ .self) { index in
-                    let option = options[index]
-                    let isSelected = selectionIndex.currentValue == index
-
-                    HStack(spacing: 12) {
-                        Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
-                            .foregroundColor(isSelected ? .green : .gray)
-                        Text(option)
-                            .font(.body)
-                            .foregroundColor(.primary)
-                        Spacer()
-                    }
-                    .padding()
-                    .background(
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(isSelected ? Color.green.opacity(0.12) : Color.gray.opacity(0.08))
-                    )
-                    .onTapGesture {
-                        selectionIndex.update(index)
+                ScrollView {
+                    ForEach(options.indices, id: \ .self) { index in
+                        let option = options[index]
+                        let isSelected = selectionIndex.currentValue == index
+                        
+                        HStack(spacing: 12) {
+                            Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
+                                .foregroundColor(isSelected ? .green : .gray)
+                            Text(option)
+                                .font(.body)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .foregroundColor(.primary)
+                            Spacer()
+                        }
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(isSelected ? Color.green.opacity(0.12) : Color.gray.opacity(0.08))
+                        )
+                        .onTapGesture {
+                            selectionIndex.update(index)
+                        }
                     }
                 }
             }

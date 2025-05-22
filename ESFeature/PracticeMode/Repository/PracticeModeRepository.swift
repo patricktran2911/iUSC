@@ -6,6 +6,7 @@ import ESDataModel
 import FirebaseRemoteConfig
 import ESAppPurchased
 import ESUSCDataRepository
+import ESLocalizer
 
 @MainActor
 public final class PracticeModeRepository: PracticeModeDataSource {
@@ -139,7 +140,7 @@ public final class PracticeModeRepository: PracticeModeDataSource {
                 $0.lowercased() == answer.lowercased()
             })
             
-            if question == "Name your U.S. Representative" {
+            if question == ESLocalizer.text("Name your U.S. Representative", table: .dataModel) {
                 //MARK: Need to have data for this
                 isCorrect = true
             }
