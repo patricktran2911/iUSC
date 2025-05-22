@@ -68,6 +68,17 @@ extension FCLandingView: View {
                         .onStateChangeAnimate(.smooth, transition: .slide)
                         .frame(maxHeight: .infinity)
                         .padding()
+                        .contentShape(Rectangle())
+                        .gesture(
+                            DragGesture(minimumDistance: 30)
+                                .onEnded { value in
+                                    if value.translation.width < -50 {
+                                        nextAction.occurs() // swipe left
+                                    } else if value.translation.width > 50 {
+                                        previousAction.occurs() // swipe right
+                                    }
+                                }
+                        )
                         
                     HStack(spacing: 12) {
                         Button(action: { previousAction.occurs() }) {
