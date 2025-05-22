@@ -2,7 +2,7 @@
   "sourceLanguage" : "en",
   "strings" : {
     "Select Your State" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "vi" : {
           "stringUnit" : {

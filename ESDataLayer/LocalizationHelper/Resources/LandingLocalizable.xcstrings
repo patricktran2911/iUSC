@@ -24,7 +24,7 @@
       }
     },
     "Practice" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "vi" : {
           "stringUnit" : {
@@ -35,7 +35,7 @@
       }
     },
     "Study" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "vi" : {
           "stringUnit" : {
