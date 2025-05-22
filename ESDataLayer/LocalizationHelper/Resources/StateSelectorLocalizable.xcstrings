@@ -1,8 +1,19 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Search..." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tìm Kiếm…"
+          }
+        }
+      }
+    },
     "Select Your State" : {
-      "extractionState" : "manual",
+      "extractionState" : "stale",
       "localizations" : {
         "vi" : {
           "stringUnit" : {

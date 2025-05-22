@@ -2,10 +2,13 @@ import SwiftUI
 import ESDataStructure
 import ESLiveData
 import ESLocalizer
+import ESDataModel
 
 public struct SSPickerView: HashIdentifiable {
-    let usStates: [String]
-    let currentSelectedState: ValueChangedEffect<String>
+    let searchedStates: [DataState.USState]
+    let usStates: [DataState.USState]
+    let currentSelectedState: ValueChangedEffect<DataState.USState>
+    let searchBar: ObservedDataView<SSSearchBarView>
     let isOpenSheet: ValueChangedEffect<Bool>
 }
 
@@ -17,7 +20,7 @@ extension SSPickerView: View {
             }) {
                 HStack(spacing: 6) {
                     Image(systemName: "location.fill")
-                    Text(currentSelectedState.currentValue)
+                    Text(currentSelectedState.currentValue.abbreviation)
                         .fontWeight(.semibold)
                     Image(systemName: "chevron.down")
                 }
@@ -33,15 +36,19 @@ extension SSPickerView: View {
         .padding(.horizontal)
         .sheet(isPresented: isOpenSheet.binding) {
             VStack(spacing: 16) {
+                
                 Text(ESLocalizer.text("Select Your State", table: .stateSelector))
                     .font(.title2)
                     .fontWeight(.bold)
                     .padding(.top, 20)
-
+                
+                searchBar
+                    .padding(.horizontal)
+                
                 ScrollViewReader { reader in
                     ScrollView(showsIndicators: false) {
                         LazyVStack(spacing: 10) {
-                            ForEach(usStates, id: \String.self) { state in
+                            ForEach(searchedStates.isEmpty ? usStates : searchedStates) { state in
                                 StateRow(
                                     state: state,
                                     isSelected: state == currentSelectedState.currentValue
@@ -71,16 +78,15 @@ extension SSPickerView: View {
 }
 
 private struct StateRow: View {
-    let state: String
+    let state: DataState.USState
     let isSelected: Bool
 
     var body: some View {
         HStack {
-            Text(state)
+            Text(state.fullStateName.capitalized)
                 .font(.body)
                 .fontWeight(.medium)
                 .foregroundColor(isSelected ? .green : .primary)
-                .textCase(.uppercase)
 
             Spacer()
 
@@ -104,8 +110,10 @@ private struct StateRow: View {
 public extension SSPickerView {
     static func preview() -> Self {
         .init(
-            usStates: ["California", "Texas", "New York", "Florida", "Illinois", "Georgia", "Colorado"],
-            currentSelectedState: .noEffect("California"),
+            searchedStates: [],
+            usStates: [.CA, .TX, .NY, .AL, .CO],
+            currentSelectedState: .noEffect(.CA),
+            searchBar: .const(.preview()),
             isOpenSheet: .noEffect(false)
         )
     }

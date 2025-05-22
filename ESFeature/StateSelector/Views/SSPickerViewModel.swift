@@ -8,21 +8,24 @@ public final class SSPickerViewModel: StreamViewModel<SSPickerView> {
     public init(repository: StateSelectorDataSource) {
         let currentStateSelectedPublisher = repository.currentUSStatePublisher
         let openSheetValue = CurrentValueSubject<Bool, Never>(false)
-        let allStates = DataState.USState.allCases.map(\.abbreviation)
-        let combinedPublisher = Publishers.CombineLatest(currentStateSelectedPublisher, openSheetValue)
+        let searchStatesPublisher = repository.stateSearchPublisher
+        let allStates = DataState.USState.allCases
+        let combinedPublisher = Publishers.CombineLatest3(currentStateSelectedPublisher, openSheetValue, searchStatesPublisher)
         
         super.init(
             dataViewPublisher: combinedPublisher
-                .map { currentStateSelected, isOpenSheet in
+                .map { currentStateSelected, isOpenSheet, searchStates in
                     SSPickerView(
+                        searchedStates: searchStates,
                         usStates: allStates,
                         currentSelectedState: .onUpdated(
-                            fromInitial: currentStateSelected.abbreviation,
+                            fromInitial: currentStateSelected,
                             action: { newValue in
-                                repository.updateState(.init(rawValue: "area_" + newValue) ?? .CA)
+                                repository.updateState(newValue)
                                 openSheetValue.value = false
                             }
                         ),
+                        searchBar: .viewObserved(stream: SSSearchBarViewModel(repository: repository)),
                         isOpenSheet: .onUpdated(fromInitial: isOpenSheet, action: { newValue in
                             openSheetValue.value = newValue
                         })

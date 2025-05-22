@@ -1,6 +1,16 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Search..." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tìm Kiếm…"
+          }
+        }
+      }
+    },
     "Select Your State" : {
       "localizations" : {
         "vi" : {
