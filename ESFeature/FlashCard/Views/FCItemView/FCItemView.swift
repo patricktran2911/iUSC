@@ -1,6 +1,7 @@
 import SwiftUI
 import ESDataStructure
 import ESLiveData
+import UIKit
 
 struct FCItemView: HashIdentifiable {
     let flippedValues: ValueChangedEffect<Bool>
@@ -15,43 +16,61 @@ extension FCItemView: View {
                 .fill(flippedValues.currentValue ? Color.blue.opacity(0.15) : Color.green.opacity(0.15))
                 .shadow(color: .black.opacity(0.1), radius: 8, x: 0, y: 4)
             
-            VStack {
+            VStack(spacing: 12) {
                 Spacer()
+                
                 Group {
                     if flippedValues.currentValue {
-                        VStack(alignment: .leading, spacing: 4) {
-                            ForEach(answers, id: \.self) {
-                                Text("◾️" + $0)
+                        VStack(alignment: .leading, spacing: 8) {
+                            ForEach(answers, id: \ .self) { answer in
+                                HStack(alignment: .top, spacing: 6) {
+                                    Image(systemName: "checkmark.circle.fill")
+                                        .foregroundColor(.blue)
+                                        .font(.subheadline)
+                                    Text(answer)
+                                        .foregroundColor(.primary)
+                                        .font(.subheadline)
+                                }
                             }
                         }
+                        .padding(.horizontal)
+                        .transition(.opacity)
                     } else {
                         Text(question)
+                            .font(.body.weight(.semibold))
+                            .foregroundColor(.primary)
+                            .multilineTextAlignment(.leading)
+                            .padding(.horizontal)
+                            .transition(.opacity)
                     }
                 }
-                .font(.body.weight(.semibold))
-                .multilineTextAlignment(.leading)
-                .foregroundColor(.primary)
-                .padding(.horizontal)
                 .rotation3DEffect(
-                    .degrees(
-                        flippedValues.currentValue ? 180 : 0
-                    ), axis: (x: 0, y: 1, z: 0)
+                    .degrees(flippedValues.currentValue ? 180 : 0),
+                    axis: (x: 0, y: 1, z: 0)
                 )
                 
                 Spacer()
+                
+                Text(flippedValues.currentValue ? "Tap to view question" : "Tap to view answer")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                    .padding(.bottom, 12)
+                    .rotation3DEffect(
+                        .degrees(flippedValues.currentValue ? 180 : 0),
+                        axis: (x: 0, y: 1, z: 0)
+                    )
             }
         }
         .rotation3DEffect(
-            .degrees(
-                flippedValues.currentValue ? 180 : 0
-            ),
+            .degrees(flippedValues.currentValue ? 180 : 0),
             axis: (x: 0, y: 1, z: 0)
         )
-        .animation(.easeInOut, value: flippedValues.currentValue)
+        .animation(.easeInOut(duration: 0.4), value: flippedValues.currentValue)
         .frame(minHeight: 220, maxHeight: 300)
         .padding(.horizontal)
         .onTapGesture {
             flippedValues.update(!flippedValues.currentValue)
+            UIImpactFeedbackGenerator(style: .light).impactOccurred()
         }
     }
 }

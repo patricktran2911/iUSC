@@ -2,6 +2,7 @@
   "sourceLanguage" : "en",
   "strings" : {
     " #%lld" : {
+      "extractionState" : "stale",
       "localizations" : {
         "vi" : {
           "stringUnit" : {
@@ -23,6 +24,7 @@
       }
     },
     "/ %lld" : {
+      "extractionState" : "stale",
       "localizations" : {
         "vi" : {
           "stringUnit" : {
@@ -41,6 +43,22 @@
           }
         }
       }
+    },
+    "%lld / %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld / %2$lld"
+          }
+        }
+      }
+    },
+    "All Questions" : {
+
+    },
+    "Flashcards" : {
+
     },
     "Next" : {
       "localizations" : {
@@ -72,7 +90,11 @@
         }
       }
     },
+    "Question" : {
+
+    },
     "Question " : {
+      "extractionState" : "stale",
       "localizations" : {
         "vi" : {
           "stringUnit" : {
@@ -81,6 +103,12 @@
           }
         }
       }
+    },
+    "Tap to view answer" : {
+
+    },
+    "Tap to view question" : {
+
     }
   },
   "version" : "1.0"

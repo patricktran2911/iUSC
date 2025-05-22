@@ -19,87 +19,90 @@ public struct FCLandingView: HashIdentifiable {
 
 extension FCLandingView: View {
     public var body: some View {
-        ZStack(alignment: .trailing) {
-            VStack(spacing: 24) {
-                HStack {
-                    Spacer()
-                    Button {
-                        isQuestionListOpen.update(true)
-                    } label: {
-                        Image(systemName: "list.bullet")
-                            .imageScale(.large)
-                            .padding(8)
-                    }
-                }
+        VStack(spacing: 0) {
+            HStack {
+                Text(ESLocalizer.text("Flashcards", table: .flashcard))
+                    .font(.headline)
+                    .foregroundColor(.primary)
 
                 Spacer()
-                
-                if totalCards > 0 {
-                    VStack {
-                        Group {
-                            Text(ESLocalizer.text("Question ", table: .flashcard))
-                            + Text(" #\(currentIndex + 1)")
-                                .foregroundStyle(Color.blue)
-                                .fontWeight(.semibold)
-                            + (Text("/ \(totalCards)"))
-                        }
-                        .font(.body)
-                        .foregroundStyle(esColor: .ESText.primary.color)
-                        .padding(6)
-                        .background {
-                            RoundedRectangle(cornerRadius: 8)
-                                .stroke(Color.ESBorder.neutral.color, lineWidth: 1)
-                        }
 
-                        itemView
-                            .onStateChangeAnimate(.smooth, transition: .slide)
-
-                        HStack(spacing: 20) {
-                            Button(action: { previousAction.occurs() }) {
-                                Label(ESLocalizer.text("Previous", table: .flashcard), systemImage: "arrow.left.circle.fill")
-                            }
-                            .buttonStyle(.borderedProminent)
-                            .disabled(!canGoPrevious)
-
-                            Button(action: { nextAction.occurs() }) {
-                                Label(ESLocalizer.text("Next", table: .flashcard), systemImage: "arrow.right.circle.fill")
-                            }
-                            .buttonStyle(.borderedProminent)
-                            .disabled(!canGoNext)
-                        }
-                        .labelStyle(.titleAndIcon)
-                        .padding(.top, 8)
-                    }
-                    
-                } else {
-                    Spacer()
-                    Text(ESLocalizer.text("No flashcards available.", table: .flashcard))
-                        .font(.title3)
-                        .foregroundColor(.secondary)
-                    Spacer()
+                Button {
+                    isQuestionListOpen.update(true)
+                } label: {
+                    Image(systemName: "square.grid.2x2")
+                        .font(.system(size: 18, weight: .medium))
+                        .padding(10)
+                        .background(
+                            Circle()
+                                .fill(Color(UIColor.tertiarySystemBackground))
+                        )
                 }
-
-                Spacer()
+                .buttonStyle(.plain)
             }
             .padding()
-            .blur(radius: isQuestionListOpen.currentValue ? 3 : 0)
-            .animation(.easeInOut(duration: 0.25), value: isQuestionListOpen.currentValue)
+            .background(Color(UIColor.secondarySystemBackground))
 
-            if isQuestionListOpen.currentValue {
-                Color.black.opacity(0.3)
-                    .ignoresSafeArea()
-                    .onTapGesture {
-                        isQuestionListOpen.update(false)
+            Divider()
+
+            if totalCards > 0 {
+                VStack(spacing: 12) {
+                    // Progress
+                    HStack {
+                        Text(ESLocalizer.text("Question", table: .flashcard))
+                            .font(.footnote)
+                            .foregroundColor(.secondary)
+
+                        Spacer()
+
+                        Text("\(currentIndex + 1) / \(totalCards)")
+                            .font(.footnote.bold())
+                            .foregroundColor(.accentColor)
                     }
-                    .transition(.opacity)
-            }
+                    .padding(.horizontal)
+                    .padding(.vertical, 8)
 
+                    Divider()
+
+                    itemView
+                        .onStateChangeAnimate(.smooth, transition: .slide)
+                        .frame(maxHeight: .infinity)
+                        .padding()
+                        
+                    HStack(spacing: 12) {
+                        Button(action: { previousAction.occurs() }) {
+                            Label(ESLocalizer.text("Previous", table: .flashcard), systemImage: "arrow.left")
+                                .frame(maxWidth: .infinity)
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .disabled(!canGoPrevious)
+
+                        Button(action: { nextAction.occurs() }) {
+                            Label(ESLocalizer.text("Next", table: .flashcard), systemImage: "arrow.right")
+                                .frame(maxWidth: .infinity)
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .disabled(!canGoNext)
+                    }
+                    .padding(.horizontal)
+                    
+                    Spacer()
+                }
+                .padding(.top, 8)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            } else {
+                Spacer()
+                Text(ESLocalizer.text("No flashcards available.", table: .flashcard))
+                    .font(.body)
+                    .foregroundColor(.secondary)
+                Spacer()
+            }
+        }
+        .background(Color(.systemGroupedBackground).ignoresSafeArea())
+        .sheet(isPresented: isQuestionListOpen.binding) {
             questionPickerView
-                .frame(width: 240)
-                .background(Color.ESBackground.screen.color)
-                .shadow(radius: 10)
-                .offset(x: isQuestionListOpen.currentValue ? 0 : 340)
-                .animation(.easeInOut(duration: 0.25), value: isQuestionListOpen.currentValue)
+                .padding()
+                .presentationDetents([.medium, .large])
         }
     }
 }

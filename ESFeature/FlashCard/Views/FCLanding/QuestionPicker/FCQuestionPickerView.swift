@@ -9,49 +9,58 @@ struct FCQuestionPickerView: HashIdentifiable {
 
 extension FCQuestionPickerView: View {
     var body: some View {
-        ScrollViewReader { reader in
-            ScrollView {
-                VStack(alignment: .leading, spacing: 8) {
-                    ForEach(questions.indices, id: \.self) { index in
-                        Button(action: {
-                            selectedIndex.update(index)
-                        }) {
-                            HStack(spacing: 10) {
+        NavigationView {
+            ScrollViewReader { reader in
+                ScrollView {
+                    LazyVStack(alignment: .leading, spacing: 8) {
+                        ForEach(questions.indices, id: \ .self) { index in
+                            HStack(alignment: .top, spacing: 10) {
                                 Text("\(index + 1)")
                                     .font(.caption2)
                                     .fontWeight(.semibold)
                                     .foregroundColor(index == selectedIndex.currentValue ? .white : .blue)
-                                    .padding(6)
+                                    .padding(4)
                                     .background(
                                         Circle()
                                             .fill(index == selectedIndex.currentValue ? Color.blue : Color.blue.opacity(0.1))
                                     )
 
                                 Text(questions[index])
-                                    .font(.footnote)
+                                    .font(.caption)
                                     .foregroundColor(.primary)
                                     .lineLimit(2)
                                     .multilineTextAlignment(.leading)
 
                                 Spacer()
+
+                                if index == selectedIndex.currentValue {
+                                    Image(systemName: "checkmark.circle.fill")
+                                        .foregroundColor(.blue)
+                                }
                             }
                             .padding(8)
                             .background(
                                 RoundedRectangle(cornerRadius: 10, style: .continuous)
-                                    .fill(index == selectedIndex.currentValue ? Color.blue.opacity(0.08) : Color(.systemGray6))
+                                    .fill(index == selectedIndex.currentValue ? Color.blue.opacity(0.1) : Color(.secondarySystemBackground))
                             )
-                            .animation(.easeInOut(duration: 0.15), value: selectedIndex.currentValue)
+                            .contentShape(Rectangle())
+                            .onTapGesture {
+                                selectedIndex.update(index)
+                            }
+                            .tag(index)
                         }
-                        .tag(index)
                     }
-                    Spacer(minLength: 16)
+                    .padding(.horizontal)
+                    .padding(.top, 8)
+                    .onAppear {
+                        withAnimation {
+                            reader.scrollTo(selectedIndex.currentValue, anchor: .center)
+                        }
+                    }
                 }
-                .padding(.horizontal, 12)
-                .padding(.top, 8)
+                .navigationTitle("All Questions")
+                .navigationBarTitleDisplayMode(.inline)
             }
-            .onChange(of: selectedIndex.currentValue, { _, newValue in
-                reader.scrollTo(newValue, anchor: .center)
-            })
         }
     }
 }

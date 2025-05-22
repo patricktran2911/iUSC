@@ -27,12 +27,10 @@ extension PMQuestionView: View {
             .background(Color(.systemGroupedBackground))
 
         case let .question(singleAnswer, multipleAnswer, freeAnswer):
-            VStack (spacing: 8) {
+            VStack(spacing: 0) {
                 ZStack {
                     singleAnswer
-                    
                     multipleAnswer
-                    
                     freeAnswer
                 }
             }

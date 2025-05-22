@@ -32,8 +32,6 @@ extension PMLandingView: View {
                             .foregroundStyle(.green)
                     }
                 }
-                .padding(.horizontal)
-
             case .complete:
                 VStack(spacing: 20) {
                     Spacer()

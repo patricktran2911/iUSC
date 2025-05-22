@@ -18,7 +18,7 @@ struct USCLandingView: HashIdentifiable {
 
 extension USCLandingView: View {
     var body: some View {
-        VStack(spacing: 24) {
+        VStack(spacing: 12) {
             VStack(spacing: 16) {
                 // Header Controls
                 HStack(spacing: 12) {
@@ -53,7 +53,6 @@ extension USCLandingView: View {
                 }
                 .padding(.horizontal)
 
-                // Mode Picker
                 Picker(selection: mode.binding) {
                     ForEach(USCLandingViewModel.RunningMode.allCases, id: \ .hashValue) {
                         Text($0.localizedString())
@@ -81,6 +80,7 @@ extension USCLandingView: View {
 
             Spacer(minLength: 12)
         }
+        .ignoresSafeArea(.all, edges: [.bottom, .horizontal])
         .padding(.top, 24)
         .background(Color(.systemGroupedBackground).edgesIgnoringSafeArea(.all))
     }

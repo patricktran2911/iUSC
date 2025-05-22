@@ -25,6 +25,7 @@ struct iUSCApp: App {
     var body: some Scene {
         WindowGroup {
             USCLandingView.viewObserved(stream: USCLandingViewModel(container: app))
+                .preferredColorScheme(.light)
                 .environment(\.locale, UserDefaults.standard.appLocale)
                 .id(appLocale)
         }

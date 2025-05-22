@@ -13,75 +13,63 @@ struct PMMultipleAnswerView: HashIdentifiable {
 
 extension PMMultipleAnswerView: View {
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading) {
+        VStack(spacing: 24) {
+            VStack(alignment: .leading, spacing: 16) {
                 Text(question)
-                    .font(.headline)
-                    .padding(.bottom, 16)
-                
-                ForEach(options, id: \.self) { option in
-                    Button(action: {
-                        guard let currentSelection = selectionIndices.currentValue else {
-                            selectionIndices.update([options.firstIndex(of: option)!])
-                            return
-                        }
-                        if let index = options.firstIndex(of: option) {
-                            if currentSelection.contains(index) {
-                                selectionIndices.update(currentSelection.filter { $0 != index })
-                            } else {
-                                selectionIndices.update(currentSelection + [index])
-                            }
-                        }
-                    }) {
-                        HStack {
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.primary)
+                ScrollView {
+                    ForEach(options.indices, id: \ .self) { index in
+                        let option = options[index]
+                        let isSelected = selectionIndices.currentValue?.contains(index) ?? false
+                        
+                        HStack(spacing: 12) {
+                            Image(systemName: isSelected ? "checkmark.square.fill" : "square")
+                                .foregroundColor(isSelected ? .blue : .gray)
                             Text(option)
                                 .font(.body)
                                 .foregroundColor(.primary)
-                                .padding(.vertical, 12)
-                            
                             Spacer()
-                            
-                            if let currentSelection = selectionIndices.currentValue,
-                               let index = options.firstIndex(of: option),
-                               currentSelection.contains(index) {
-                                Image(systemName: "checkmark.square.fill")
-                                    .foregroundColor(.blue)
-                            }
                         }
-                        .padding(.horizontal, 16)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .background {
-                            if let currentSelection = selectionIndices.currentValue,
-                               let index = options.firstIndex(of: option),
-                               currentSelection.contains(index) {
-                                RoundedRectangle(cornerRadius: 8)
-                                    .fill(Color.blue.opacity(0.2))
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(isSelected ? Color.blue.opacity(0.12) : Color.gray.opacity(0.08))
+                        )
+                        .onTapGesture {
+                            var updated = selectionIndices.currentValue ?? []
+                            if isSelected {
+                                updated.removeAll { $0 == index }
                             } else {
-                                RoundedRectangle(cornerRadius: 8)
-                                    .fill(Color.gray.opacity(0.2))
+                                updated.append(index)
                             }
+                            selectionIndices.update(updated)
                         }
                     }
-                    .buttonStyle(PlainButtonStyle())
-                    .padding(.bottom, 8)
                 }
-                
-                Spacer()
-                
-                Button(action: {
-                    submitAction.occurs()
-                }) {
+            }
+
+            Spacer()
+
+            Button(action: submitAction.occurs) {
+                HStack {
+                    Spacer()
                     Text(ESLocalizer.text("Submit", table: .practiceMode))
-                        .font(.headline)
+                        .fontWeight(.bold)
                         .foregroundColor(.white)
-                        .frame(maxWidth: .infinity, minHeight: 44)
-                        .background(Color.green)
-                        .cornerRadius(8)
+                    Spacer()
                 }
-                .padding(.top, 16)
+                .padding()
+                .background(Color.green)
+                .cornerRadius(12)
             }
         }
         .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .fill(Color(UIColor.systemGroupedBackground))
+        )
     }
 }
 

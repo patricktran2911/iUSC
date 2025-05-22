@@ -12,63 +12,56 @@ struct PMSingleAnswerView: HashIdentifiable {
 
 extension PMSingleAnswerView: View {
     var body: some View {
-        VStack {
-            ScrollView {
-                VStack(alignment: .leading) {
-                    Text(question)
-                        .font(.headline)
-                        .padding(.bottom, 16)
-                    
-                    ForEach(options, id: \.self) { option in
-                        Button(action: {
-                            guard let index = options.firstIndex(of: option) else { return }
-                            selectionIndex.update(index)
-                        }) {
-                            HStack {
-                                Text(option)
-                                    .font(.body)
-                                    .foregroundColor(.primary)
-                                    .padding(.vertical, 12)
-                                Spacer()
-                                if let index = selectionIndex.currentValue,
-                                   options[index] == option {
-                                    Image(systemName: "checkmark.circle.fill")
-                                        .foregroundColor(.green)
-                                }
-                            }
-                            .padding(.horizontal, 16)
-                            .background {
-                                if let index = selectionIndex.currentValue,
-                                   options[index] == option {
-                                    RoundedRectangle(cornerRadius: 8)
-                                        .fill(Color.green.opacity(0.2))
-                                } else {
-                                    RoundedRectangle(cornerRadius: 8)
-                                        .fill(Color.gray.opacity(0.2))
-                                }
-                            }
-                        }
-                        .buttonStyle(PlainButtonStyle())
-                        .padding(.bottom, 8)
+        VStack(spacing: 24) {
+            VStack(alignment: .leading, spacing: 16) {
+                Text(question)
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.primary)
+
+                ForEach(options.indices, id: \ .self) { index in
+                    let option = options[index]
+                    let isSelected = selectionIndex.currentValue == index
+
+                    HStack(spacing: 12) {
+                        Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
+                            .foregroundColor(isSelected ? .green : .gray)
+                        Text(option)
+                            .font(.body)
+                            .foregroundColor(.primary)
+                        Spacer()
                     }
-                    
-                    Spacer()
+                    .padding()
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(isSelected ? Color.green.opacity(0.12) : Color.gray.opacity(0.08))
+                    )
+                    .onTapGesture {
+                        selectionIndex.update(index)
+                    }
                 }
             }
-            
-            Button(action: {
-                submitAction.occurs()
-            }) {
-                Text(ESLocalizer.text("Submit", table: .practiceMode))
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity, minHeight: 44)
-                    .background(Color.blue)
-                    .cornerRadius(8)
+
+            Spacer()
+
+            Button(action: submitAction.occurs) {
+                HStack {
+                    Spacer()
+                    Text(ESLocalizer.text("Submit", table: .practiceMode))
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                    Spacer()
+                }
+                .padding()
+                .background(Color.blue)
+                .cornerRadius(12)
             }
-            .padding(.top, 16)
         }
         .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .fill(Color(UIColor.systemGroupedBackground))
+        )
     }
 }
 
