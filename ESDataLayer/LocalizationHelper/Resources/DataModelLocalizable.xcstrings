@@ -857,13 +857,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Before he was President, Eisenhower was a general. What war was he in?\""
+            "value" : "Before he was President, Eisenhower was a general. What war was he in?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Trước khi làm Tổng thống, Eisenhower là tướng. Ông tham gia cuộc chiến nào?\""
+            "value" : "Trước khi làm Tổng thống, Eisenhower là tướng. Ông tham gia cuộc chiến nào?"
           }
         }
       }
@@ -1537,13 +1537,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"During the Cold War, what was the main concern of the United States?\""
+            "value" : "During the Cold War, what was the main concern of the United States?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Trong Chiến tranh Lạnh, mối quan ngại chính của Hoa Kỳ là gì?\""
+            "value" : "Trong Chiến tranh Lạnh, mối quan ngại chính của Hoa Kỳ là gì?"
           }
         }
       }
@@ -2625,13 +2625,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"How many amendments does the Constitution have?\""
+            "value" : "How many amendments does the Constitution have?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hiến pháp có bao nhiêu tu chính án?\""
+            "value" : "Hiến pháp có bao nhiêu tu chính án?"
           }
         }
       }
@@ -2642,13 +2642,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"How many justices are on the Supreme Court?\""
+            "value" : "How many justices are on the Supreme Court?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Có bao nhiêu Thẩm phán tại Tòa án Tối cao?\""
+            "value" : "Có bao nhiêu Thẩm phán tại Tòa án Tối cao?"
           }
         }
       }
@@ -2659,13 +2659,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"How many U.S. Senators are there?\""
+            "value" : "How many U.S. Senators are there?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Có bao nhiêu Thượng nghị sĩ Hoa Kỳ?\""
+            "value" : "Có bao nhiêu Thượng nghị sĩ Hoa Kỳ?"
           }
         }
       }
@@ -2676,13 +2676,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"How old do citizens have to be to vote for President?\""
+            "value" : "How old do citizens have to be to vote for President?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Công dân phải bao nhiêu tuổi mới được bầu Tổng thống?\""
+            "value" : "Công dân phải bao nhiêu tuổi mới được bầu Tổng thống?"
           }
         }
       }
@@ -2727,13 +2727,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"If both the President and the Vice President can no longer serve, who becomes President?\""
+            "value" : "If both the President and the Vice President can no longer serve, who becomes President?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Nếu cả Tổng thống và Phó Tổng thống không còn phục vụ được, ai sẽ trở thành Tổng thống?\""
+            "value" : "Nếu cả Tổng thống và Phó Tổng thống không còn phục vụ được, ai sẽ trở thành Tổng thống?"
           }
         }
       }
@@ -2744,13 +2744,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"If the President can no longer serve, who becomes President?\""
+            "value" : "If the President can no longer serve, who becomes President?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Nếu Tổng thống không còn phục vụ được nữa, ai sẽ trở thành Tổng thống?\""
+            "value" : "Nếu Tổng thống không còn phục vụ được nữa, ai sẽ trở thành Tổng thống?"
           }
         }
       }
@@ -2795,13 +2795,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"In what month do we vote for President?\""
+            "value" : "In what month do we vote for President?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Chúng ta bỏ phiếu bầu Tổng thống vào tháng nào?\""
+            "value" : "Chúng ta bỏ phiếu bầu Tổng thống vào tháng nào?"
           }
         }
       }
@@ -3832,13 +3832,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Name one American Indian tribe in the United States.\""
+            "value" : "Name one American Indian tribe in the United States."
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hãy nêu tên một bộ lạc người Mỹ bản địa ở Hoa Kỳ.\""
+            "value" : "Hãy nêu tên một bộ lạc người Mỹ bản địa ở Hoa Kỳ."
           }
         }
       }
@@ -3849,13 +3849,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Name one branch or part of the government.\""
+            "value" : "Name one branch or part of the government."
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Kể tên một nhánh hoặc phần của chính phủ.\""
+            "value" : "Kể tên một nhánh hoặc phần của chính phủ."
           }
         }
       }
@@ -3866,13 +3866,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Name one of the two longest rivers in the United States\""
+            "value" : "Name one of the two longest rivers in the United States"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Kể tên một trong hai con sông dài nhất Hoa Kỳ.\""
+            "value" : "Kể tên một trong hai con sông dài nhất Hoa Kỳ."
           }
         }
       }
@@ -3883,13 +3883,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Name one problem that led to the Civil War\""
+            "value" : "Name one problem that led to the Civil War"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Một vấn đề dẫn đến Nội chiến là gì?\""
+            "value" : "Một vấn đề dẫn đến Nội chiến là gì?"
           }
         }
       }
@@ -3900,13 +3900,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Name one right only for United States citizens\""
+            "value" : "Name one right only for United States citizens"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Kể tên một quyền chỉ dành cho công dân Hoa Kỳ.\""
+            "value" : "Kể tên một quyền chỉ dành cho công dân Hoa Kỳ."
           }
         }
       }
@@ -3917,13 +3917,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Name one state that borders Canada.\""
+            "value" : "Name one state that borders Canada."
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hãy nêu tên một tiểu bang giáp Canada.\""
+            "value" : "Hãy nêu tên một tiểu bang giáp Canada."
           }
         }
       }
@@ -3934,13 +3934,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Name one state that borders Mexico.\""
+            "value" : "Name one state that borders Mexico."
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hãy nêu tên một tiểu bang giáp Mexico.\""
+            "value" : "Hãy nêu tên một tiểu bang giáp Mexico."
           }
         }
       }
@@ -3951,13 +3951,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Name one U.S. territory.\""
+            "value" : "Name one U.S. territory."
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hãy nêu tên một lãnh thổ của Hoa Kỳ.\""
+            "value" : "Hãy nêu tên một lãnh thổ của Hoa Kỳ."
           }
         }
       }
@@ -3968,13 +3968,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Name one war fought by the United States in the 1800s\""
+            "value" : "Name one war fought by the United States in the 1800s"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Kể tên một cuộc chiến Hoa Kỳ tham gia vào những năm 1800.\""
+            "value" : "Kể tên một cuộc chiến Hoa Kỳ tham gia vào những năm 1800."
           }
         }
       }
@@ -3985,13 +3985,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Name one war fought by the United States in the 1900s.\""
+            "value" : "Name one war fought by the United States in the 1900s."
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Kể tên một cuộc chiến Hoa Kỳ tham gia vào những năm 1900.\""
+            "value" : "Kể tên một cuộc chiến Hoa Kỳ tham gia vào những năm 1900."
           }
         }
       }
@@ -4002,13 +4002,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Name the U.S. war between the North and the South.\""
+            "value" : "Name the U.S. war between the North and the South."
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tên cuộc chiến giữa miền Bắc và miền Nam Hoa Kỳ là gì?\""
+            "value" : "Tên cuộc chiến giữa miền Bắc và miền Nam Hoa Kỳ là gì?"
           }
         }
       }
@@ -4019,13 +4019,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Name two national U.S. holidays.\""
+            "value" : "Name two national U.S. holidays."
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hãy nêu tên hai ngày lễ quốc gia của Hoa Kỳ.\""
+            "value" : "Hãy nêu tên hai ngày lễ quốc gia của Hoa Kỳ."
           }
         }
       }
@@ -4036,13 +4036,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Name your U.S. Representative\""
+            "value" : "Name your U.S. Representative"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hãy cho biết tên Dân biểu Hoa Kỳ của bạn.\""
+            "value" : "Hãy cho biết tên Dân biểu Hoa Kỳ của bạn."
           }
         }
       }
@@ -6586,13 +6586,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers\""
+            "value" : "The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Các bài viết Federalist ủng hộ việc thông qua Hiến pháp. Hãy nêu tên một tác giả.\""
+            "value" : "Các bài viết Federalist ủng hộ việc thông qua Hiến pháp. Hãy nêu tên một tác giả."
           }
         }
       }
@@ -6637,13 +6637,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"The House of Representatives has how many voting members?\""
+            "value" : "The House of Representatives has how many voting members?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hạ viện có bao nhiêu thành viên có quyền bỏ phiếu?\""
+            "value" : "Hạ viện có bao nhiêu thành viên có quyền bỏ phiếu?"
           }
         }
       }
@@ -6654,13 +6654,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"The idea of self-government is in the first three words of the Constitution. What are these words?\""
+            "value" : "The idea of self-government is in the first three words of the Constitution. What are these words?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Ý tưởng về tự trị nằm trong ba từ đầu tiên của Hiến pháp. Ba từ đó là gì?\""
+            "value" : "Ý tưởng về tự trị nằm trong ba từ đầu tiên của Hiến pháp. Ba từ đó là gì?"
           }
         }
       }
@@ -7079,13 +7079,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"There are four amendments to the Constitution about who can vote. Describe one of them.\""
+            "value" : "There are four amendments to the Constitution about who can vote. Describe one of them."
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Có bốn tu chính án về quyền bầu cử. Hãy mô tả một tu chính án.\""
+            "value" : "Có bốn tu chính án về quyền bầu cử. Hãy mô tả một tu chính án."
           }
         }
       }
@@ -7096,13 +7096,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"There were 13 original states. Name three.\""
+            "value" : "There were 13 original states. Name three."
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Có 13 bang nguyên thủy. Hãy nêu tên ba bang.\""
+            "value" : "Có 13 bang nguyên thủy. Hãy nêu tên ba bang."
           }
         }
       }
@@ -7470,13 +7470,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Under our Constitution, some powers belong to the federal government. What is one power of the federal government?\""
+            "value" : "Under our Constitution, some powers belong to the federal government. What is one power of the federal government?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Theo Hiến pháp, một số quyền thuộc về chính phủ liên bang. Hãy nêu một quyền của chính phủ liên bang.\""
+            "value" : "Theo Hiến pháp, một số quyền thuộc về chính phủ liên bang. Hãy nêu một quyền của chính phủ liên bang."
           }
         }
       }
@@ -7487,13 +7487,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Under our Constitution, some powers belong to the states. What is one power of the states?\""
+            "value" : "Under our Constitution, some powers belong to the states. What is one power of the states?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Theo Hiến pháp, một số quyền thuộc về các tiểu bang. Hãy nêu một quyền của tiểu bang.\""
+            "value" : "Theo Hiến pháp, một số quyền thuộc về các tiểu bang. Hãy nêu một quyền của tiểu bang."
           }
         }
       }
@@ -7776,13 +7776,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"We elect a President for how many years?\""
+            "value" : "We elect a President for how many years?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Chúng ta bầu một Tổng thống cho nhiệm kỳ bao nhiêu năm?\""
+            "value" : "Chúng ta bầu một Tổng thống cho nhiệm kỳ bao nhiêu năm?"
           }
         }
       }
@@ -7793,13 +7793,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"We elect a U.S. Representative for how many years?\""
+            "value" : "We elect a U.S. Representative for how many years?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Chúng ta bầu một Dân biểu Hoa Kỳ cho nhiệm kỳ bao nhiêu năm?\""
+            "value" : "Chúng ta bầu một Dân biểu Hoa Kỳ cho nhiệm kỳ bao nhiêu năm?"
           }
         }
       }
@@ -7810,13 +7810,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"We elect a U.S. Senator for how many years?\""
+            "value" : "We elect a U.S. Senator for how many years?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Chúng ta bầu một Thượng nghị sĩ Hoa Kỳ cho nhiệm kỳ bao nhiêu năm?\""
+            "value" : "Chúng ta bầu một Thượng nghị sĩ Hoa Kỳ cho nhiệm kỳ bao nhiêu năm?"
           }
         }
       }
@@ -7844,13 +7844,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What are the two major political parties in the United States?\""
+            "value" : "What are the two major political parties in the United States?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hai đảng chính của Hoa Kỳ là gì?\""
+            "value" : "Hai đảng chính của Hoa Kỳ là gì?"
           }
         }
       }
@@ -7861,13 +7861,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What are the two parts of the U.S. Congress?\""
+            "value" : "What are the two parts of the U.S. Congress?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hai phần của Quốc hội Hoa Kỳ là gì?\""
+            "value" : "Hai phần của Quốc hội Hoa Kỳ là gì?"
           }
         }
       }
@@ -7878,13 +7878,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What are two Cabinet-level positions?\""
+            "value" : "What are two Cabinet-level positions?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Kể tên hai vị trí cấp Bộ trong Nội các.\""
+            "value" : "Kể tên hai vị trí cấp Bộ trong Nội các."
           }
         }
       }
@@ -7895,13 +7895,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What are two rights in the Declaration of Independence?\""
+            "value" : "What are two rights in the Declaration of Independence?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Trong Tuyên ngôn Độc lập có hai quyền nào?\""
+            "value" : "Trong Tuyên ngôn Độc lập có hai quyền nào?"
           }
         }
       }
@@ -7912,13 +7912,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What are two rights of everyone living in the United States?\""
+            "value" : "What are two rights of everyone living in the United States?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hai quyền của mọi người sống ở Hoa Kỳ là gì?\""
+            "value" : "Hai quyền của mọi người sống ở Hoa Kỳ là gì?"
           }
         }
       }
@@ -7929,13 +7929,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What are two ways that Americans can participate in their democracy?\""
+            "value" : "What are two ways that Americans can participate in their democracy?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hai cách người Mỹ có thể tham gia nền dân chủ là gì?\""
+            "value" : "Hai cách người Mỹ có thể tham gia nền dân chủ là gì?"
           }
         }
       }
@@ -7946,13 +7946,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What did Martin Luther King, Jr. do?\""
+            "value" : "What did Martin Luther King, Jr. do?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Martin Luther King, Jr. đã làm gì?\""
+            "value" : "Martin Luther King, Jr. đã làm gì?"
           }
         }
       }
@@ -7963,13 +7963,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What did Susan B. Anthony do?\""
+            "value" : "What did Susan B. Anthony do?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Susan B. Anthony đã làm gì?\""
+            "value" : "Susan B. Anthony đã làm gì?"
           }
         }
       }
@@ -7980,13 +7980,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What did the Declaration of Independence do?\""
+            "value" : "What did the Declaration of Independence do?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tuyên ngôn Độc lập đã làm gì?\""
+            "value" : "Tuyên ngôn Độc lập đã làm gì?"
           }
         }
       }
@@ -7997,13 +7997,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What did the Emancipation Proclamation do?\""
+            "value" : "What did the Emancipation Proclamation do?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tuyên ngôn Giải phóng (Emancipation Proclamation) đã làm gì?\""
+            "value" : "Tuyên ngôn Giải phóng (Emancipation Proclamation) đã làm gì?"
           }
         }
       }
@@ -8014,13 +8014,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What do we call the first ten amendments to the Constitution?\""
+            "value" : "What do we call the first ten amendments to the Constitution?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Chúng ta gọi mười tu chính án đầu tiên của Hiến pháp là gì?\""
+            "value" : "Chúng ta gọi mười tu chính án đầu tiên của Hiến pháp là gì?"
           }
         }
       }
@@ -8031,13 +8031,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What do we show loyalty to when we say the Pledge of Allegiance?\""
+            "value" : "What do we show loyalty to when we say the Pledge of Allegiance?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Khi đọc Lời Tuyên Thệ Trung Thành (Pledge of Allegiance), chúng ta thể hiện lòng trung thành với điều gì?\""
+            "value" : "Khi đọc Lời Tuyên Thệ Trung Thành (Pledge of Allegiance), chúng ta thể hiện lòng trung thành với điều gì?"
           }
         }
       }
@@ -8048,13 +8048,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What does the Constitution do?\""
+            "value" : "What does the Constitution do?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hiến pháp có chức năng gì?\""
+            "value" : "Hiến pháp có chức năng gì?"
           }
         }
       }
@@ -8065,13 +8065,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What does the judicial branch do?\""
+            "value" : "What does the judicial branch do?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Nhánh tư pháp làm gì?\""
+            "value" : "Nhánh tư pháp làm gì?"
           }
         }
       }
@@ -8082,13 +8082,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What does the President Cabinet do?\""
+            "value" : "What does the President Cabinet do?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Nội các của Tổng thống làm gì?\""
+            "value" : "Nội các của Tổng thống làm gì?"
           }
         }
       }
@@ -8099,13 +8099,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What group of people was taken to America and sold as slaves?\""
+            "value" : "What group of people was taken to America and sold as slaves?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Nhóm người nào bị đưa đến Mỹ và bị bán làm nô lệ?\""
+            "value" : "Nhóm người nào bị đưa đến Mỹ và bị bán làm nô lệ?"
           }
         }
       }
@@ -8116,13 +8116,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What happened at the Constitutional Convention?\""
+            "value" : "What happened at the Constitutional Convention?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Điều gì đã xảy ra tại Đại hội Lập hiến?\""
+            "value" : "Điều gì đã xảy ra tại Đại hội Lập hiến?"
           }
         }
       }
@@ -8133,13 +8133,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is an amendment?\""
+            "value" : "What is an amendment?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tu chính án là gì?\""
+            "value" : "Tu chính án là gì?"
           }
         }
       }
@@ -8150,13 +8150,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is freedom of religion?\""
+            "value" : "What is freedom of religion?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tự do tôn giáo là gì?\""
+            "value" : "Tự do tôn giáo là gì?"
           }
         }
       }
@@ -8167,13 +8167,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is one promise you make when you become a United States citizen?\""
+            "value" : "What is one promise you make when you become a United States citizen?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Một lời hứa khi trở thành công dân Hoa Kỳ là gì?\""
+            "value" : "Một lời hứa khi trở thành công dân Hoa Kỳ là gì?"
           }
         }
       }
@@ -8184,13 +8184,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is one reason colonists came to America?\""
+            "value" : "What is one reason colonists came to America?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Một lý do khiến những người định cư đến Mỹ là gì?\""
+            "value" : "Một lý do khiến những người định cư đến Mỹ là gì?"
           }
         }
       }
@@ -8201,13 +8201,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is one responsibility that is only for United States citizens?\""
+            "value" : "What is one responsibility that is only for United States citizens?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Một trách nhiệm chỉ dành cho công dân Hoa Kỳ là gì?\""
+            "value" : "Một trách nhiệm chỉ dành cho công dân Hoa Kỳ là gì?"
           }
         }
       }
@@ -8218,13 +8218,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is one right or freedom from the First Amendment?\""
+            "value" : "What is one right or freedom from the First Amendment?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Một quyền hoặc tự do nào từ Tu chính án Thứ Nhất?\""
+            "value" : "Một quyền hoặc tự do nào từ Tu chính án Thứ Nhất?"
           }
         }
       }
@@ -8235,13 +8235,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is one thing Benjamin Franklin is famous for?\""
+            "value" : "What is one thing Benjamin Franklin is famous for?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Benjamin Franklin nổi tiếng về điều gì?\""
+            "value" : "Benjamin Franklin nổi tiếng về điều gì?"
           }
         }
       }
@@ -8252,13 +8252,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is the capital of the United States?\""
+            "value" : "What is the capital of the United States?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Thủ đô của Hoa Kỳ là gì?\""
+            "value" : "Thủ đô của Hoa Kỳ là gì?"
           }
         }
       }
@@ -8269,13 +8269,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is the capital of your state?\""
+            "value" : "What is the capital of your state?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Thủ phủ của tiểu bang bạn là gì?\""
+            "value" : "Thủ phủ của tiểu bang bạn là gì?"
           }
         }
       }
@@ -8286,13 +8286,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is the economic system in the United States?\""
+            "value" : "What is the economic system in the United States?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hệ thống kinh tế của Hoa Kỳ là gì?\""
+            "value" : "Hệ thống kinh tế của Hoa Kỳ là gì?"
           }
         }
       }
@@ -8303,13 +8303,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is the highest court in the United States?\""
+            "value" : "What is the highest court in the United States?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tòa án cao nhất ở Hoa Kỳ là gì?\""
+            "value" : "Tòa án cao nhất ở Hoa Kỳ là gì?"
           }
         }
       }
@@ -8320,13 +8320,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is the name of the national anthem?\""
+            "value" : "What is the name of the national anthem?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tên quốc ca là gì?\""
+            "value" : "Tên quốc ca là gì?"
           }
         }
       }
@@ -8337,13 +8337,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is the name of the President of the United States now?\""
+            "value" : "What is the name of the President of the United States now?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tên của Tổng thống Hoa Kỳ hiện nay là gì?\""
+            "value" : "Tên của Tổng thống Hoa Kỳ hiện nay là gì?"
           }
         }
       }
@@ -8354,13 +8354,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is the name of the Speaker of the House of Representatives now?\""
+            "value" : "What is the name of the Speaker of the House of Representatives now?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tên của Chủ tịch Hạ viện hiện nay là gì?\""
+            "value" : "Tên của Chủ tịch Hạ viện hiện nay là gì?"
           }
         }
       }
@@ -8371,13 +8371,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is the name of the Vice President of the United States now?\""
+            "value" : "What is the name of the Vice President of the United States now?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tên của Phó Tổng thống Hoa Kỳ hiện nay là gì?\""
+            "value" : "Tên của Phó Tổng thống Hoa Kỳ hiện nay là gì?"
           }
         }
       }
@@ -8388,13 +8388,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is the political party of the President now?\""
+            "value" : "What is the political party of the President now?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tổng thống hiện nay thuộc đảng chính trị nào?\""
+            "value" : "Tổng thống hiện nay thuộc đảng chính trị nào?"
           }
         }
       }
@@ -8405,13 +8405,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What is the rule of law?\""
+            "value" : "What is the rule of law?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Pháp quyền (rule of law) là gì?\""
+            "value" : "Pháp quyền (rule of law) là gì?"
           }
         }
       }
@@ -8439,13 +8439,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What major event happened on September 11, 2001, in the United States?\""
+            "value" : "What major event happened on September 11, 2001, in the United States?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Sự kiện trọng đại nào xảy ra ngày 11 tháng 9 năm 2001 tại Hoa Kỳ?\""
+            "value" : "Sự kiện trọng đại nào xảy ra ngày 11 tháng 9 năm 2001 tại Hoa Kỳ?"
           }
         }
       }
@@ -8456,13 +8456,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What movement tried to end racial discrimination?\""
+            "value" : "What movement tried to end racial discrimination?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Phong trào nào cố gắng chấm dứt phân biệt chủng tộc?\""
+            "value" : "Phong trào nào cố gắng chấm dứt phân biệt chủng tộc?"
           }
         }
       }
@@ -8473,13 +8473,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What ocean is on the East Coast of the United States?\""
+            "value" : "What ocean is on the East Coast of the United States?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Đại dương nào ở Bờ Đông Hoa Kỳ?\""
+            "value" : "Đại dương nào ở Bờ Đông Hoa Kỳ?"
           }
         }
       }
@@ -8490,13 +8490,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What ocean is on the West Coast of the United States?\""
+            "value" : "What ocean is on the West Coast of the United States?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Đại dương nào ở Bờ Tây Hoa Kỳ?\""
+            "value" : "Đại dương nào ở Bờ Tây Hoa Kỳ?"
           }
         }
       }
@@ -8507,13 +8507,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What stops one branch of government from becoming too powerful?\""
+            "value" : "What stops one branch of government from becoming too powerful?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Điều gì ngăn một nhánh chính phủ trở nên quá quyền lực?\""
+            "value" : "Điều gì ngăn một nhánh chính phủ trở nên quá quyền lực?"
           }
         }
       }
@@ -8524,13 +8524,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What territory did the United States buy from France in 1803?\""
+            "value" : "What territory did the United States buy from France in 1803?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hoa Kỳ đã mua lãnh thổ nào từ Pháp năm 1803?\""
+            "value" : "Hoa Kỳ đã mua lãnh thổ nào từ Pháp năm 1803?"
           }
         }
       }
@@ -8541,13 +8541,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"What was one important thing that Abraham Lincoln did?\""
+            "value" : "What was one important thing that Abraham Lincoln did?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Một điều quan trọng mà Abraham Lincoln đã làm là gì?\""
+            "value" : "Một điều quan trọng mà Abraham Lincoln đã làm là gì?"
           }
         }
       }
@@ -8558,13 +8558,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"When do we celebrate Independence Day?\""
+            "value" : "When do we celebrate Independence Day?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Chúng ta kỷ niệm Ngày Độc lập vào ngày nào?\""
+            "value" : "Chúng ta kỷ niệm Ngày Độc lập vào ngày nào?"
           }
         }
       }
@@ -8575,13 +8575,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"When is the last day you can send in federal income tax forms?\""
+            "value" : "When is the last day you can send in federal income tax forms?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Ngày cuối cùng bạn có thể nộp mẫu thuế thu nhập liên bang là ngày nào?\""
+            "value" : "Ngày cuối cùng bạn có thể nộp mẫu thuế thu nhập liên bang là ngày nào?"
           }
         }
       }
@@ -8592,13 +8592,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"When must all men register for the Selective Service?\""
+            "value" : "When must all men register for the Selective Service?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Khi nào tất cả nam giới phải đăng ký Dịch vụ Quân dịch (Selective Service)?\""
+            "value" : "Khi nào tất cả nam giới phải đăng ký Dịch vụ Quân dịch (Selective Service)?"
           }
         }
       }
@@ -8609,13 +8609,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"When was the Constitution written?\""
+            "value" : "When was the Constitution written?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hiến pháp được viết vào năm nào?\""
+            "value" : "Hiến pháp được viết vào năm nào?"
           }
         }
       }
@@ -8626,13 +8626,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"When was the Declaration of Independence adopted?\""
+            "value" : "When was the Declaration of Independence adopted?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tuyên ngôn Độc lập được thông qua khi nào?\""
+            "value" : "Tuyên ngôn Độc lập được thông qua khi nào?"
           }
         }
       }
@@ -8643,13 +8643,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Where is the Statue of Liberty?\""
+            "value" : "Where is the Statue of Liberty?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tượng Nữ thần Tự do ở đâu?\""
+            "value" : "Tượng Nữ thần Tự do ở đâu?"
           }
         }
       }
@@ -8660,13 +8660,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Who did the United States fight in World War II?\""
+            "value" : "Who did the United States fight in World War II?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hoa Kỳ đã chiến đấu với ai trong Thế chiến II?\""
+            "value" : "Hoa Kỳ đã chiến đấu với ai trong Thế chiến II?"
           }
         }
       }
@@ -8677,13 +8677,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Who does a U.S. Senator represent?\""
+            "value" : "Who does a U.S. Senator represent?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Một Thượng nghị sĩ Hoa Kỳ đại diện cho ai?\""
+            "value" : "Một Thượng nghị sĩ Hoa Kỳ đại diện cho ai?"
           }
         }
       }
@@ -8694,13 +8694,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Who is in charge of the executive branch?\""
+            "value" : "Who is in charge of the executive branch?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Ai đứng đầu nhánh hành pháp?\""
+            "value" : "Ai đứng đầu nhánh hành pháp?"
           }
         }
       }
@@ -8711,13 +8711,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Who is one of your state U.S. Senators now?\""
+            "value" : "Who is one of your state U.S. Senators now?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Hiện nay, ai là một trong những Thượng nghị sĩ Hoa Kỳ của tiểu bang bạn?\""
+            "value" : "Hiện nay, ai là một trong những Thượng nghị sĩ Hoa Kỳ của tiểu bang bạn?"
           }
         }
       }
@@ -8728,13 +8728,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Who is the Chief Justice of the United States now?\""
+            "value" : "Who is the Chief Justice of the United States now?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Ai là Chánh án Hoa Kỳ hiện nay?\""
+            "value" : "Ai là Chánh án Hoa Kỳ hiện nay?"
           }
         }
       }
@@ -8745,13 +8745,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Who is the Commander in Chief of the military?\""
+            "value" : "Who is the Commander in Chief of the military?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Ai là Tổng tư lệnh các lực lượng vũ trang?\""
+            "value" : "Ai là Tổng tư lệnh các lực lượng vũ trang?"
           }
         }
       }
@@ -8762,13 +8762,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Who is the Father of Our Country?\""
+            "value" : "Who is the Father of Our Country?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Ai được gọi là 'Cha của đất nước'?\""
+            "value" : "Ai được gọi là 'Cha của đất nước'?"
           }
         }
       }
@@ -8779,13 +8779,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Who is the Governor of your state now?\""
+            "value" : "Who is the Governor of your state now?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Ai là Thống đốc tiểu bang của bạn hiện nay?\""
+            "value" : "Ai là Thống đốc tiểu bang của bạn hiện nay?"
           }
         }
       }
@@ -8796,13 +8796,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Who lived in America before the Europeans arrived?\""
+            "value" : "Who lived in America before the Europeans arrived?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Ai sống ở Mỹ trước khi người châu Âu đến?\""
+            "value" : "Ai sống ở Mỹ trước khi người châu Âu đến?"
           }
         }
       }
@@ -8813,13 +8813,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Who makes federal laws?\""
+            "value" : "Who makes federal laws?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Ai làm luật liên bang?\""
+            "value" : "Ai làm luật liên bang?"
           }
         }
       }
@@ -8830,13 +8830,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Who signs bills to become laws?\""
+            "value" : "Who signs bills to become laws?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Ai ký các dự luật để trở thành luật?\""
+            "value" : "Ai ký các dự luật để trở thành luật?"
           }
         }
       }
@@ -8847,13 +8847,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Who vetoes bills?\""
+            "value" : "Who vetoes bills?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Ai phủ quyết các dự luật?\""
+            "value" : "Ai phủ quyết các dự luật?"
           }
         }
       }
@@ -8864,13 +8864,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Who was President during the Great Depression and World War II?\""
+            "value" : "Who was President during the Great Depression and World War II?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Ai là Tổng thống trong thời kỳ Đại Khủng hoảng và Thế chiến II?\""
+            "value" : "Ai là Tổng thống trong thời kỳ Đại Khủng hoảng và Thế chiến II?"
           }
         }
       }
@@ -8881,13 +8881,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Who was President during World War I?\""
+            "value" : "Who was President during World War I?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Ai là Tổng thống trong Thế chiến I?\""
+            "value" : "Ai là Tổng thống trong Thế chiến I?"
           }
         }
       }
@@ -8898,13 +8898,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Who was the first President?\""
+            "value" : "Who was the first President?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Ai là Tổng thống đầu tiên?\""
+            "value" : "Ai là Tổng thống đầu tiên?"
           }
         }
       }
@@ -8915,13 +8915,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Who wrote the Declaration of Independence?\""
+            "value" : "Who wrote the Declaration of Independence?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Ai viết Tuyên ngôn Độc lập?\""
+            "value" : "Ai viết Tuyên ngôn Độc lập?"
           }
         }
       }
@@ -8932,13 +8932,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Why did the colonists fight the British?\""
+            "value" : "Why did the colonists fight the British?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tại sao các thuộc địa chiến đấu chống lại Anh?\""
+            "value" : "Tại sao các thuộc địa chiến đấu chống lại Anh?"
           }
         }
       }
@@ -8949,13 +8949,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Why do some states have more Representatives than other states?\""
+            "value" : "Why do some states have more Representatives than other states?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tại sao một số tiểu bang có nhiều Dân biểu hơn những tiểu bang khác?\""
+            "value" : "Tại sao một số tiểu bang có nhiều Dân biểu hơn những tiểu bang khác?"
           }
         }
       }
@@ -8966,13 +8966,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Why does the flag have 13 stripes?\""
+            "value" : "Why does the flag have 13 stripes?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tại sao lá cờ có 13 sọc?\""
+            "value" : "Tại sao lá cờ có 13 sọc?"
           }
         }
       }
@@ -8983,13 +8983,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Why does the flag have 50 stars?\""
+            "value" : "Why does the flag have 50 stars?"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"Tại sao lá cờ có 50 sao?\""
+            "value" : "Tại sao lá cờ có 50 sao?"
           }
         }
       }

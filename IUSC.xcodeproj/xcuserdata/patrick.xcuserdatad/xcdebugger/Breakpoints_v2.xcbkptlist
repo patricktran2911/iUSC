@@ -18,36 +18,6 @@
             endingLineNumber = "58"
             landmarkName = "fuzzyMatch(input:against:threshold:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2A4BB56C-F7B8-4619-8BD1-3A0CE67E0CAF - 2e285f0b6f50c91a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ESStateSelector.StateSelectorRepository.fuzzyMatch(input: Swift.String, against: Swift.Array&lt;Swift.String&gt;, threshold: Swift.Double) -&gt; Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "IUSC.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patrick/Dev/iUSC/ESFeature/StateSelector/Repository/StateSelectorRepository.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58">
-               </Location>
-               <Location
-                  uuid = "2A4BB56C-F7B8-4619-8BD1-3A0CE67E0CAF - ef2e97bed6adcc60"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.String, Swift.String) -&gt; Swift.Bool in ESStateSelector.StateSelectorRepository.fuzzyMatch(input: Swift.String, against: Swift.Array&lt;Swift.String&gt;, threshold: Swift.Double) -&gt; Swift.Array&lt;Swift.String&gt;"
-                  moduleName = "IUSC.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/patrick/Dev/iUSC/ESFeature/StateSelector/Repository/StateSelectorRepository.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
