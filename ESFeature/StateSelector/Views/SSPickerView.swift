@@ -33,7 +33,7 @@ extension SSPickerView: View {
         .padding(.horizontal)
         .sheet(isPresented: isOpenSheet.binding) {
             VStack(spacing: 16) {
-                Text(ESLocalizer.text("Select Your State", table: .practiceMode))
+                Text(ESLocalizer.text("Select Your State", table: .stateSelector))
                     .font(.title2)
                     .fontWeight(.bold)
                     .padding(.top, 20)

@@ -1,6 +1,7 @@
 import SwiftUI
 import ESDataStructure
 import ESLiveData
+import ESLocalizer
 
 struct FCQuestionPickerView: HashIdentifiable {
     let questions: [String]
@@ -58,7 +59,7 @@ extension FCQuestionPickerView: View {
                         }
                     }
                 }
-                .navigationTitle("All Questions")
+                .navigationTitle(ESLocalizer.text("All Questions", table: .flashcard))
                 .navigationBarTitleDisplayMode(.inline)
             }
         }

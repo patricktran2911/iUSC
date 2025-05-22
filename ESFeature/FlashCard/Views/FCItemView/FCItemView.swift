@@ -2,6 +2,7 @@ import SwiftUI
 import ESDataStructure
 import ESLiveData
 import UIKit
+import ESLocalizer
 
 struct FCItemView: HashIdentifiable {
     let flippedValues: ValueChangedEffect<Bool>
@@ -51,7 +52,7 @@ extension FCItemView: View {
                 
                 Spacer()
                 
-                Text(flippedValues.currentValue ? "Tap to view question" : "Tap to view answer")
+                Text(ESLocalizer.text(flippedValues.currentValue ? "Tap to view question" : "Tap to view answer", table: .flashcard))
                     .font(.caption)
                     .foregroundColor(.secondary)
                     .padding(.bottom, 12)

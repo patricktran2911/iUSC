@@ -1,20 +1,15 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    " #%lld" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "#%lld"
-          }
-        }
-      }
-    },
     " of %lld" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " of %lld"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -23,20 +18,15 @@
         }
       }
     },
-    "/ %lld" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "/%lld"
-          }
-        }
-      }
-    },
     "%lld" : {
       "extractionState" : "stale",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -45,9 +35,66 @@
         }
       }
     },
+    "%lld / %lld" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld / %2$lld"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld / %lld"
+          }
+        }
+      }
+    },
+    "All Questions" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All Questions"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tất cả các câu hỏi"
+          }
+        }
+      }
+    },
+    "Flashcards" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flashcards"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flashcards"
+          }
+        }
+      }
+    },
     "Next" : {
       "extractionState" : "stale",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -59,6 +106,12 @@
     "No flashcards available." : {
       "extractionState" : "stale",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No flashcards available."
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -70,6 +123,12 @@
     "Previous" : {
       "extractionState" : "stale",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Previous"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
@@ -78,13 +137,53 @@
         }
       }
     },
-    "Question " : {
+    "Question" : {
       "extractionState" : "stale",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Question"
+          }
+        },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Câu hỏi"
+          }
+        }
+      }
+    },
+    "Tap to view answer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap to view answer"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhấn để xem câu trả lời"
+          }
+        }
+      }
+    },
+    "Tap to view question" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap to view question"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhấn để xem câu hỏi"
           }
         }
       }

@@ -1,17 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    " #%lld" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "#%lld"
-          }
-        }
-      }
-    },
     " of %lld" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -19,17 +8,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "của %lld"
-          }
-        }
-      }
-    },
-    "/ %lld" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "/%lld"
           }
         }
       }
@@ -91,10 +69,6 @@
       }
     },
     "Question" : {
-
-    },
-    "Question " : {
-      "extractionState" : "stale",
       "localizations" : {
         "vi" : {
           "stringUnit" : {

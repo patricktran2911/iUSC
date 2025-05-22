@@ -7,6 +7,7 @@ public enum ESLocalizer {
         case flashcard = "FlashcardLocalizable"
         case practiceMode = "PracticeModeLocalizable"
         case landing = "LandingLocalizable"
+        case stateSelector = "StateSelectorLocalizable"
     }
 
     public static func text(
