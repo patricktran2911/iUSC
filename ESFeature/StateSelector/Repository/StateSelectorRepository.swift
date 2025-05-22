@@ -56,10 +56,6 @@ public final class StateSelectorRepository: StateSelectorDataSource {
             let normalizedCandidate = candidate.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
             let score = similarity(a: normalizedInput, b: normalizedCandidate)
             return score >= threshold ? candidate : nil
-        }.sorted {
-            let score1 = similarity(a: normalizedInput, b: $0.lowercased())
-            let score2 = similarity(a: normalizedInput, b: $1.lowercased())
-            return score1 > score2
         }
     }
 }
