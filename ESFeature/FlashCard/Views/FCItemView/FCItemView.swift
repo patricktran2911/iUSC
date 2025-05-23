@@ -8,6 +8,8 @@ struct FCItemView: HashIdentifiable {
     let flippedValues: ValueChangedEffect<Bool>
     let question: String
     let answers: [String]
+    let onTapSpeechQuestion: ActionEffect
+    let onTapSpeechAnswer: ActionEffect
 }
 
 extension FCItemView: View {
@@ -68,6 +70,16 @@ extension FCItemView: View {
         )
         .animation(.easeInOut(duration: 0.4), value: flippedValues.currentValue)
         .frame(minHeight: 220, maxHeight: 300)
+        .overlay(alignment: .topTrailing) {
+            Button(action: {
+                flippedValues.currentValue ? onTapSpeechAnswer.occurs() : onTapSpeechQuestion.occurs()
+            }) {
+                Image(systemName: "speaker.wave.2.fill")
+                    .foregroundColor(.secondary)
+                    .imageScale(.medium)
+            }
+            .padding()
+        }
         .padding(.horizontal)
         .onTapGesture {
             flippedValues.update(!flippedValues.currentValue)
@@ -91,7 +103,9 @@ extension FCItemView {
                 "The Cabinet and Congress",
                 "The President and Vice President",
                 "The Judicial and Executive branches"
-            ]
+            ],
+            onTapSpeechQuestion: .noEffect(),
+            onTapSpeechAnswer: .noEffect()
         )
     }
 }

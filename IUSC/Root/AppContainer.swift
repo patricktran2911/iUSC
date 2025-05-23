@@ -10,6 +10,7 @@ import ESPracticeMode
 import ESAppPurchased
 import ESUSCDataRepository
 import ESStateSelector
+import ESSpeechService
 
 final class AppContainer {
     
@@ -19,10 +20,11 @@ final class AppContainer {
         LoginContainer()
     })
     
-    lazy var fcContainer = Injected(.singleton { [anchorTime, uscDataRepository] in
+    lazy var fcContainer = Injected(.singleton { [anchorTime, uscDataRepository, speechService] in
         let container = FCContainer()
         container.anchorTime = anchorTime
         container.uscDataRepository = uscDataRepository
+        container.speechService = speechService
         return container
     })
     
@@ -61,6 +63,10 @@ final class AppContainer {
     
     lazy var anchorTime = Injected(.factory {
         AnchorTime.realTime
+    })
+    
+    lazy var speechService = Injected(.singleton {
+        SpeechService()
     })
     
     lazy var appPersistence = Injected(.singleton {

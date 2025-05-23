@@ -2,6 +2,7 @@ import Combine
 import ESLiveData
 import ESDataModel
 import ESDataSource
+import Foundation
 
 final class FCItemViewModel: StreamViewModel<FCItemView> {
     @MainActor
@@ -22,7 +23,13 @@ final class FCItemViewModel: StreamViewModel<FCItemView> {
                             isFlippedPublisher.send(newValue)
                         }),
                         question: currentQuestion.question,
-                        answers: currentQuestion.answer
+                        answers: currentQuestion.answer,
+                        onTapSpeechQuestion: .performing {
+                            fcDataStore.speech(word: currentQuestion.question)
+                        },
+                        onTapSpeechAnswer: .performing {
+                            fcDataStore.speech(word: currentQuestion.answer.joined(separator: ".\n"))
+                        }
                     )
                 )
             }

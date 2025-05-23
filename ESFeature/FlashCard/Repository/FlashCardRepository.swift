@@ -6,6 +6,7 @@ import ESDataTransport
 import ESDataSource
 import ESAppPurchased
 import ESUSCDataRepository
+import ESSpeechService
 
 @MainActor
 class FlashCardRepository: FlashCardDataSource {
@@ -40,10 +41,13 @@ class FlashCardRepository: FlashCardDataSource {
     private var isMenuListOpenValueSubject = CurrentValueSubject<Bool, Never>(false)
     private var flashcardsValueSubject = CurrentValueSubject<[DataModel.FlashCard], Never>([])
     private var cancellables = Set<AnyCancellable>()
+    
     private let uscDataSource: USCDataSource
+    private let speechService: SpeechService
 
-    init(uscDataSource: USCDataSource) {
+    init(uscDataSource: USCDataSource, speechService: SpeechService) {
         self.uscDataSource = uscDataSource
+        self.speechService = speechService
         loadFlashcards()
     }
 
@@ -80,6 +84,10 @@ class FlashCardRepository: FlashCardDataSource {
     
     func setMenuList(isOpen: Bool) {
         isMenuListOpenValueSubject.value = isOpen
+    }
+    
+    public func speech(word: String) {
+        speechService.speak(word, languageCode: UserDefaults.standard.string(forKey: UserDefaults.appLocaleKey) ?? "en-US")
     }
 }
 

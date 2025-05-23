@@ -50,7 +50,7 @@ public final class StateSelectorRepository: StateSelectorDataSource {
         searchText.value = text
     }
     
-    private func fuzzyMatch(input: String, against candidates: [String], threshold: Double = 0.2) -> [String] {
+    private func fuzzyMatch(input: String, against candidates: [String], threshold: Double = 0.5) -> [String] {
         let normalizedInput = input.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
         return candidates.compactMap { candidate in
             let normalizedCandidate = candidate.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)

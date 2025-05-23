@@ -17,4 +17,5 @@ public protocol FlashCardDataSource {
     func previousCard()
     func setCurrentCard(at index: Int)
     func setMenuList(isOpen: Bool)
+    func speech(word: String)
 }

@@ -38,6 +38,9 @@ let package = Package(
         ),
         .library(name: "ESStateSelector", targets: [
             "ESStateSelector"
+        ]),
+        .library(name: "ESSpeechService", targets: [
+            "ESSpeechService"
         ])
     ],
     dependencies: [
@@ -75,7 +78,8 @@ let package = Package(
                 .product(name: "ESLocalNotification", package: "ESModule"),
                 .product(name: "ESReusableUI", package: "ESModule"),
                 "ESUSCDataRepository",
-                "ESAppPurchased"
+                "ESAppPurchased",
+                "ESSpeechService",
             ],
             path: "FlashCard",
             resources: [.process("Resources", localization: .default)],
@@ -150,6 +154,15 @@ let package = Package(
                 )
             ]
         ),
+        .target(
+            name: "ESSpeechService",
+            path: "SpeechService",
+            swiftSettings: [
+                .enableExperimentalFeature(
+                    "StrictConcurrency"
+                )
+            ]
+        ),
         
         //--------------------------------------------------//
         //
@@ -162,6 +175,7 @@ let package = Package(
                     "ESPracticeMode",
                     "ESUSCDataRepository",
                     "ESStateSelector",
+                    "ESSpeechService",
                     .product(name: "ESTestTool", package: "ESFoundation")
                 ],
                 resources: [.process("Resources")],
